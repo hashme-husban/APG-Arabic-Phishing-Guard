@@ -205,10 +205,10 @@ APG-Arabic-Phishing-Guard/
 │   ├── lexical_model/        # TF-IDF model bundle (included)
 │   ├── semantic_arabert/     # AraBERT metadata (weights excluded — see models/README.md)
 │   └── README.md
-├── data/                     # Dataset splits
-│   ├── processed/            # Training/val/test splits
-│   ├── challenge_sets/       # Adversarial challenge sets
-│   └── README.md
+├── data/                     # Dataset (see data/README.md for policy)
+│   ├── samples/              # Small safe synthetic sample (20 rows)
+│   ├── raw/synthetic_datasets/ # APG-generated synthetic data
+│   └── README.md             # Dataset policy and licensing
 ├── ocr_service/              # PaddleOCR microservice
 ├── nginx/                    # Nginx reverse proxy config
 ├── scripts/                  # Utility and dev scripts
