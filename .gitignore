@@ -1,0 +1,97 @@
+# ── Secrets & credentials ──────────────────────────────────────────────────────
+.env
+*.env
+*.env.local
+*.env.production
+*.env.staging
+backend/.env
+secrets/
+credentials/
+google-services.json
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+*.jks
+service-account*.json
+
+# ── Python ─────────────────────────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+venv/
+.venv/
+env/
+*.egg-info/
+
+# ── Node / Frontend ────────────────────────────────────────────────────────────
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+dist/
+.npm/
+
+# ── Flutter / Mobile ───────────────────────────────────────────────────────────
+mobile/build/
+mobile/.dart_tool/
+mobile/android/.gradle/
+mobile/.flutter-plugins
+mobile/.flutter-plugins-dependencies
+android/.gradle/
+*.apk
+*.aab
+*.ipa
+
+# ── Databases ──────────────────────────────────────────────────────────────────
+*.db
+*.sqlite
+*.sqlite3
+*.dump
+*.sql.gz
+backend/instance/
+
+# ── Logs & exports ─────────────────────────────────────────────────────────────
+*.log
+logs/
+backend/exports/
+exports/
+
+# ── Build artifacts / archives ─────────────────────────────────────────────────
+releases/
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+backups/
+archive_backups/
+*.bak
+
+# ── ML / training artifacts ────────────────────────────────────────────────────
+runs/
+wandb/
+outputs/
+**/checkpoint-*/
+**/optimizer.pt
+**/trainer_state.json
+models/semantic_arabert/final_model/model.safetensors
+
+# ── OS / editor ────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.iml
+*.swp
+*.swo
+
+# ── Misc ───────────────────────────────────────────────────────────────────────
+*.pyc
+.coverage
+htmlcov/

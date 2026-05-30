@@ -1,0 +1,60 @@
+# APG Risk Intelligence Engine v1 — URL Provider Configuration
+#
+# External reputation providers. Missing API key = provider skipped (not error).
+# Timeout = provider error (not fatal).
+# A malicious verdict from any provider triggers BLOCK.
+# A clean verdict does NOT prove safety.
+
+providers:
+  google_safe_browsing:
+    enabled: true
+    env_key: GOOGLE_SAFE_BROWSING_API_KEY
+    timeout_seconds: 3
+    weight: 1.0
+    verdicts:
+      malicious: [MALWARE, SOCIAL_ENGINEERING, UNWANTED_SOFTWARE, POTENTIALLY_HARMFUL_APPLICATION]
+
+  virustotal:
+    enabled: true
+    env_key: VIRUSTOTAL_API_KEY
+    timeout_seconds: 3
+    weight: 1.0
+    malicious_threshold: 2    # >= 2 engines flag as malicious
+    suspicious_threshold: 1   # 1 engine OR >= 3 suspicious
+
+  urlscan:
+    enabled: true
+    env_key: URLSCAN_API_KEY
+    timeout_seconds: 3
+    weight: 0.9
+    suspicious_score_threshold: 50
+
+  phishtank:
+    enabled: true
+    env_key: PHISHTANK_API_KEY
+    timeout_seconds: 3
+    weight: 1.0
+
+# SSRF protection — block requests to these ranges when expanding URLs
+ssrf_protection:
+  blocked_ranges:
+    - "127.0.0.0/8"
+    - "10.0.0.0/8"
+    - "172.16.0.0/12"
+    - "192.168.0.0/16"
+    - "169.254.0.0/16"
+    - "100.64.0.0/10"
+    - "::1/128"
+    - "fc00::/7"
+    - "fe80::/10"
+  max_redirects: 3
+  max_response_bytes: 1048576
+  prefer_head: true
+  allowed_schemes: [http, https]
+
+# Privacy settings
+privacy:
+  send_to_providers_when_disabled: false
+  strip_query_params_from_privacy_log: true
+  add_privacy_note_on_external_check: true
+  privacy_note_ar: "تم إرسال الرابط إلى مزودي سمعة خارجيين للتحقق منه. لا يتم تخزين النص الكامل."

@@ -1,0 +1,43 @@
+{
+  "model_type": "logistic",
+  "used_focused_addon": true,
+  "train_rows": 3899,
+  "val_rows": 124,
+  "test_rows": 124,
+  "hard_rows": 103,
+  "best_threshold": 0.5999999999999999,
+  "best_val_f1": 0.9508,
+  "test_metrics": {
+    "accuracy": 0.9435,
+    "precision": 1.0,
+    "recall": 0.8871,
+    "f1": 0.9402,
+    "confusion_matrix": [
+      [
+        62,
+        0
+      ],
+      [
+        7,
+        55
+      ]
+    ]
+  },
+  "hard_metrics": {
+    "accuracy": 0.9223,
+    "precision": 0.9623,
+    "recall": 0.8947,
+    "f1": 0.9273,
+    "confusion_matrix": [
+      [
+        44,
+        2
+      ],
+      [
+        6,
+        51
+      ]
+    ]
+  },
+  "hard_breakdown": null
+}

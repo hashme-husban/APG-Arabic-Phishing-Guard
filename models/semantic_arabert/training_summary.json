@@ -1,0 +1,102 @@
+{
+  "seed": 777,
+  "model_name": "aubmindlab/bert-base-arabertv02",
+  "base_train": "arabic_phishing_guard_train_augmented_recommended_simple.csv",
+  "use_focused_addon": true,
+  "focused_addon": "arabic_phishing_guard_focused_addon_balanced_simple.csv",
+  "use_typo_addon": false,
+  "typo_addon": null,
+  "typo_ratio": 0.1,
+  "val_best_threshold": {
+    "threshold": 0.3,
+    "f1": 0.9365079365079365,
+    "precision": 0.921875,
+    "recall": 0.9516129032258065
+  },
+  "test_metrics": {
+    "accuracy": 0.9516129032258065,
+    "precision": 0.9666666666666667,
+    "recall": 0.9354838709677419,
+    "f1": 0.9508196721311475,
+    "confusion_matrix": [
+      [
+        60,
+        2
+      ],
+      [
+        4,
+        58
+      ]
+    ],
+    "classification_report": {
+      "legit": {
+        "precision": 0.9375,
+        "recall": 0.967741935483871,
+        "f1-score": 0.9523809523809523,
+        "support": 62.0
+      },
+      "phishing": {
+        "precision": 0.9666666666666667,
+        "recall": 0.9354838709677419,
+        "f1-score": 0.9508196721311475,
+        "support": 62.0
+      },
+      "accuracy": 0.9516129032258065,
+      "macro avg": {
+        "precision": 0.9520833333333334,
+        "recall": 0.9516129032258065,
+        "f1-score": 0.9516003122560499,
+        "support": 124.0
+      },
+      "weighted avg": {
+        "precision": 0.9520833333333334,
+        "recall": 0.9516129032258065,
+        "f1-score": 0.95160031225605,
+        "support": 124.0
+      }
+    }
+  },
+  "hard_metrics": {
+    "accuracy": 0.883495145631068,
+    "precision": 0.9787234042553191,
+    "recall": 0.8070175438596491,
+    "f1": 0.8846153846153846,
+    "confusion_matrix": [
+      [
+        45,
+        1
+      ],
+      [
+        11,
+        46
+      ]
+    ],
+    "classification_report": {
+      "legit": {
+        "precision": 0.8035714285714286,
+        "recall": 0.9782608695652174,
+        "f1-score": 0.8823529411764706,
+        "support": 46.0
+      },
+      "phishing": {
+        "precision": 0.9787234042553191,
+        "recall": 0.8070175438596491,
+        "f1-score": 0.8846153846153846,
+        "support": 57.0
+      },
+      "accuracy": 0.883495145631068,
+      "macro avg": {
+        "precision": 0.8911474164133739,
+        "recall": 0.8926392067124332,
+        "f1-score": 0.8834841628959276,
+        "support": 103.0
+      },
+      "weighted avg": {
+        "precision": 0.9005001918139699,
+        "recall": 0.883495145631068,
+        "f1-score": 0.8836049729824714,
+        "support": 103.0
+      }
+    }
+  }
+}

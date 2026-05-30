@@ -1,0 +1,4463 @@
+[
+  {
+    "id": "safe_casual_001",
+    "category": "safe_casual",
+    "description": "Simple greeting",
+    "text": "مرحبا كيف حالك اليوم؟",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 30
+    }
+  },
+  {
+    "id": "safe_casual_002",
+    "category": "safe_casual",
+    "description": "Casual confirmation",
+    "text": "تم الاتفاق، نلتقي الساعة 5",
+    "source": "manual",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 30
+    }
+  },
+  {
+    "id": "safe_casual_003",
+    "category": "safe_casual",
+    "description": "Weather message",
+    "text": "الجو حلو اليوم، خرجنا للنزهة",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 30
+    }
+  },
+  {
+    "id": "safe_casual_004",
+    "category": "safe_casual",
+    "description": "Known contact casual",
+    "text": "وين أنت؟ أنا عند البيت",
+    "source": "sms",
+    "is_known_contact": true,
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 15
+    }
+  },
+  {
+    "id": "safe_casual_005",
+    "category": "safe_casual",
+    "description": "Appointment reminder",
+    "text": "تذكير: موعدك غداً الساعة العاشرة",
+    "source": "notification",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 30
+    }
+  },
+  {
+    "id": "safe_casual_006",
+    "category": "safe_casual",
+    "description": "Food order confirmation",
+    "text": "طلبك في الطريق إليك، يصل خلال 30 دقيقة",
+    "source": "notification",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 30
+    }
+  },
+  {
+    "id": "safe_casual_007",
+    "category": "safe_casual",
+    "description": "Delivery notification",
+    "text": "تم شحن طلبك، رقم التتبع: 123456789",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 30
+    }
+  },
+  {
+    "id": "safe_casual_008",
+    "category": "safe_casual",
+    "description": "News update",
+    "text": "آخر الأخبار: اجتماع مجلس الوزراء غداً",
+    "source": "notification",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 30
+    }
+  },
+  {
+    "id": "safe_casual_009",
+    "category": "safe_casual",
+    "description": "Prayer time notification",
+    "text": "حان وقت صلاة المغرب",
+    "source": "notification",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 30
+    }
+  },
+  {
+    "id": "safe_casual_010",
+    "category": "safe_casual",
+    "description": "Known contact event",
+    "text": "هل تيجي الحفلة يوم الجمعة؟",
+    "source": "whatsapp",
+    "is_known_contact": true,
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 15
+    }
+  },
+  {
+    "id": "safe_casual_011",
+    "category": "safe_casual",
+    "description": "Simple thanks",
+    "text": "شكراً جزيلاً على مساعدتك",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 30
+    }
+  },
+  {
+    "id": "safe_casual_012",
+    "category": "safe_casual",
+    "description": "Sports result",
+    "text": "النصر فاز 3-1 الليلة في الدوري",
+    "source": "notification",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 30
+    }
+  },
+  {
+    "id": "safe_casual_013",
+    "category": "safe_casual",
+    "description": "Meeting invite from known",
+    "text": "اجتماع العمل الساعة 9 صباحاً، لا تتأخر",
+    "source": "whatsapp",
+    "is_known_contact": true,
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "safe_casual_014",
+    "category": "safe_casual",
+    "description": "Mixed Arabic English casual",
+    "text": "Hey, how are you? كيف حالك؟ Let me know if you need help",
+    "source": "whatsapp",
+    "is_known_contact": true,
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "safe_casual_015",
+    "category": "safe_casual",
+    "description": "Birthday wish",
+    "text": "كل عام وأنت بخير! عيد ميلاد سعيد",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 30
+    }
+  },
+  {
+    "id": "safe_casual_016",
+    "category": "safe_casual",
+    "description": "Confirmation of receipt",
+    "text": "وصلني الطرد، شكراً",
+    "source": "whatsapp",
+    "is_known_contact": true,
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 15
+    }
+  },
+  {
+    "id": "safe_casual_017",
+    "category": "safe_casual",
+    "description": "System update notification",
+    "text": "تحديث التطبيق متاح، النسخة 2.5.0",
+    "source": "notification",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 30
+    }
+  },
+  {
+    "id": "safe_casual_018",
+    "category": "safe_casual",
+    "description": "Subscription renewal",
+    "text": "تجديد اشتراكك في Netflix تم بنجاح",
+    "source": "email",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 30
+    }
+  },
+  {
+    "id": "safe_casual_019",
+    "category": "safe_casual",
+    "description": "Simple question from known",
+    "text": "متى ترجع من الرحلة؟",
+    "source": "sms",
+    "is_known_contact": true,
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 15
+    }
+  },
+  {
+    "id": "safe_casual_020",
+    "category": "safe_casual",
+    "description": "Order placed",
+    "text": "Your order #ORD-789 has been placed successfully. Thank you!",
+    "source": "email",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 30
+    }
+  },
+  {
+    "id": "safe_casual_021",
+    "category": "safe_casual",
+    "description": "Electricity bill reminder",
+    "text": "تذكير: موعد سداد فاتورة الكهرباء الشهر القادم",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 30
+    }
+  },
+  {
+    "id": "safe_casual_022",
+    "category": "safe_casual",
+    "description": "Flight reminder",
+    "text": "تذكير بموعد رحلتك غداً من مطار الملك خالد",
+    "source": "email",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 30
+    }
+  },
+  {
+    "id": "safe_casual_023",
+    "category": "safe_casual",
+    "description": "Parking notification",
+    "text": "مدة انتهاء وقوفك تقترب، رقم اللوحة ABC123",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 30
+    }
+  },
+  {
+    "id": "safe_casual_024",
+    "category": "safe_casual",
+    "description": "Library due date",
+    "text": "الكتاب المستعار منك يجب إعادته قبل نهاية الأسبوع",
+    "source": "email",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 30
+    }
+  },
+  {
+    "id": "safe_casual_025",
+    "category": "safe_casual",
+    "description": "Gym class reminder",
+    "text": "تذكير: حصة اليوغا الساعة 7 مساءً",
+    "source": "notification",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 30
+    }
+  },
+  {
+    "id": "safe_awareness_001",
+    "category": "safe_awareness",
+    "description": "Do not share OTP",
+    "text": "لا تشارك رمز التحقق مع أي شخص مهما كان",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20,
+      "message_category": "awareness"
+    }
+  },
+  {
+    "id": "safe_awareness_002",
+    "category": "safe_awareness",
+    "description": "Bank will never ask",
+    "text": "البنك لن يطلب منك كلمة المرور أبداً عبر الرسائل أو الهاتف",
+    "source": "sms",
+    "sender": "BANKALAR",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20,
+      "message_category": "awareness"
+    }
+  },
+  {
+    "id": "safe_awareness_003",
+    "category": "safe_awareness",
+    "description": "Security tip",
+    "text": "نصيحة أمنية: لا تضغط على روابط مجهولة المصدر",
+    "source": "notification",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20,
+      "message_category": "awareness"
+    }
+  },
+  {
+    "id": "safe_awareness_004",
+    "category": "safe_awareness",
+    "description": "Do not share verification code",
+    "text": "لا تعطي رمز التحقق لأي أحد، حتى لو ادّعى أنه من البنك",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20,
+      "message_category": "awareness"
+    }
+  },
+  {
+    "id": "safe_awareness_005",
+    "category": "safe_awareness",
+    "description": "Official channel reminder",
+    "text": "تذكير: لن يطلب البنك الأهلي منك بياناتك عبر الرسائل النصية",
+    "source": "sms",
+    "sender": "ALAHLIBK",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20,
+      "message_category": "awareness"
+    }
+  },
+  {
+    "id": "safe_awareness_006",
+    "category": "safe_awareness",
+    "description": "Phishing warning",
+    "text": "احذر من رسائل الاحتيال التي تطلب بياناتك البنكية",
+    "source": "notification",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20,
+      "message_category": "awareness"
+    }
+  },
+  {
+    "id": "safe_awareness_007",
+    "category": "safe_awareness",
+    "description": "Never share PIN",
+    "text": "لا تشارك رقمك السري مع أحد ولا حتى مع موظفي البنك",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20,
+      "message_category": "awareness"
+    }
+  },
+  {
+    "id": "safe_awareness_008",
+    "category": "safe_awareness",
+    "description": "Protect your account Arabic",
+    "text": "لحماية حسابك: لا تفصح عن بيانات بطاقتك لأي طرف ثالث",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20,
+      "message_category": "awareness"
+    }
+  },
+  {
+    "id": "safe_awareness_009",
+    "category": "safe_awareness",
+    "description": "Do not click suspicious links",
+    "text": "لا تضغط على روابط مشبوهة وتحقق دائماً من هوية المرسل",
+    "source": "email",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20,
+      "message_category": "awareness"
+    }
+  },
+  {
+    "id": "safe_awareness_010",
+    "category": "safe_awareness",
+    "description": "Security awareness English",
+    "text": "Security tip: Do not share your OTP or password with anyone, including bank staff.",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20,
+      "message_category": "awareness"
+    }
+  },
+  {
+    "id": "safe_awareness_011",
+    "category": "safe_awareness",
+    "description": "We never ask for your data",
+    "text": "نحن لن نطلب منك كلمة المرور أو رمز OTP في أي وقت",
+    "source": "sms",
+    "sender": "STCPAY",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20,
+      "message_category": "awareness"
+    }
+  },
+  {
+    "id": "safe_awareness_012",
+    "category": "safe_awareness",
+    "description": "Fraud alert awareness",
+    "text": "تحذير أمني: إذا طلب منك أحد رمز التحقق فهو محتال",
+    "source": "notification",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20,
+      "message_category": "awareness"
+    }
+  },
+  {
+    "id": "safe_awareness_013",
+    "category": "safe_awareness",
+    "description": "Awareness with Gulf dialect",
+    "text": "ما تعطي الكود لأي أحد، حتى لو قال إنه من البنك",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20,
+      "message_category": "awareness"
+    }
+  },
+  {
+    "id": "safe_awareness_014",
+    "category": "safe_awareness",
+    "description": "Awareness Egyptian dialect",
+    "text": "متبعتش الرمز لحد خالص، حتى لو اتصل بك البنك",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 25
+    }
+  },
+  {
+    "id": "safe_awareness_015",
+    "category": "safe_awareness",
+    "description": "Official tip do not share CVV",
+    "text": "لا تشارك رقم CVV الموجود خلف بطاقتك مع أي شخص",
+    "source": "sms",
+    "sender": "BANKINFO",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20,
+      "message_category": "awareness"
+    }
+  },
+  {
+    "id": "safe_awareness_016",
+    "category": "safe_awareness",
+    "description": "Beware phishing links",
+    "text": "تحذير: قد تصلك روابط تنتحل صفة البنك، لا تضغط عليها",
+    "source": "notification",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20,
+      "message_category": "awareness"
+    }
+  },
+  {
+    "id": "safe_awareness_017",
+    "category": "safe_awareness",
+    "description": "Multiple do not share",
+    "text": "لا تشارك كلمة المرور ولا الرمز السري ولا بيانات البطاقة",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20,
+      "message_category": "awareness"
+    }
+  },
+  {
+    "id": "safe_awareness_018",
+    "category": "safe_awareness",
+    "description": "Bank awareness Levantine dialect",
+    "text": "البنك ما بطلب منك كلمة السر عبر الواتساب أو الرسائل",
+    "source": "whatsapp",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "safe_awareness_019",
+    "category": "safe_awareness",
+    "description": "Do not enter data on suspicious site",
+    "text": "لا تدخل بياناتك على أي موقع لم تتحقق من هويته",
+    "source": "email",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "safe_awareness_020",
+    "category": "safe_awareness",
+    "description": "Tips for safe banking",
+    "text": "للحفاظ على أمان حسابك: لا ترسل رمز OTP ولا كلمة مرورك لأي أحد",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20,
+      "message_category": "awareness"
+    }
+  },
+  {
+    "id": "safe_awareness_021",
+    "category": "safe_awareness",
+    "description": "Awareness with PIN warning",
+    "text": "تنبيه أمني: لا ترسل رقمك السري (PIN) لأي جهة كانت",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "safe_awareness_022",
+    "category": "safe_awareness",
+    "description": "We never call for password",
+    "text": "جهة الدعم الفني لن تطلب كلمة مرورك أبداً عبر أي قناة",
+    "source": "email",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "safe_awareness_023",
+    "category": "safe_awareness",
+    "description": "Awareness with card data",
+    "text": "لا تكشف عن رقم بطاقتك البنكية أو تاريخ انتهائها أو CVV لأي أحد",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "safe_awareness_024",
+    "category": "safe_awareness",
+    "description": "Iraqi dialect awareness",
+    "text": "لا ترسل الرمز لأي أحد، حتى لو ادعى أنه من البنك",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "safe_awareness_025",
+    "category": "safe_awareness",
+    "description": "Awareness about impersonation",
+    "text": "احذر: قد ينتحل المحتالون صفة البنك، تحقق من أي طلب عبر القنوات الرسمية",
+    "source": "notification",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "safe_awareness_026",
+    "category": "safe_awareness",
+    "description": "Do not give code mixed",
+    "text": "Do not share your verification code. لا تشارك رمز التحقق مع أحد.",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "safe_awareness_027",
+    "category": "safe_awareness",
+    "description": "Protect account tip",
+    "text": "نصيحة: فعّل المصادقة الثنائية وغيّر كلمة مرورك بانتظام لحماية حسابك",
+    "source": "email",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "safe_awareness_028",
+    "category": "safe_awareness",
+    "description": "Awareness from bank",
+    "text": "رسالة توعوية من البنك الوطني: لا نطلب منك أبداً مشاركة بياناتك الحساسة",
+    "source": "sms",
+    "sender": "NBKBANK",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "safe_awareness_029",
+    "category": "safe_awareness",
+    "description": "Phishing education",
+    "text": "ما هي رسائل الاحتيال؟ هي رسائل تطلب منك إرسال رمز تحقق أو كلمة مرور — لا تستجب لها",
+    "source": "notification",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "safe_awareness_030",
+    "category": "safe_awareness",
+    "description": "Social engineering tip",
+    "text": "احذر من أساليب الهندسة الاجتماعية: المحتال قد يدّعي أنه موظف دعم لانتزاع بياناتك",
+    "source": "email",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "safe_otp_001",
+    "category": "safe_otp_delivery",
+    "description": "OTP with do not share",
+    "text": "رمز التحقق الخاص بك هو 847362. لا تشاركه مع أحد.",
+    "source": "sms",
+    "sender": "BANKALAR",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 25,
+      "message_category": "otp_delivery"
+    }
+  },
+  {
+    "id": "safe_otp_002",
+    "category": "safe_otp_delivery",
+    "description": "WhatsApp OTP delivery",
+    "text": "رمز واتساب الخاص بك: 123-456. لا تشاركه",
+    "source": "sms",
+    "sender": "WhatsApp",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 25,
+      "message_category": "otp_delivery"
+    }
+  },
+  {
+    "id": "safe_otp_003",
+    "category": "safe_otp_delivery",
+    "description": "OTP English with warning",
+    "text": "Your OTP is 567890. Do not share this code with anyone.",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 25,
+      "message_category": "otp_delivery"
+    }
+  },
+  {
+    "id": "safe_otp_004",
+    "category": "safe_otp_delivery",
+    "description": "Verification code with expiry",
+    "text": "رمز التحقق الخاص بك هو 112233. صالح لمدة 5 دقائق. لا تعطيه لأحد.",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 25
+    }
+  },
+  {
+    "id": "safe_otp_005",
+    "category": "safe_otp_delivery",
+    "description": "Bank login OTP",
+    "text": "كود الدخول لمرة واحدة من الراجحي: 998877. لا تشارك هذا الرمز.",
+    "source": "sms",
+    "sender": "ALRAJHI",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 25
+    }
+  },
+  {
+    "id": "safe_otp_006",
+    "category": "safe_otp_delivery",
+    "description": "App store verification code",
+    "text": "Your Apple ID verification code is 345678. Don't share it.",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 25
+    }
+  },
+  {
+    "id": "safe_otp_007",
+    "category": "safe_otp_delivery",
+    "description": "Google auth code",
+    "text": "رمزك هو 741852. لا تشاركه مع أي شخص حتى مع Google.",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 25
+    }
+  },
+  {
+    "id": "safe_otp_008",
+    "category": "safe_otp_delivery",
+    "description": "STC Pay OTP",
+    "text": "STC Pay: رمز التحقق الخاص بك 963741. لا تفصح عنه لأي أحد.",
+    "source": "sms",
+    "sender": "STCPAY",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 25
+    }
+  },
+  {
+    "id": "safe_otp_009",
+    "category": "safe_otp_delivery",
+    "description": "OTP mixed language",
+    "text": "Your verification code is 555444. لا تشارك هذا الرمز.",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 25
+    }
+  },
+  {
+    "id": "safe_otp_010",
+    "category": "safe_otp_delivery",
+    "description": "Short OTP with warning",
+    "text": "رمزك: 271828. لا تعطيه لأي أحد.",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 25
+    }
+  },
+  {
+    "id": "safe_otp_011",
+    "category": "safe_otp_delivery",
+    "description": "OTP with bank name",
+    "text": "بنك الكويت الوطني: رمز التحقق الخاص بك هو 654321. لا تشاركه.",
+    "source": "sms",
+    "sender": "NBK",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 25
+    }
+  },
+  {
+    "id": "safe_otp_012",
+    "category": "safe_otp_delivery",
+    "description": "Telegram code delivery",
+    "text": "Telegram code: 87654. لا تشارك هذا الرمز مع أحد.",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 25
+    }
+  },
+  {
+    "id": "safe_otp_013",
+    "category": "safe_otp_delivery",
+    "description": "Banking OTP never share",
+    "text": "رمز الدخول لمرة واحدة: 456789. البنك لن يطلب منك هذا الرمز — لا تعطيه لأحد.",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 25
+    }
+  },
+  {
+    "id": "safe_otp_014",
+    "category": "safe_otp_delivery",
+    "description": "Login code with expiry",
+    "text": "Your login code is 123789. Valid for 10 minutes. Never share with anyone.",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 25
+    }
+  },
+  {
+    "id": "safe_otp_015",
+    "category": "safe_otp_delivery",
+    "description": "Account verification code",
+    "text": "رمز تفعيل حسابك هو 357159. لا تفصح عنه لأي طرف ثالث.",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 25
+    }
+  },
+  {
+    "id": "safe_otp_016",
+    "category": "safe_otp_delivery",
+    "description": "Snapchat code",
+    "text": "Snapchat code: 147258. Do not share this code.",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 25
+    }
+  },
+  {
+    "id": "safe_otp_017",
+    "category": "safe_otp_delivery",
+    "description": "Jordan bank OTP",
+    "text": "رمز التحقق من بنك الأردن: 852963. لا تشاركه مع أي شخص كان.",
+    "source": "sms",
+    "sender": "JORDANBANK",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 25
+    }
+  },
+  {
+    "id": "safe_otp_018",
+    "category": "safe_otp_delivery",
+    "description": "Mobile number verification",
+    "text": "رمز التحقق من رقم هاتفك: 741963. لا تعطيه لأحد.",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 25
+    }
+  },
+  {
+    "id": "safe_otp_019",
+    "category": "safe_otp_delivery",
+    "description": "Instagram verification",
+    "text": "Instagram: code 236598. Do not share this code.",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 25
+    }
+  },
+  {
+    "id": "safe_otp_020",
+    "category": "safe_otp_delivery",
+    "description": "OTP Gulf dialect do not share",
+    "text": "كودك 789456. ما تعطيه لأي أحد أبداً.",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 25
+    }
+  },
+  {
+    "id": "safe_bank_001",
+    "category": "safe_bank_transaction",
+    "description": "Debit notification",
+    "text": "تم خصم 150 ريالاً من حسابك لدى الراجحي. الرصيد المتاح: 2350 ريالاً.",
+    "source": "sms",
+    "sender": "ALRAJHI",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 25,
+      "message_category": "transactional"
+    }
+  },
+  {
+    "id": "safe_bank_002",
+    "category": "safe_bank_transaction",
+    "description": "Credit notification",
+    "text": "تم إيداع 5000 دينار في حسابك. الرصيد الحالي: 12500 دينار.",
+    "source": "sms",
+    "sender": "NBK",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 25,
+      "message_category": "transactional"
+    }
+  },
+  {
+    "id": "safe_bank_003",
+    "category": "safe_bank_transaction",
+    "description": "Purchase notification",
+    "text": "عملية شراء بقيمة 75 دولاراً من Amazon تمت بنجاح. رقم البطاقة المنتهية بـ 4532.",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 25
+    }
+  },
+  {
+    "id": "safe_bank_004",
+    "category": "safe_bank_transaction",
+    "description": "Transfer completed",
+    "text": "تم تنفيذ حوالة بمبلغ 1000 دينار إلى الحساب المحدد. رقم العملية: TXN789.",
+    "source": "sms",
+    "sender": "ARABBANK",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 25
+    }
+  },
+  {
+    "id": "safe_bank_005",
+    "category": "safe_bank_transaction",
+    "description": "Withdrawal completed",
+    "text": "تم السحب بمبلغ 200 ريال من الصراف الآلي. الرصيد المتاح: 1800 ريال.",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 25
+    }
+  },
+  {
+    "id": "safe_bank_006",
+    "category": "safe_bank_transaction",
+    "description": "Balance inquiry result",
+    "text": "رصيدك الحالي في بنك البلاد: 4520.00 ريال",
+    "source": "sms",
+    "sender": "BILAD",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 25
+    }
+  },
+  {
+    "id": "safe_bank_007",
+    "category": "safe_bank_transaction",
+    "description": "Payment confirmation",
+    "text": "تم الدفع بنجاح إلى سامبا باي بمبلغ 250 ريال. شكراً لاستخدامك خدماتنا.",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 25
+    }
+  },
+  {
+    "id": "safe_bank_008",
+    "category": "safe_bank_transaction",
+    "description": "Salary credit",
+    "text": "تم إيداع راتبك بمبلغ 8000 ريال في حسابك. تاريخ الإيداع: اليوم.",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 25
+    }
+  },
+  {
+    "id": "safe_bank_009",
+    "category": "safe_bank_transaction",
+    "description": "Credit card statement",
+    "text": "كشف حساب بطاقتك الائتمانية: المبلغ المستحق 1200 ريال. تاريخ الاستحقاق: 15 الشهر القادم.",
+    "source": "email",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 25
+    }
+  },
+  {
+    "id": "safe_bank_010",
+    "category": "safe_bank_transaction",
+    "description": "Incoming transfer",
+    "text": "تم استلام حوالة بمبلغ 3000 دينار أردني من أحمد محمد. رصيدك الجديد: 8500 دينار.",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 25
+    }
+  },
+  {
+    "id": "safe_bank_011",
+    "category": "safe_bank_transaction",
+    "description": "Bill payment success",
+    "text": "تم سداد فاتورة الكهرباء بمبلغ 95 ريال بنجاح. رقم المرجع: BIL456789.",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 25
+    }
+  },
+  {
+    "id": "safe_bank_012",
+    "category": "safe_bank_transaction",
+    "description": "International purchase",
+    "text": "Purchase of USD 120.00 at Amazon.com. Card ending 7812. If not authorized, call 920000000.",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 25
+    }
+  },
+  {
+    "id": "safe_bank_013",
+    "category": "safe_bank_transaction",
+    "description": "Zakat payment confirmation",
+    "text": "تم سداد زكاة مالك بمبلغ 500 ريال. شكراً لالتزامك.",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 25
+    }
+  },
+  {
+    "id": "safe_bank_014",
+    "category": "safe_bank_transaction",
+    "description": "Balance after deduction",
+    "text": "خصم مبلغ 65 ريال رسوم اشتراك شهري. رصيدك المتاح الآن: 3200 ريال.",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 25
+    }
+  },
+  {
+    "id": "safe_bank_015",
+    "category": "safe_bank_transaction",
+    "description": "Successful investment",
+    "text": "تمت عملية الاستثمار بنجاح. المبلغ المستثمر: 10000 ريال. صندوق: الأسهم السعودية.",
+    "source": "email",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 25
+    }
+  },
+  {
+    "id": "safe_bank_016",
+    "category": "safe_bank_transaction",
+    "description": "Loan installment deduction",
+    "text": "تم خصم قسط القرض الشهري بمبلغ 1500 ريال. الرصيد المتبقي في القرض: 45000 ريال.",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 25
+    }
+  },
+  {
+    "id": "safe_bank_017",
+    "category": "safe_bank_transaction",
+    "description": "Refund credited",
+    "text": "تم إيداع مبلغ استرداد 200 ريال في حسابك من طلب الإرجاع رقم REF123.",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 25
+    }
+  },
+  {
+    "id": "safe_bank_018",
+    "category": "safe_bank_transaction",
+    "description": "Card payment notification English",
+    "text": "Payment of 50.00 KWD to Talabat was successful. Remaining balance: 450.00 KWD.",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 25
+    }
+  },
+  {
+    "id": "safe_bank_019",
+    "category": "safe_bank_transaction",
+    "description": "ATM cash withdrawal",
+    "text": "تم سحب 500 ريال نقداً من الصراف الآلي. إذا لم تقم بهذه العملية، اتصل بنا فوراً.",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 25
+    }
+  },
+  {
+    "id": "safe_bank_020",
+    "category": "safe_bank_transaction",
+    "description": "Telecom bill payment",
+    "text": "تم دفع فاتورة STC بمبلغ 180 ريال بنجاح. شكراً لك.",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 25
+    }
+  },
+  {
+    "id": "safe_appver_001",
+    "category": "safe_app_verification",
+    "description": "WhatsApp verification in progress",
+    "text": "جاري التحقق من واتساب. رمز التحقق صالح لمدة 10 دقائق.",
+    "source": "sms",
+    "sender": "WhatsApp",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 15,
+      "message_category": "app_verification"
+    }
+  },
+  {
+    "id": "safe_appver_002",
+    "category": "safe_app_verification",
+    "description": "WhatsApp verifying your number",
+    "text": "واتساب يتحقق من رقم هاتفك. لا تشارك هذا الرمز.",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 15
+    }
+  },
+  {
+    "id": "safe_appver_003",
+    "category": "safe_app_verification",
+    "description": "Telegram verification",
+    "text": "Telegram: يتحقق تيليغرام من رقمك. رمز التحقق: 78541.",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 25
+    }
+  },
+  {
+    "id": "safe_appver_004",
+    "category": "safe_app_verification",
+    "description": "WhatsApp Business verification",
+    "text": "WhatsApp Business: تحقق من رقمك. الرمز: 321654. لا تشاركه.",
+    "source": "sms",
+    "sender": "WhatsApp",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "safe_appver_005",
+    "category": "safe_app_verification",
+    "description": "WhatsApp verifying status message",
+    "text": "واتساب: جاري التحقق من واتساب. رمزك: 741852.",
+    "source": "sms",
+    "sender": "WhatsApp",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 15
+    }
+  },
+  {
+    "id": "safe_appver_006",
+    "category": "safe_app_verification",
+    "description": "App verification English",
+    "text": "WhatsApp verification in progress. Your code: 963147. Do not share.",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 15
+    }
+  },
+  {
+    "id": "safe_appver_007",
+    "category": "safe_app_verification",
+    "description": "WhatsApp verifying mixed",
+    "text": "WhatsApp is verifying your number. رمز التحقق: 258369.",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "suspicious_account_001",
+    "category": "suspicious_account_notice",
+    "description": "Account update vague",
+    "text": "يوجد تحديث مهم لحسابك البنكي. يرجى مراجعة التطبيق.",
+    "source": "sms",
+    "sender": "BANK",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "suspicious_account_002",
+    "category": "suspicious_account_notice",
+    "description": "Unusual activity notice",
+    "text": "تم رصد نشاط غير معتاد في حسابك. يرجى التحقق من العمليات الأخيرة.",
+    "source": "sms",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "suspicious_account_003",
+    "category": "suspicious_account_notice",
+    "description": "Account needs review",
+    "text": "حسابك بحاجة إلى مراجعة بياناتك. تواصل مع الدعم إذا لم تتمكن من الوصول.",
+    "source": "sms",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "suspicious_account_004",
+    "category": "suspicious_account_notice",
+    "description": "Account confirmation vague",
+    "text": "تأكيد بياناتك مطلوب للحفاظ على حسابك نشطاً.",
+    "source": "sms",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "suspicious_account_005",
+    "category": "suspicious_account_notice",
+    "description": "Account status warning",
+    "text": "تحديث معلومات الحساب مطلوب. يرجى تحديث بياناتك خلال 48 ساعة.",
+    "source": "sms",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "suspicious_account_006",
+    "category": "suspicious_account_notice",
+    "description": "Suspicious login attempt",
+    "text": "محاولة دخول مشبوهة لحسابك. إذا لم تكن أنت، راجع إعدادات الأمان.",
+    "source": "email",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "suspicious_account_007",
+    "category": "suspicious_account_notice",
+    "description": "Account verification needed",
+    "text": "حسابك يحتاج إلى توثيق. يرجى التحقق من هويتك.",
+    "source": "sms",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "suspicious_account_008",
+    "category": "suspicious_account_notice",
+    "description": "Financial profile review",
+    "text": "ملفك المالي يحتاج مراجعة. تحقق من أي تغييرات غير مصرح بها.",
+    "source": "email",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "suspicious_account_009",
+    "category": "suspicious_account_notice",
+    "description": "Unknown sender bank warning",
+    "text": "تحديث عاجل لبياناتك البنكية مطلوب في أقرب وقت",
+    "source": "sms",
+    "is_known_contact": false,
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "suspicious_account_010",
+    "category": "suspicious_account_notice",
+    "description": "Wallet update notice",
+    "text": "محفظتك الإلكترونية تحتاج إلى تفعيل. راجع التطبيق للتفاصيل.",
+    "source": "notification",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "suspicious_account_011",
+    "category": "suspicious_account_notice",
+    "description": "Card activation notice",
+    "text": "بطاقتك لم يتم تفعيلها. يرجى متابعة إجراءات التفعيل.",
+    "source": "sms",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "suspicious_account_012",
+    "category": "suspicious_account_notice",
+    "description": "Vague account activity",
+    "text": "تأكيد الحساب: يرجى مراجعة حساب النشاط الأخير والتأكد من صحة المعاملات.",
+    "source": "email",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "suspicious_account_013",
+    "category": "suspicious_account_notice",
+    "description": "Important update no details",
+    "text": "تحديث مهم يخص حسابك البنكي. يرجى مراجعة التطبيق الرسمي.",
+    "source": "sms",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "suspicious_account_014",
+    "category": "suspicious_account_notice",
+    "description": "Salary account warning",
+    "text": "راتبك قد يتأخر بسبب خطأ في بيانات حسابك. تواصل مع البنك",
+    "source": "sms",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "suspicious_account_015",
+    "category": "suspicious_account_notice",
+    "description": "Account data confirmation vague",
+    "text": "التأكد من بيانات حسابك مطلوب بشكل عاجل لضمان استمرارية الخدمة",
+    "source": "sms",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "suspicious_fin_link_001",
+    "category": "suspicious_financial_link",
+    "description": "Bank link no credentials",
+    "text": "تحقق من حساباتك عبر الرابط https://www.alrajhibank.com.sa",
+    "source": "sms",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "suspicious_fin_link_002",
+    "category": "suspicious_financial_link",
+    "description": "Account notice with link",
+    "text": "يوجد تحديث لحسابك، يمكنك الاطلاع عليه من خلال الرابط التالي http://short.ly/abc123",
+    "source": "sms",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "suspicious_fin_link_003",
+    "category": "suspicious_financial_link",
+    "description": "Financial message with unknown URL",
+    "text": "تم تحديث شروط الخدمة البنكية. اضغط على الرابط للاطلاع على التفاصيل http://bankupdate.xyz/terms",
+    "source": "sms",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "suspicious_fin_link_004",
+    "category": "suspicious_financial_link",
+    "description": "Account balance with link",
+    "text": "رصيدك المتاح ومعلومات حسابك متاحة على: https://secure-bank-verify.top/account",
+    "source": "sms",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "suspicious_fin_link_005",
+    "category": "suspicious_financial_link",
+    "description": "Payment link suspicious TLD",
+    "text": "تفاصيل معاملتك المالية الأخيرة على https://transaction-check.xyz/view/12345",
+    "source": "email",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "danger_otp_001",
+    "category": "dangerous_otp_theft",
+    "description": "Direct OTP request",
+    "text": "أرسل لنا رمز التحقق الذي وصلك للتأكد من هويتك",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 80
+    }
+  },
+  {
+    "id": "danger_otp_002",
+    "category": "dangerous_otp_theft",
+    "description": "Share OTP imperative",
+    "text": "شارك رمز OTP الذي وصلك على هذا الرقم",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 80
+    }
+  },
+  {
+    "id": "danger_otp_003",
+    "category": "dangerous_otp_theft",
+    "description": "WhatsApp code request",
+    "text": "أرسل لي رمز واتساب اللي وصلك",
+    "source": "whatsapp",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 80
+    }
+  },
+  {
+    "id": "danger_otp_004",
+    "category": "dangerous_otp_theft",
+    "description": "Send verification code",
+    "text": "ابعث رمز التحقق اللي وصلك على رقمك",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 80
+    }
+  },
+  {
+    "id": "danger_otp_005",
+    "category": "dangerous_otp_theft",
+    "description": "Gulf dialect OTP request",
+    "text": "دز الكود اللي وصلك الحين",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 80
+    }
+  },
+  {
+    "id": "danger_otp_006",
+    "category": "dangerous_otp_theft",
+    "description": "Egyptian dialect send code",
+    "text": "ابعتلي الكود اللي وصلك على التليفون",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 80
+    }
+  },
+  {
+    "id": "danger_otp_007",
+    "category": "dangerous_otp_theft",
+    "description": "Levantine dialect forward code",
+    "text": "صيفط الرمز اللي وصلك هلق",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 80
+    }
+  },
+  {
+    "id": "danger_otp_008",
+    "category": "dangerous_otp_theft",
+    "description": "Give me the code",
+    "text": "اعطني رمز التحقق الخاص بك",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 80
+    }
+  },
+  {
+    "id": "danger_otp_009",
+    "category": "dangerous_otp_theft",
+    "description": "Provide verification code",
+    "text": "قدم رمز التحقق الذي وصلك لإكمال عملية التحقق",
+    "source": "email",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 80
+    }
+  },
+  {
+    "id": "danger_otp_010",
+    "category": "dangerous_otp_theft",
+    "description": "Enter code on link",
+    "text": "ادخل رمز التحقق الذي وصلك عبر الرابط http://verify-now.xyz",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 85
+    }
+  },
+  {
+    "id": "danger_otp_011",
+    "category": "dangerous_otp_theft",
+    "description": "OTP request with urgency",
+    "text": "أرسل رمز التحقق فوراً لتجنب إيقاف حسابك",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 85
+    }
+  },
+  {
+    "id": "danger_otp_012",
+    "category": "dangerous_otp_theft",
+    "description": "Question form OTP theft",
+    "text": "شو رمز التحقق اللي وصلك؟ أعطيني إياه",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 80
+    }
+  },
+  {
+    "id": "danger_otp_013",
+    "category": "dangerous_otp_theft",
+    "description": "Pretend to be bank, request OTP",
+    "text": "من البنك الوطني: أرسل رمز التحقق الذي وصلك للتحقق من هويتك",
+    "source": "sms",
+    "sender": "NBK",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 80
+    }
+  },
+  {
+    "id": "danger_otp_014",
+    "category": "dangerous_otp_theft",
+    "description": "Tech support OTP request",
+    "text": "من فريق الدعم الفني: زودنا برمز التحقق لاستعادة حسابك",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 80
+    }
+  },
+  {
+    "id": "danger_otp_015",
+    "category": "dangerous_otp_theft",
+    "description": "Share WhatsApp OTP now",
+    "text": "شارك رمز واتساب اللي وصلك الآن لتفعيل خدمتنا",
+    "source": "whatsapp",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 80
+    }
+  },
+  {
+    "id": "danger_otp_016",
+    "category": "dangerous_otp_theft",
+    "description": "Iraqi dialect code request",
+    "text": "ابعتلي الرمز اللي وصلك بالرسالة",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 80
+    }
+  },
+  {
+    "id": "danger_otp_017",
+    "category": "dangerous_otp_theft",
+    "description": "Moroccan dialect code",
+    "text": "عطيني الكود ديال التحقق اللي وصلك",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 80
+    }
+  },
+  {
+    "id": "danger_otp_018",
+    "category": "dangerous_otp_theft",
+    "description": "English OTP request direct",
+    "text": "Please send me your verification code to complete the activation",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 80
+    }
+  },
+  {
+    "id": "danger_otp_019",
+    "category": "dangerous_otp_theft",
+    "description": "Provide OTP english",
+    "text": "Provide your one-time password to verify your identity",
+    "source": "email",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 80
+    }
+  },
+  {
+    "id": "danger_otp_020",
+    "category": "dangerous_otp_theft",
+    "description": "Enter OTP on website",
+    "text": "ادخل رمز التحقق الخاص بك على الموقع لإتمام عملية التحقق",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 80
+    }
+  },
+  {
+    "id": "danger_otp_021",
+    "category": "dangerous_otp_theft",
+    "description": "Known contact OTP request still dangerous",
+    "text": "أرسل لي رمز التحقق اللي وصلك بسرعة",
+    "source": "whatsapp",
+    "is_known_contact": true,
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 80
+    }
+  },
+  {
+    "id": "danger_otp_022",
+    "category": "dangerous_otp_theft",
+    "description": "OTP request with bank name",
+    "text": "من فريق بنك الراجحي: شاركنا رمز التحقق لحماية حسابك",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 80
+    }
+  },
+  {
+    "id": "danger_otp_023",
+    "category": "dangerous_otp_theft",
+    "description": "Whatsapp code send me",
+    "text": "الرمز اللي وصلك من واتساب، أعطني إياه",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 80
+    }
+  },
+  {
+    "id": "danger_otp_024",
+    "category": "dangerous_otp_theft",
+    "description": "Verification code forward request",
+    "text": "حوّل رمز التحقق الذي وصلك على هاتفك إلى هذا الرقم",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 80
+    }
+  },
+  {
+    "id": "danger_otp_025",
+    "category": "dangerous_otp_theft",
+    "description": "Enter your 6-digit code",
+    "text": "أدخل الرمز المكون من 6 أرقام الذي وصلك في الخانة أدناه",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 80
+    }
+  },
+  {
+    "id": "danger_otp_026",
+    "category": "dangerous_otp_theft",
+    "description": "Share code urgency",
+    "text": "أرسل رمز التحقق عاجل قبل انتهاء الوقت",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 85
+    }
+  },
+  {
+    "id": "danger_otp_027",
+    "category": "dangerous_otp_theft",
+    "description": "What code did you receive",
+    "text": "ما هو رمز التحقق الذي وصلك؟ أعطنيه",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 80
+    }
+  },
+  {
+    "id": "danger_otp_028",
+    "category": "dangerous_otp_theft",
+    "description": "Write me the code",
+    "text": "اكتب لي رمز التحقق الخاص بك هنا",
+    "source": "whatsapp",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 80
+    }
+  },
+  {
+    "id": "danger_otp_029",
+    "category": "dangerous_otp_theft",
+    "description": "Code that arrived on phone",
+    "text": "الكود اللي وصل على تليفونك، ابعته هنا",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 80
+    }
+  },
+  {
+    "id": "danger_otp_030",
+    "category": "dangerous_otp_theft",
+    "description": "Mixed request otp",
+    "text": "Please share your OTP. أرسل لنا رمز التحقق.",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 80
+    }
+  },
+  {
+    "id": "danger_pw_001",
+    "category": "dangerous_password_theft",
+    "description": "Send password",
+    "text": "أرسل لنا كلمة مرورك لإعادة تعيينها",
+    "source": "email",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 85
+    }
+  },
+  {
+    "id": "danger_pw_002",
+    "category": "dangerous_password_theft",
+    "description": "Share your password",
+    "text": "شارك كلمة المرور الخاصة بك مع فريق الدعم",
+    "source": "email",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 85
+    }
+  },
+  {
+    "id": "danger_pw_003",
+    "category": "dangerous_password_theft",
+    "description": "Enter password via link",
+    "text": "ادخل كلمة المرور عبر الرابط التالي لإعادة التحقق http://reset-verify.top/login",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 88
+    }
+  },
+  {
+    "id": "danger_pw_004",
+    "category": "dangerous_password_theft",
+    "description": "Send current password",
+    "text": "أرسل لنا كلمة مرورك الحالية للتحقق من هويتك",
+    "source": "email",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 85
+    }
+  },
+  {
+    "id": "danger_pw_005",
+    "category": "dangerous_password_theft",
+    "description": "PIN request",
+    "text": "أرسل رقمك السري (PIN) للتحقق من عمليتك المالية",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 85
+    }
+  },
+  {
+    "id": "danger_pw_006",
+    "category": "dangerous_password_theft",
+    "description": "Write your password",
+    "text": "اكتب كلمة مرورك هنا لإكمال عملية التحقق",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 85
+    }
+  },
+  {
+    "id": "danger_pw_007",
+    "category": "dangerous_password_theft",
+    "description": "Gulf dialect PIN request",
+    "text": "دز لنا الرقم السري حق بطاقتك",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 85
+    }
+  },
+  {
+    "id": "danger_pw_008",
+    "category": "dangerous_password_theft",
+    "description": "Provide passcode",
+    "text": "Provide your passcode to verify your account",
+    "source": "email",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 85
+    }
+  },
+  {
+    "id": "danger_pw_009",
+    "category": "dangerous_password_theft",
+    "description": "Enter PIN English",
+    "text": "Enter your 4-digit PIN to authorize this transaction",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 85
+    }
+  },
+  {
+    "id": "danger_pw_010",
+    "category": "dangerous_password_theft",
+    "description": "Password request with urgency",
+    "text": "ادخل كلمة المرور فوراً لتجنب تعليق حسابك",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 88
+    }
+  },
+  {
+    "id": "danger_pw_011",
+    "category": "dangerous_password_theft",
+    "description": "Send password to support",
+    "text": "زودنا بكلمة المرور الحالية لاستعادة حسابك عبر الدعم الفني",
+    "source": "email",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 85
+    }
+  },
+  {
+    "id": "danger_pw_012",
+    "category": "dangerous_password_theft",
+    "description": "Levantine PIN request",
+    "text": "هاتلي الرقم السري تبع البطاقة",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 85
+    }
+  },
+  {
+    "id": "danger_pw_013",
+    "category": "dangerous_password_theft",
+    "description": "Password to verify",
+    "text": "قدم كلمة مرورك القديمة للتحقق من هويتك وتغييرها",
+    "source": "email",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 85
+    }
+  },
+  {
+    "id": "danger_pw_014",
+    "category": "dangerous_password_theft",
+    "description": "Passcode mixed Arabic English",
+    "text": "Enter الباسورد الخاص بك to verify your identity",
+    "source": "email",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 85
+    }
+  },
+  {
+    "id": "danger_pw_015",
+    "category": "dangerous_password_theft",
+    "description": "Share PIN urgency",
+    "text": "شارك رقمك السري الآن لتجنب إغلاق حسابك نهائياً",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 88
+    }
+  },
+  {
+    "id": "danger_card_001",
+    "category": "dangerous_card_theft",
+    "description": "Send card number",
+    "text": "أرسل رقم بطاقتك البنكية لاستكمال عملية الاسترداد",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 88
+    }
+  },
+  {
+    "id": "danger_card_002",
+    "category": "dangerous_card_theft",
+    "description": "Share CVV",
+    "text": "شارك رمز CVV الموجود خلف بطاقتك مع فريقنا",
+    "source": "email",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 88
+    }
+  },
+  {
+    "id": "danger_card_003",
+    "category": "dangerous_card_theft",
+    "description": "Send card details",
+    "text": "أرسل بيانات البطاقة كاملة: الرقم، تاريخ الانتهاء، رمز CVV",
+    "source": "email",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 90
+    }
+  },
+  {
+    "id": "danger_card_004",
+    "category": "dangerous_card_theft",
+    "description": "Enter card number via link",
+    "text": "ادخل رقم بطاقتك عبر الرابط http://card-verify.xyz/update",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 90
+    }
+  },
+  {
+    "id": "danger_card_005",
+    "category": "dangerous_card_theft",
+    "description": "CVC request",
+    "text": "زودنا برمز CVC بطاقتك للتحقق من صحة المعاملة",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 88
+    }
+  },
+  {
+    "id": "danger_card_006",
+    "category": "dangerous_card_theft",
+    "description": "Banking details request",
+    "text": "أرسل بياناتك البنكية كاملة: رقم الحساب وبيانات البطاقة",
+    "source": "email",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 88
+    }
+  },
+  {
+    "id": "danger_card_007",
+    "category": "dangerous_card_theft",
+    "description": "IBAN request",
+    "text": "أرسل رقم الآيبان (IBAN) الخاص بك لاستكمال التحويل",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 85
+    }
+  },
+  {
+    "id": "danger_card_008",
+    "category": "dangerous_card_theft",
+    "description": "Card data urgency",
+    "text": "أرسل بيانات بطاقتك فوراً لتجنب تجميد الحساب",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 90
+    }
+  },
+  {
+    "id": "danger_card_009",
+    "category": "dangerous_card_theft",
+    "description": "Provide card number english",
+    "text": "Please provide your full card number to process the refund",
+    "source": "email",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 88
+    }
+  },
+  {
+    "id": "danger_card_010",
+    "category": "dangerous_card_theft",
+    "description": "Gulf dialect card request",
+    "text": "دزلنا رقم البطاقة وتاريخ الانتهاء",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 88
+    }
+  },
+  {
+    "id": "danger_url_001",
+    "category": "dangerous_url_account_urgency",
+    "description": "URL account update urgency",
+    "text": "حسابك سيُعلَّق خلال 24 ساعة. حدّث بياناتك الآن عبر https://account-verify.top/update",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 85
+    }
+  },
+  {
+    "id": "danger_url_002",
+    "category": "dangerous_url_account_urgency",
+    "description": "URL financial urgency",
+    "text": "تحديث عاجل: سيتم إغلاق حسابك البنكي. اضغط هنا فوراً http://bank-secure.xyz/confirm",
+    "source": "sms",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "danger_url_003",
+    "category": "dangerous_url_account_urgency",
+    "description": "URL account verification urgent",
+    "text": "مطلوب تأكيد هويتك خلال ساعة لتجنب تعليق البطاقة. الرابط: https://verify-card.top",
+    "source": "sms",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "danger_url_004",
+    "category": "dangerous_url_account_urgency",
+    "description": "Bank link with threat",
+    "text": "تحذير: نشاط مشبوه رُصد في حسابك. قم بتحديث بياناتك الآن http://mybank-update.xyz",
+    "source": "sms",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "danger_url_005",
+    "category": "dangerous_url_account_urgency",
+    "description": "Account suspended link",
+    "text": "حسابك موقوف مؤقتاً. ادخل عبر الرابط التالي لإعادة التفعيل: http://account-fix.click",
+    "source": "sms",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "danger_url_006",
+    "category": "dangerous_url_account_urgency",
+    "description": "IP-based URL with bank",
+    "text": "تحديث بيانات البنك مطلوب. اضغط: http://185.22.33.44/bank/login",
+    "source": "sms",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "danger_url_007",
+    "category": "dangerous_url_account_urgency",
+    "description": "Shortened URL with account urgency",
+    "text": "حسابك سيُغلق الآن. اضغط الرابط فوراً http://bit.ly/xK92pQ",
+    "source": "sms",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "danger_url_008",
+    "category": "dangerous_url_account_urgency",
+    "description": "Punycode URL suspicious",
+    "text": "تحديث مهم لحسابك البنكي: http://xn--bankalrajhi-p4b.com/update",
+    "source": "sms",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "danger_url_009",
+    "category": "dangerous_url_account_urgency",
+    "description": "URL urgency mixed English",
+    "text": "Your account will be suspended. Verify now at https://secure-login.top/verify",
+    "source": "sms",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "danger_url_010",
+    "category": "dangerous_url_account_urgency",
+    "description": "Wallet update urgency URL",
+    "text": "محفظتك ستُغلق خلال ساعتين. أكّد بياناتك هنا: https://wallet-confirm.site/update",
+    "source": "sms",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "danger_malicious_url_001",
+    "category": "dangerous_malicious_url",
+    "description": "Mocked malicious URL provider",
+    "text": "اضغط على الرابط http://evil-site.xyz/login",
+    "source": "sms",
+    "mock_url_reputation": {
+      "*": "malicious"
+    },
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 95
+    }
+  },
+  {
+    "id": "danger_malicious_url_002",
+    "category": "dangerous_malicious_url",
+    "description": "Malicious URL with innocuous text",
+    "text": "مرحباً! يمكنك الاطلاع على المعلومات هنا https://phish.xyz",
+    "source": "sms",
+    "mock_url_reputation": {
+      "*": "malicious"
+    },
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 95
+    }
+  },
+  {
+    "id": "danger_malicious_url_003",
+    "category": "dangerous_malicious_url",
+    "description": "Malicious URL bank context",
+    "text": "تحديث حسابك البنكي: http://fake-bank.xyz",
+    "source": "sms",
+    "mock_url_reputation": {
+      "*": "malicious"
+    },
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 95
+    }
+  },
+  {
+    "id": "danger_malicious_url_004",
+    "category": "dangerous_malicious_url",
+    "description": "Malicious with OTP context",
+    "text": "أرسل OTP وافتح الرابط http://steal.top/otp",
+    "source": "sms",
+    "mock_url_reputation": {
+      "*": "malicious"
+    },
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 95
+    }
+  },
+  {
+    "id": "danger_malicious_url_005",
+    "category": "dangerous_malicious_url",
+    "description": "Mocked multiple provider malicious",
+    "text": "الرابط: https://malware-download.xyz/payload",
+    "source": "sms",
+    "mock_url_reputation": {
+      "*": {
+        "verdict": "malicious",
+        "providers": [
+          {
+            "provider": "google_safe_browsing",
+            "status": "ok",
+            "verdict": "malicious"
+          },
+          {
+            "provider": "virustotal",
+            "status": "ok",
+            "verdict": "malicious"
+          }
+        ]
+      }
+    },
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 95
+    }
+  },
+  {
+    "id": "danger_clean_url_cred_001",
+    "category": "dangerous_clean_url_credential",
+    "description": "Clean URL but OTP request",
+    "text": "رمز التحقق الذي وصلك أرسله عبر https://google.com/verify",
+    "source": "sms",
+    "mock_url_reputation": {
+      "*": "clean"
+    },
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 85
+    }
+  },
+  {
+    "id": "danger_clean_url_cred_002",
+    "category": "dangerous_clean_url_credential",
+    "description": "Clean URL but password request",
+    "text": "ادخل كلمة المرور عبر https://microsoft.com/reset",
+    "source": "sms",
+    "mock_url_reputation": {
+      "*": "clean"
+    },
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 88
+    }
+  },
+  {
+    "id": "danger_clean_url_cred_003",
+    "category": "dangerous_clean_url_credential",
+    "description": "Clean URL card data request",
+    "text": "شارك بيانات بطاقتك عبر الرابط https://paypal.com/verify",
+    "source": "sms",
+    "mock_url_reputation": {
+      "*": "clean"
+    },
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 90
+    }
+  },
+  {
+    "id": "suspicious_unknown_url_001",
+    "category": "suspicious_unknown_url_account",
+    "description": "Unknown URL account update no urgency",
+    "text": "تحديث حسابك متاح عبر الرابط http://bank-update.net/account",
+    "source": "sms",
+    "mock_url_reputation": {
+      "*": "unknown"
+    },
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "suspicious_unknown_url_002",
+    "category": "suspicious_unknown_url_account",
+    "description": "Unknown URL financial",
+    "text": "تفاصيل معاملتك البنكية على http://txn-details.online/view",
+    "source": "sms",
+    "mock_url_reputation": {
+      "*": "unknown"
+    },
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "suspicious_unknown_url_003",
+    "category": "suspicious_unknown_url_account",
+    "description": "Unknown URL account notice",
+    "text": "يوجد إشعار مهم لحسابك. اطلع عليه هنا http://acct-notice.site",
+    "source": "sms",
+    "mock_url_reputation": {
+      "*": "unknown"
+    },
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "tricky_neg_001",
+    "category": "tricky_negation",
+    "description": "Do not share OTP warning",
+    "text": "لا تشارك رمز التحقق الذي وصلك مع أي أحد",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "tricky_neg_002",
+    "category": "tricky_negation",
+    "description": "Do not send password",
+    "text": "لا ترسل كلمة مرورك لأي جهة حتى لو ادّعت أنها البنك",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "tricky_neg_003",
+    "category": "tricky_negation",
+    "description": "Never share card details",
+    "text": "لا تعطي بيانات بطاقتك لأي أحد عبر الهاتف أو الرسائل",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "tricky_neg_004",
+    "category": "tricky_negation",
+    "description": "Do not click links",
+    "text": "لا تضغط على الروابط المجهولة في الرسائل",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "tricky_neg_005",
+    "category": "tricky_negation",
+    "description": "Bank will not ask for data",
+    "text": "البنك لن يطلب منك كلمة المرور أو رمز التحقق أبداً",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "tricky_neg_006",
+    "category": "tricky_negation",
+    "description": "Negation before share verb",
+    "text": "لا تشارك رمز التحقق الخاص بك مع أي شخص حتى مع موظفي الدعم",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "tricky_neg_007",
+    "category": "tricky_negation",
+    "description": "Never give code negation",
+    "text": "لا تعطي الكود لأي أحد مهما كانت الأسباب",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "tricky_neg_008",
+    "category": "tricky_negation",
+    "description": "Do not enter PIN negation",
+    "text": "لا تدخل رقمك السري على أي موقع لم تطلبه بنفسك",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "tricky_neg_009",
+    "category": "tricky_negation",
+    "description": "Do not share with support",
+    "text": "لا تشارك رمز واتساب مع أي شخص حتى لو ادّعى أنه دعم تقني",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "tricky_neg_010",
+    "category": "tricky_negation",
+    "description": "Gulf dialect do not send code",
+    "text": "ما تدز الكود لأحد مهما صار",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "tricky_neg_011",
+    "category": "tricky_negation",
+    "description": "Negation OTP mixed",
+    "text": "Do not share your OTP. لا تشارك رمز التحقق مطلقاً.",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "tricky_neg_012",
+    "category": "tricky_negation",
+    "description": "Negation password english",
+    "text": "Never share your password with anyone, including support staff.",
+    "source": "email",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "tricky_neg_013",
+    "category": "tricky_negation",
+    "description": "We will never ask for code",
+    "text": "نؤكد أننا لن نطلب منك رمز التحقق أو كلمة المرور عبر الرسائل",
+    "source": "sms",
+    "sender": "BANKBIZ",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "tricky_neg_014",
+    "category": "tricky_negation",
+    "description": "Do not press on suspicious links",
+    "text": "لا تضغط على روابط مشبوهة وتذكر: البنك لن يرسل لك رابط تحديث",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "tricky_neg_015",
+    "category": "tricky_negation",
+    "description": "Negation with OTP entity but safe",
+    "text": "رمز التحقق للأنظمة الرسمية فقط — لا تشاركه عبر أي قناة أخرى",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 25
+    }
+  },
+  {
+    "id": "awareness_phish_ex_001",
+    "category": "awareness_with_phishing_examples",
+    "description": "Awareness with phishing example inside",
+    "text": "تحذير: لو وصلتك رسالة تقول 'أرسل رمز التحقق' فهي احتيال. لا تستجب.",
+    "source": "notification",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "awareness_phish_ex_002",
+    "category": "awareness_with_phishing_examples",
+    "description": "Awareness describes phishing pattern",
+    "text": "من أساليب الاحتيال: 'شارك رمز OTP لتفعيل حسابك' — لا تستجب لهذه الرسائل أبداً",
+    "source": "notification",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "awareness_phish_ex_003",
+    "category": "awareness_with_phishing_examples",
+    "description": "Awareness: if someone asks for password",
+    "text": "إذا طلب منك أي شخص كلمة مرورك، فهو محتال. البنك لن يطلب كلمة مرورك أبداً.",
+    "source": "notification",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "awareness_phish_ex_004",
+    "category": "awareness_with_phishing_examples",
+    "description": "Educational message with example phishing text",
+    "text": "مثال على رسائل الاحتيال: 'اضغط هنا فوراً لتحديث حسابك وإلا سيُغلق'. احذر من هذه الرسائل.",
+    "source": "notification",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "awareness_phish_ex_005",
+    "category": "awareness_with_phishing_examples",
+    "description": "Bank tip with phishing example",
+    "text": "نصيحة من البنك: أي رسالة تطلب منك رمز التحقق أو CVV هي رسالة احتيال — أبلغ عنها فوراً",
+    "source": "sms",
+    "sender": "BANKINFO",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "sender_trust_001",
+    "category": "sender_trust_cases",
+    "description": "Known contact casual low risk",
+    "text": "مرحباً! كيف أنت؟",
+    "source": "sms",
+    "is_known_contact": true,
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 15
+    }
+  },
+  {
+    "id": "sender_trust_002",
+    "category": "sender_trust_cases",
+    "description": "Known contact with OTP request still dangerous",
+    "text": "أرسل لي رمز التحقق اللي وصلك",
+    "source": "whatsapp",
+    "is_known_contact": true,
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 80
+    }
+  },
+  {
+    "id": "sender_trust_003",
+    "category": "sender_trust_cases",
+    "description": "Unknown sender financial notice elevated",
+    "text": "يوجد نشاط غير معتاد في حسابك البنكي",
+    "source": "sms",
+    "is_known_contact": false,
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "sender_trust_004",
+    "category": "sender_trust_cases",
+    "description": "Known contact with password request still dangerous",
+    "text": "شارك كلمة مرورك لأقدر أدخل على الحساب",
+    "source": "whatsapp",
+    "is_known_contact": true,
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 85
+    }
+  },
+  {
+    "id": "sender_trust_005",
+    "category": "sender_trust_cases",
+    "description": "Unknown sender bank vague warning elevated",
+    "text": "تحديث مهم لحسابك البنكي في أقرب وقت",
+    "source": "sms",
+    "is_known_contact": false,
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "dialect_001",
+    "category": "arabic_dialect_variants",
+    "description": "Gulf dialect: send the code",
+    "text": "دزلنا الكود اللي وصلك على الجوال الحين",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 80
+    }
+  },
+  {
+    "id": "dialect_002",
+    "category": "arabic_dialect_variants",
+    "description": "Levantine: forward the code now",
+    "text": "صيفط الرمز اللي وصلك هلق",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 80
+    }
+  },
+  {
+    "id": "dialect_003",
+    "category": "arabic_dialect_variants",
+    "description": "Egyptian: send me the code",
+    "text": "ابعتلي الكود اللي وصل التليفون",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 80
+    }
+  },
+  {
+    "id": "dialect_004",
+    "category": "arabic_dialect_variants",
+    "description": "Iraqi: give me the code",
+    "text": "هاتلي الرمز اللي وصلك بالرسالة",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 80
+    }
+  },
+  {
+    "id": "dialect_005",
+    "category": "arabic_dialect_variants",
+    "description": "Moroccan: give me the code",
+    "text": "عطيني الكود ديال التحقق",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 80
+    }
+  },
+  {
+    "id": "dialect_006",
+    "category": "arabic_dialect_variants",
+    "description": "Sudanese: send the verification number",
+    "text": "ابعت لينا رقم التحقق",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 80
+    }
+  },
+  {
+    "id": "dialect_007",
+    "category": "arabic_dialect_variants",
+    "description": "Gulf: don't send the code safety",
+    "text": "ما تدز الكود لأحد أبداً",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "dialect_008",
+    "category": "arabic_dialect_variants",
+    "description": "Levantine awareness",
+    "text": "البنك ما بطلب منك الرمز السري",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "dialect_009",
+    "category": "arabic_dialect_variants",
+    "description": "Egyptian: bank won't ask",
+    "text": "البنك مش هيطلب منك الباسورد خالص",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 25
+    }
+  },
+  {
+    "id": "dialect_010",
+    "category": "arabic_dialect_variants",
+    "description": "Iraqi: bank transaction",
+    "text": "تم خصم 50 دولار من حسابك اليوم",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 25
+    }
+  },
+  {
+    "id": "mixed_001",
+    "category": "mixed_arabic_english",
+    "description": "Mixed OTP request",
+    "text": "Please send us your OTP code. أرسل لنا رمز التحقق.",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 80
+    }
+  },
+  {
+    "id": "mixed_002",
+    "category": "mixed_arabic_english",
+    "description": "Mixed awareness",
+    "text": "Security tip: Do not share your OTP. لا تشارك رمز التحقق مع أحد.",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "mixed_003",
+    "category": "mixed_arabic_english",
+    "description": "Mixed bank transaction",
+    "text": "تم خصم 100 SAR من حسابك. Transaction ref: TXN456.",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 25
+    }
+  },
+  {
+    "id": "mixed_004",
+    "category": "mixed_arabic_english",
+    "description": "Mixed card request dangerous",
+    "text": "Please provide your card number. أرسل رقم بطاقتك للتحقق.",
+    "source": "email",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 85
+    }
+  },
+  {
+    "id": "mixed_005",
+    "category": "mixed_arabic_english",
+    "description": "Mixed suspicious account",
+    "text": "Your account needs verification. حسابك بحاجة إلى تحقق. Please click the link.",
+    "source": "email",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "url_obf_001",
+    "category": "url_obfuscated_bare_domain",
+    "description": "Shortened URL with account action",
+    "text": "تحديث حسابك ضروري. اضغط هنا http://bit.ly/3xyz123",
+    "source": "sms",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "url_obf_002",
+    "category": "url_obfuscated_bare_domain",
+    "description": "IP URL with bank context",
+    "text": "بنكك يطلب تحديث بياناتك. اضغط: http://192.168.1.100/bank",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 80
+    }
+  },
+  {
+    "id": "url_obf_003",
+    "category": "url_obfuscated_bare_domain",
+    "description": "Suspicious TLD with bank",
+    "text": "تحديث بياناتك البنكية: https://yourbank-secure.xyz/update",
+    "source": "sms",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "url_obf_004",
+    "category": "url_obfuscated_bare_domain",
+    "description": "Many subdomains suspicious",
+    "text": "رابط حسابك: https://secure.bank.login.verify.click/account",
+    "source": "sms",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "url_obf_005",
+    "category": "url_obfuscated_bare_domain",
+    "description": "Misleading brand in path",
+    "text": "ادخل عبر الرابط http://totally-real.com/alrajhibank/login",
+    "source": "sms",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "soc_eng_001",
+    "category": "dangerous_social_engineering",
+    "description": "Impersonates IT support, asks for OTP",
+    "text": "من قسم تقنية المعلومات: حسابك تعرض لاختراق. أرسل رمز التحقق لتأمينه فوراً.",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 85
+    }
+  },
+  {
+    "id": "soc_eng_002",
+    "category": "dangerous_social_engineering",
+    "description": "Prize scam requiring OTP",
+    "text": "تهانينا! ربحت جائزة 5000 ريال. لاستلامها أرسل رمز التحقق الذي سيصلك.",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 85
+    }
+  },
+  {
+    "id": "soc_eng_003",
+    "category": "dangerous_social_engineering",
+    "description": "Fake charity asking for OTP",
+    "text": "اشترك في حملة التبرع للأيتام. أرسل لنا الرمز الذي وصلك لتأكيد تبرعك.",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 80
+    }
+  },
+  {
+    "id": "soc_eng_004",
+    "category": "dangerous_social_engineering",
+    "description": "Fake government benefit, needs OTP",
+    "text": "معالي الوزير: يحق لك الحصول على إعانة. أرسل رمز التفعيل لصرف المبلغ.",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 85
+    }
+  },
+  {
+    "id": "soc_eng_005",
+    "category": "dangerous_social_engineering",
+    "description": "Friend-in-need scam",
+    "text": "أنا صديقك سامي، فقدت هاتفي وأحتاج رمز التحقق من رقمك لحظياً — ضروري جداً",
+    "source": "whatsapp",
+    "is_known_contact": false,
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 80
+    }
+  },
+  {
+    "id": "soc_eng_006",
+    "category": "dangerous_social_engineering",
+    "description": "Romance scam asking card number",
+    "text": "أنا أحبك وأريد إرسال هدية، أرسل لي رقم بطاقتك لأتحقق من عنوانك",
+    "source": "whatsapp",
+    "is_known_contact": false,
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 90
+    }
+  },
+  {
+    "id": "soc_eng_007",
+    "category": "dangerous_social_engineering",
+    "description": "Lottery scam with urgency",
+    "text": "لقد فزت في سحب اليانصيب العالمي. المطلوب رقم بطاقتك للتحقق من هويتك وإيداع الجائزة.",
+    "source": "email",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 85
+    }
+  },
+  {
+    "id": "soc_eng_008",
+    "category": "dangerous_social_engineering",
+    "description": "Fake survey with credential request",
+    "text": "شارك في استطلاعنا واحصل على مكافأة 200 ريال. أرسل كلمة مرور تطبيقك البنكي للتحقق.",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 90
+    }
+  },
+  {
+    "id": "soc_eng_009",
+    "category": "dangerous_social_engineering",
+    "description": "Fake job offer needs personal info",
+    "text": "تم قبولك في الوظيفة. لإتمام التسجيل أرسل لنا رمز التحقق المرسل إلى هاتفك.",
+    "source": "email",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 80
+    }
+  },
+  {
+    "id": "soc_eng_010",
+    "category": "dangerous_social_engineering",
+    "description": "Impersonates bank manager for OTP",
+    "text": "أنا مدير حسابك في البنك. يوجد تحويل مريب، أرسل رمز التحقق لإيقافه.",
+    "source": "sms",
+    "is_known_contact": false,
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 90
+    }
+  },
+  {
+    "id": "soc_eng_011",
+    "category": "dangerous_social_engineering",
+    "description": "Fake refund needs card",
+    "text": "لديك استرداد 150 ريال من أمازون. أرسل رقم بطاقتك لاستلام المبلغ.",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 85
+    }
+  },
+  {
+    "id": "soc_eng_012",
+    "category": "dangerous_social_engineering",
+    "description": "Emergency family member scam",
+    "text": "ابنك في المستشفى ويحتاج رسوم عاجلة. أرسل رمز التحويل لإتمام الدفع.",
+    "source": "sms",
+    "is_known_contact": false,
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 80
+    }
+  },
+  {
+    "id": "soc_eng_013",
+    "category": "dangerous_social_engineering",
+    "description": "Fake upgrade requires OTP",
+    "text": "لترقية حسابك إلى الفئة الذهبية مجاناً، أرسل رمز التحقق الذي سيصل هاتفك الآن.",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 85
+    }
+  },
+  {
+    "id": "soc_eng_014",
+    "category": "dangerous_social_engineering",
+    "description": "Telecom scam: SIM swap OTP",
+    "text": "شركة الاتصالات: لتفعيل شريحتك الجديدة أرسل رمز التحقق المرسل إليك.",
+    "source": "sms",
+    "sender": "TELECOM-FAKE",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 85
+    }
+  },
+  {
+    "id": "soc_eng_015",
+    "category": "dangerous_social_engineering",
+    "description": "Password reset hijack attempt",
+    "text": "تلقينا طلب إعادة تعيين كلمة مرورك. أرسل رمز التحقق لإلغاء هذا الطلب.",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 80
+    }
+  },
+  {
+    "id": "brand_imp_001",
+    "category": "dangerous_brand_impersonation",
+    "description": "Fake STCPAY OTP request",
+    "text": "STCPAY: حسابك مقيد. أرسل رمز التحقق على هذا الرقم لفك القيد.",
+    "source": "sms",
+    "sender": "STCPAY-FAKE",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 85
+    }
+  },
+  {
+    "id": "brand_imp_002",
+    "category": "dangerous_brand_impersonation",
+    "description": "Fake Noon phishing",
+    "text": "نون: فزت بقسيمة شراء. اضغط على الرابط وأدخل بيانات بطاقتك لاستلام الجائزة. http://n00n-promo.xyz/win",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 85
+    }
+  },
+  {
+    "id": "brand_imp_003",
+    "category": "dangerous_brand_impersonation",
+    "description": "Fake Absher OTP",
+    "text": "أبشر: يرجى إرسال رمز التحقق الذي وصلك لاستكمال تحديث بيانات هويتك.",
+    "source": "sms",
+    "sender": "ABSHER-FAKE",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 85
+    }
+  },
+  {
+    "id": "brand_imp_004",
+    "category": "dangerous_brand_impersonation",
+    "description": "Fake ARB bank login link",
+    "text": "بنك الرياض: تسجيل دخول مشبوه. أكد هويتك: https://alrajhi-bank.verify-now.com/login",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 85
+    }
+  },
+  {
+    "id": "brand_imp_005",
+    "category": "dangerous_brand_impersonation",
+    "description": "Fake PayPal with credential request",
+    "text": "PayPal: Your account is limited. Provide your password to verify identity. باسورد حسابك لإعادة التنشيط.",
+    "source": "email",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 90
+    }
+  },
+  {
+    "id": "brand_imp_006",
+    "category": "dangerous_brand_impersonation",
+    "description": "Fake WhatsApp OTP",
+    "text": "WhatsApp: أرسل رمز التحقق لتفعيل نسخة WhatsApp Business على هاتفك.",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 80
+    }
+  },
+  {
+    "id": "brand_imp_007",
+    "category": "dangerous_brand_impersonation",
+    "description": "Fake Saudi Post phishing",
+    "text": "البريد السعودي: طردك محتجز برسوم جمركية. ادفع 15 ريال عبر: https://saudi-post.fees-pay.net",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 85
+    }
+  },
+  {
+    "id": "brand_imp_008",
+    "category": "dangerous_brand_impersonation",
+    "description": "Fake Etisalat bill phishing",
+    "text": "اتصالات: فاتورتك متأخرة. لتجنب قطع الخدمة اضغط: http://etisalat-bill.update.xyz",
+    "source": "sms",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "brand_imp_009",
+    "category": "dangerous_brand_impersonation",
+    "description": "Fake Amazon Saudi OTP",
+    "text": "أمازون السعودية: أرسل لنا كلمة مرورك لتأكيد هويتك وفك تجميد حسابك.",
+    "source": "email",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 90
+    }
+  },
+  {
+    "id": "brand_imp_010",
+    "category": "dangerous_brand_impersonation",
+    "description": "Fake Careem credential harvest",
+    "text": "كريم: لتجديد حسابك أدخل بيانات بطاقتك على: https://careem-renew.ru/card",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 85
+    }
+  },
+  {
+    "id": "brand_imp_011",
+    "category": "dangerous_brand_impersonation",
+    "description": "Fake government social benefit",
+    "text": "وزارة الموارد البشرية: تم اعتماد إعانتك. أرسل رقم حسابك البنكي ورمز التحقق.",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 85
+    }
+  },
+  {
+    "id": "brand_imp_012",
+    "category": "dangerous_brand_impersonation",
+    "description": "Fake Apple ID phishing",
+    "text": "Apple: حسابك معلق. أرسل كلمة مرور Apple ID الخاصة بك لإعادة التنشيط.",
+    "source": "email",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 90
+    }
+  },
+  {
+    "id": "brand_imp_013",
+    "category": "dangerous_brand_impersonation",
+    "description": "Fake Google account security alert",
+    "text": "Google: نشاط مريب في حسابك. أرسل رمز التحقق لحماية الحساب.",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 85
+    }
+  },
+  {
+    "id": "brand_imp_014",
+    "category": "dangerous_brand_impersonation",
+    "description": "Fake Tamara BNPL phishing",
+    "text": "تمارة: مدفوعاتك متأخرة. أدخل بيانات بطاقتك على https://tamara-pay.verify.xyz لتجنب الحجز.",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 85
+    }
+  },
+  {
+    "id": "brand_imp_015",
+    "category": "dangerous_brand_impersonation",
+    "description": "Fake bank merger notice",
+    "text": "تنبيه: بعد دمج البنكين يجب تحديث بياناتك. أرسل رقم حسابك وكلمة المرور على هذا الرقم.",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 90
+    }
+  },
+  {
+    "id": "ecom_001",
+    "category": "safe_ecommerce",
+    "description": "Order shipped notification",
+    "text": "طلبك #45231 تم شحنه. موعد التسليم غداً بين 2-6 مساءً.",
+    "source": "sms",
+    "sender": "AMAZON",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 25
+    }
+  },
+  {
+    "id": "ecom_002",
+    "category": "safe_ecommerce",
+    "description": "Order confirmed",
+    "text": "شكراً لطلبك! رقم الطلب: ORD-789456. سيتم الشحن خلال يومين.",
+    "source": "notification",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 25
+    }
+  },
+  {
+    "id": "ecom_003",
+    "category": "safe_ecommerce",
+    "description": "Return processed",
+    "text": "تم استرداد 89 ريال إلى حسابك. قد يستغرق 3-5 أيام عمل لظهوره.",
+    "source": "email",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 25
+    }
+  },
+  {
+    "id": "ecom_004",
+    "category": "safe_ecommerce",
+    "description": "Flash sale notification",
+    "text": "تخفيضات حتى 70% على الإلكترونيات اليوم فقط في نون. تسوق الآن!",
+    "source": "notification",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 30
+    }
+  },
+  {
+    "id": "ecom_005",
+    "category": "safe_ecommerce",
+    "description": "Payment confirmation",
+    "text": "تم استلام دفعتك بمبلغ 249 ريال. شكراً لتسوقك معنا.",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 25
+    }
+  },
+  {
+    "id": "ecom_006",
+    "category": "safe_ecommerce",
+    "description": "Delivery attempt failed",
+    "text": "محاولة توصيل للطلب #12345 فشلت. سيتم إعادة المحاولة غداً.",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 25
+    }
+  },
+  {
+    "id": "ecom_007",
+    "category": "safe_ecommerce",
+    "description": "Wishlist item in stock",
+    "text": "منتج في قائمة أمنياتك أصبح متاحاً. اطلبه الآن قبل نفاد الكمية.",
+    "source": "notification",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 30
+    }
+  },
+  {
+    "id": "ecom_008",
+    "category": "safe_ecommerce",
+    "description": "Account created notification",
+    "text": "مرحباً بك في متجرنا! تم إنشاء حسابك بنجاح.",
+    "source": "email",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 25
+    }
+  },
+  {
+    "id": "ecom_009",
+    "category": "safe_ecommerce",
+    "description": "Pickup ready",
+    "text": "طلبك جاهز للاستلام من فرع الرياض. الاستلام متاح خلال 48 ساعة.",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 25
+    }
+  },
+  {
+    "id": "ecom_010",
+    "category": "safe_ecommerce",
+    "description": "Subscription confirmed",
+    "text": "تم تجديد اشتراكك في خدمة نتفليكس تلقائياً بمبلغ 39 ريال.",
+    "source": "email",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 25
+    }
+  },
+  {
+    "id": "inst_001",
+    "category": "safe_institutional",
+    "description": "University exam schedule",
+    "text": "جامعة الملك عبدالله: جدول الامتحانات النهائية متاح على البوابة الإلكترونية.",
+    "source": "sms",
+    "sender": "KAU",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "inst_002",
+    "category": "safe_institutional",
+    "description": "Hospital appointment reminder",
+    "text": "تذكير: موعدك في مستشفى الملك فهد غداً الساعة 10 صباحاً. الرجاء الحضور مبكراً.",
+    "source": "sms",
+    "sender": "KFMC",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "inst_003",
+    "category": "safe_institutional",
+    "description": "Ministry announcement",
+    "text": "وزارة التعليم: إجازة رسمية يوم الثلاثاء بمناسبة اليوم الوطني.",
+    "source": "notification",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "inst_004",
+    "category": "safe_institutional",
+    "description": "Police non-emergency notice",
+    "text": "شرطة المنطقة الشرقية: تحذير من أعطال في الطريق الساحلي. يرجى تجنب المنطقة.",
+    "source": "notification",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "inst_005",
+    "category": "safe_institutional",
+    "description": "Municipality service notification",
+    "text": "أمانة الرياض: سيتم إيقاف المياه في حيكم من 8-12 صباحاً لأعمال صيانة.",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "inst_006",
+    "category": "safe_institutional",
+    "description": "Health ministry vaccine reminder",
+    "text": "وزارة الصحة: حملة التطعيم متاحة في المراكز الصحية. احجز موعدك على صحتي.",
+    "source": "notification",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "inst_007",
+    "category": "safe_institutional",
+    "description": "School grade notification",
+    "text": "مدرسة النور: درجات الطالب أحمد في الاختبار الأول متاحة على منصة نور.",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "inst_008",
+    "category": "safe_institutional",
+    "description": "Court notification",
+    "text": "المحكمة الإدارية: جلسة قضيتك رقم 2025/123 بتاريخ 15/06/2025.",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "inst_009",
+    "category": "safe_institutional",
+    "description": "Embassy appointment",
+    "text": "سفارة الولايات المتحدة: موعد تأشيرتك يوم الخميس الساعة 9 صباحاً.",
+    "source": "email",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "inst_010",
+    "category": "safe_institutional",
+    "description": "Electricity bill due",
+    "text": "شركة الكهرباء: فاتورة شهر أبريل مستحقة بمبلغ 320 ريال. آخر موعد للسداد 30/04.",
+    "source": "sms",
+    "sender": "SEC",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 25
+    }
+  },
+  {
+    "id": "urg_001",
+    "category": "suspicious_urgency_no_credential",
+    "description": "Account suspension warning with link",
+    "text": "حسابك سيتعطل خلال 24 ساعة. اضغط هنا لإعادة التنشيط.",
+    "source": "sms",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "urg_002",
+    "category": "suspicious_urgency_no_credential",
+    "description": "Urgent bank update no credential",
+    "text": "يجب تحديث بياناتك البنكية فوراً لتجنب تجميد الحساب.",
+    "source": "sms",
+    "is_known_contact": false,
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "urg_003",
+    "category": "suspicious_urgency_no_credential",
+    "description": "Prize claim time limited",
+    "text": "لديك 2 ساعة فقط لاستلام جائزتك. اضغط الرابط قبل انتهاء المهلة.",
+    "source": "sms",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "urg_004",
+    "category": "suspicious_urgency_no_credential",
+    "description": "Package held, action needed",
+    "text": "طردك محتجز في الجمارك. تواصل معنا فوراً لإتمام الإفراج.",
+    "source": "sms",
+    "is_known_contact": false,
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "urg_005",
+    "category": "suspicious_urgency_no_credential",
+    "description": "Account flagged urgency",
+    "text": "تم رصد نشاط غير عادي في حسابك. يجب التحقق خلال الساعات الـ 12 القادمة.",
+    "source": "email",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "urg_006",
+    "category": "suspicious_urgency_no_credential",
+    "description": "Subscription expiring urgency",
+    "text": "اشتراكك سينتهي خلال ساعة! اضغط الآن لتجديده وتجنب خسارة مزاياك.",
+    "source": "notification",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "urg_007",
+    "category": "suspicious_urgency_no_credential",
+    "description": "Final warning threat",
+    "text": "إنذار أخير: إذا لم تستجب خلال 24 ساعة سيتم إغلاق حسابك نهائياً.",
+    "source": "email",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "urg_008",
+    "category": "suspicious_urgency_no_credential",
+    "description": "Security breach update required",
+    "text": "اختُرق نظامنا مؤخراً. يجب عليك تحديث معلوماتك فوراً لحماية حسابك.",
+    "source": "email",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "urg_009",
+    "category": "suspicious_urgency_no_credential",
+    "description": "Unconfirmed purchase alert",
+    "text": "تم رصد عملية شراء غير معتادة بمبلغ 999 ريال. تواصل معنا فوراً إذا لم تقم بها.",
+    "source": "sms",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "urg_010",
+    "category": "suspicious_urgency_no_credential",
+    "description": "App re-verification urgency",
+    "text": "تطبيقك يحتاج إلى إعادة تحقق. قم بالتحقق الآن وإلا ستفقد الوصول.",
+    "source": "notification",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "urg_011",
+    "category": "suspicious_urgency_no_credential",
+    "description": "Unknown number claims bank",
+    "text": "هذا بنك الأهلي. يوجد مشكلة في حسابك. اتصل بنا على هذا الرقم فوراً.",
+    "source": "sms",
+    "is_known_contact": false,
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "urg_012",
+    "category": "suspicious_urgency_no_credential",
+    "description": "Vague threat with link",
+    "text": "مهم جداً: اضغط الرابط الآن وإلا ستحدث عواقب وخيمة.",
+    "source": "sms",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "urg_013",
+    "category": "suspicious_urgency_no_credential",
+    "description": "Personal file at risk claim",
+    "text": "ملفاتك الشخصية في خطر! تصرف الآن لحمايتها.",
+    "source": "notification",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "urg_014",
+    "category": "suspicious_urgency_no_credential",
+    "description": "Suspicious invoice urgency",
+    "text": "لديك فاتورة غير مدفوعة. ادفع الآن لتجنب الرسوم الإضافية.",
+    "source": "sms",
+    "is_known_contact": false,
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "urg_015",
+    "category": "suspicious_urgency_no_credential",
+    "description": "Legal threat without detail",
+    "text": "سيتم رفع دعوى قضائية ضدك خلال 48 ساعة. تواصل معنا لتسوية الأمر.",
+    "source": "email",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "typo_001",
+    "category": "url_typosquatting",
+    "description": "Rajhi bank typosquat",
+    "text": "تسجيل الدخول لحسابك: https://alraihi-bank.com/login",
+    "source": "sms",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "typo_002",
+    "category": "url_typosquatting",
+    "description": "National commercial bank typo",
+    "text": "بنك الأهلي: حدّث بياناتك عبر https://ahl1-bank.com/update",
+    "source": "sms",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "typo_003",
+    "category": "url_typosquatting",
+    "description": "Absher impersonation URL",
+    "text": "تحديث أبشر مطلوب: https://absh3r.sa/renew",
+    "source": "sms",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "typo_004",
+    "category": "url_typosquatting",
+    "description": "Careem homograph attack",
+    "text": "Careeem: استرداد رصيدك على https://careem.refund-now.cc",
+    "source": "sms",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "typo_005",
+    "category": "url_typosquatting",
+    "description": "SABIC investor portal fake",
+    "text": "مساهمو سابك: بوابة الأرباح https://sab1c-dividends.net/investor",
+    "source": "email",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "typo_006",
+    "category": "url_typosquatting",
+    "description": "Tawuniya insurance fake",
+    "text": "تأمين تعاونية: تجديد وثيقتك على https://tawun1ya.com/renew",
+    "source": "sms",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "typo_007",
+    "category": "url_typosquatting",
+    "description": "Tamimi supermarket promo fake",
+    "text": "عروض التميمي: https://tamim1-markets.com/offers",
+    "source": "sms",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "typo_008",
+    "category": "url_typosquatting",
+    "description": "SNB bank fake login",
+    "text": "البنك الأهلي السعودي: https://snb-sa.secure-login.net/account",
+    "source": "sms",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "typo_009",
+    "category": "url_typosquatting",
+    "description": "SADAD payment fake",
+    "text": "ادفع فاتورتك عبر سداد: https://sadaad-pay.com/bills",
+    "source": "sms",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "typo_010",
+    "category": "url_typosquatting",
+    "description": "Homoglyph Arabic brand in URL",
+    "text": "تسجيل الدخول: https://xn--mgbaam7a8h-banking.com/login",
+    "source": "sms",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "typo_011",
+    "category": "url_typosquatting",
+    "description": "Double credential request with typosquat",
+    "text": "أرسل كلمة مرورك على https://arabian-bank-secure.ru/login",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 85
+    }
+  },
+  {
+    "id": "typo_012",
+    "category": "url_typosquatting",
+    "description": "OTP request with typosquat URL",
+    "text": "أرسل رمز التحقق الذي وصلك على https://ncb-bank-sa.net/verify",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 85
+    }
+  },
+  {
+    "id": "typo_013",
+    "category": "url_typosquatting",
+    "description": "Card details with typosquat",
+    "text": "أدخل بيانات بطاقتك على https://saudia-airlines.booking-secure.xyz/card",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 80
+    }
+  },
+  {
+    "id": "typo_014",
+    "category": "url_typosquatting",
+    "description": "Inbank subdomain attack",
+    "text": "تسجيل دخول مطلوب: https://inbank.alahli.com.evil.com/login",
+    "source": "sms",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "typo_015",
+    "category": "url_typosquatting",
+    "description": "Emoji domain URL suspicious",
+    "text": "اضغط الرابط للوصول لحسابك: http://🏦banking-secure.com/account",
+    "source": "sms",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "fin_cred_001",
+    "category": "dangerous_financial_credential",
+    "description": "ATM PIN request",
+    "text": "شارك رقم بطاقتك البنكية الرباعي (PIN) لنتمكن من التحقق من هويتك.",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 88
+    }
+  },
+  {
+    "id": "fin_cred_002",
+    "category": "dangerous_financial_credential",
+    "description": "CVV request",
+    "text": "أرسل لنا رمز الأمان (CVV) الموجود على ظهر بطاقتك لإتمام التحقق.",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 95
+    }
+  },
+  {
+    "id": "fin_cred_003",
+    "category": "dangerous_financial_credential",
+    "description": "Full card number request",
+    "text": "للتحقق من هويتك أرسل رقم بطاقتك الائتمانية كاملاً مع تاريخ الانتهاء.",
+    "source": "email",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 95
+    }
+  },
+  {
+    "id": "fin_cred_004",
+    "category": "dangerous_financial_credential",
+    "description": "IBAN and password request",
+    "text": "أرسل الآيبان الخاص بك وكلمة مرور الإنترنت البنكي لاستكمال التحويل.",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 90
+    }
+  },
+  {
+    "id": "fin_cred_005",
+    "category": "dangerous_financial_credential",
+    "description": "Online banking credentials",
+    "text": "أدخل اسم المستخدم وكلمة مرور الإنترنت البنكي هنا لاستعادة حسابك.",
+    "source": "email",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 90
+    }
+  },
+  {
+    "id": "fin_cred_006",
+    "category": "dangerous_financial_credential",
+    "description": "Bank app login credentials",
+    "text": "شارك بياناتك للدخول في تطبيق البنك: اسم المستخدم وكلمة المرور.",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 90
+    }
+  },
+  {
+    "id": "fin_cred_007",
+    "category": "dangerous_financial_credential",
+    "description": "Secret question answers request",
+    "text": "للتحقق من ملكيتك للحساب أرسل إجابات أسئلة الأمان الخاصة بك.",
+    "source": "email",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 85
+    }
+  },
+  {
+    "id": "fin_cred_008",
+    "category": "dangerous_financial_credential",
+    "description": "Mobile banking PIN",
+    "text": "أرسل الرقم السري لتطبيق الجوال البنكي لإعادة تنشيطه.",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 85
+    }
+  },
+  {
+    "id": "fin_cred_009",
+    "category": "dangerous_financial_credential",
+    "description": "Token value request",
+    "text": "ما هو رمز Token الظاهر على جهاز الـ OTP الخاص بك الآن؟",
+    "source": "whatsapp",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 85
+    }
+  },
+  {
+    "id": "fin_cred_010",
+    "category": "dangerous_financial_credential",
+    "description": "Expiry and CVV",
+    "text": "أحتاج تاريخ انتهاء بطاقتك ورمز CVV للتحقق من صحة الدفع.",
+    "source": "whatsapp",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 90
+    }
+  },
+  {
+    "id": "fin_cred_011",
+    "category": "dangerous_financial_credential",
+    "description": "Full payment details",
+    "text": "لاتمام التحويل: رقم البطاقة + تاريخ الانتهاء + رمز CVV + الرقم السري.",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 95
+    }
+  },
+  {
+    "id": "fin_cred_012",
+    "category": "dangerous_financial_credential",
+    "description": "Investment platform credentials",
+    "text": "أرسل بيانات دخول منصة الأسهم الخاصة بك لمساعدتك في التداول.",
+    "source": "whatsapp",
+    "is_known_contact": false,
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 85
+    }
+  },
+  {
+    "id": "fin_cred_013",
+    "category": "dangerous_financial_credential",
+    "description": "Crypto wallet seed phrase",
+    "text": "أرسل عبارة الاسترداد (seed phrase) لمحفظتك المشفرة لاستعادة وصولك.",
+    "source": "telegram",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 90
+    }
+  },
+  {
+    "id": "fin_cred_014",
+    "category": "dangerous_financial_credential",
+    "description": "E-wallet password request",
+    "text": "كلمة مرور محفظة STC Pay الخاصة بك مطلوبة للتحقق من هويتك.",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 90
+    }
+  },
+  {
+    "id": "fin_cred_015",
+    "category": "dangerous_financial_credential",
+    "description": "Combined OTP and card",
+    "text": "أرسل رمز التحقق اللي وصلك مع رقم بطاقتك لتأكيد العملية.",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 80
+    }
+  },
+  {
+    "id": "gov_001",
+    "category": "safe_government_service",
+    "description": "Absher ID renewal",
+    "text": "أبشر: تنبيه انتهاء صلاحية الهوية الوطنية. جدد هويتك عبر التطبيق.",
+    "source": "sms",
+    "sender": "ABSHER",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "gov_002",
+    "category": "safe_government_service",
+    "description": "Absher traffic violation notice",
+    "text": "أبشر: لديك مخالفة مرورية بتاريخ 10/03. راجع تفاصيلها عبر تطبيق أبشر الرسمي.",
+    "source": "sms",
+    "sender": "ABSHER",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "gov_003",
+    "category": "safe_government_service",
+    "description": "Mudad salary transfer confirmed",
+    "text": "مدد: تم تحويل رواتب موظفيك بنجاح لشهر مارس 2025.",
+    "source": "sms",
+    "sender": "MUDAD",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "gov_004",
+    "category": "safe_government_service",
+    "description": "Taqat job matching",
+    "text": "طاقات: يوجد وظيفة تناسب مهاراتك. راجع التفاصيل عبر منصة طاقات.",
+    "source": "notification",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "gov_005",
+    "category": "safe_government_service",
+    "description": "GOSI contribution notice",
+    "text": "المؤسسة العامة للتأمينات: تم اعتماد اشتراكات شهر أبريل. راجع كشف الحساب في البوابة.",
+    "source": "sms",
+    "sender": "GOSI",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "gov_006",
+    "category": "safe_government_service",
+    "description": "Monshaat SME support",
+    "text": "منشآت: برنامج دعم المنشآت الصغيرة متاح للتسجيل. قدّم طلبك على منصة منشآت.",
+    "source": "notification",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "gov_007",
+    "category": "safe_government_service",
+    "description": "Traffic fine paid confirmation",
+    "text": "مرور أبوظبي: تم استلام سداد مخالفتك. رقم الإيصال: 20250312-789.",
+    "source": "sms",
+    "sender": "ADPoliceTrafic",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "gov_008",
+    "category": "safe_government_service",
+    "description": "Civil status ID card ready",
+    "text": "الأحوال المدنية: بطاقتك جاهزة للاستلام من مكتب الأحوال بالرياض.",
+    "source": "sms",
+    "sender": "AHWAL",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "gov_009",
+    "category": "safe_government_service",
+    "description": "Insurance enrollment confirmation",
+    "text": "التأمين الصحي: تم تسجيل موظفيك في بوليصة التأمين الجماعي.",
+    "source": "email",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "gov_010",
+    "category": "safe_government_service",
+    "description": "Zakat assessment",
+    "text": "هيئة الزكاة والضريبة: تم استلام إقراركم الضريبي للربع الأول. رقم المرجع: ZT-2025-456.",
+    "source": "email",
+    "sender": "ZATCA",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "cond_001",
+    "category": "tricky_conditional",
+    "description": "Conditional OTP — if you receive",
+    "text": "إذا وصلك رمز تحقق لم تطلبه فلا تشاركه مع أحد وأبلغنا فوراً.",
+    "source": "sms",
+    "sender": "BANKINFO",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "cond_002",
+    "category": "tricky_conditional",
+    "description": "Conditional: unless you requested",
+    "text": "إذا لم تكن قد طلبت إعادة تعيين كلمة المرور فتجاهل هذه الرسالة.",
+    "source": "email",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 25
+    }
+  },
+  {
+    "id": "cond_003",
+    "category": "tricky_conditional",
+    "description": "Past tense OTP use",
+    "text": "رمز التحقق الذي استخدمته لتسجيل الدخول أمس تم إلغاؤه تلقائياً.",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 25
+    }
+  },
+  {
+    "id": "cond_004",
+    "category": "tricky_conditional",
+    "description": "Warning phrased as condition",
+    "text": "لو أحد طلب منك الرمز السري للبطاقة، فهذا يعني أن هناك محاولة احتيال — أبلغ البنك.",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 25
+    }
+  },
+  {
+    "id": "cond_005",
+    "category": "tricky_conditional",
+    "description": "Conditional request — attacker disguised",
+    "text": "إذا كنت توافق على التحويل أرسل لنا رمز التحقق للمتابعة.",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 80
+    }
+  },
+  {
+    "id": "cond_006",
+    "category": "tricky_conditional",
+    "description": "Hypothetical awareness",
+    "text": "مثال: 'لو طلب منك موظف البنك رمز OTP فهو يحتال عليك. البنك لن يطلبه أبداً'",
+    "source": "notification",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "cond_007",
+    "category": "tricky_conditional",
+    "description": "Conditional card — attacker pattern",
+    "text": "إذا كنت تريد التسجيل أرسل لنا رقم بطاقتك والرمز السري.",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 90
+    }
+  },
+  {
+    "id": "cond_008",
+    "category": "tricky_conditional",
+    "description": "Reported as suspicious conditional",
+    "text": "رسالة وصلتنا تقول: 'أرسل رمزك لتفعيل الجائزة'. هذه رسالة احتيال، لا تستجب لها.",
+    "source": "notification",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "cond_009",
+    "category": "tricky_conditional",
+    "description": "Non-request conditional — safe",
+    "text": "رمز التحقق الذي طلبته لتسجيل الدخول صالح لمدة 10 دقائق فقط.",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 30
+    }
+  },
+  {
+    "id": "cond_010",
+    "category": "tricky_conditional",
+    "description": "Conditional gift scam",
+    "text": "إذا أرسلت لنا بيانات بطاقتك ستحصل على هدية قيمة فوراً.",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 90
+    }
+  },
+  {
+    "id": "cond_011",
+    "category": "tricky_conditional",
+    "description": "Double conditional safe awareness",
+    "text": "البنك لن يطلب منك رمز OTP في أي وقت، حتى لو ادّعى أن هناك مشكلة في حسابك.",
+    "source": "sms",
+    "sender": "BANKAWARE",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "cond_012",
+    "category": "tricky_conditional",
+    "description": "Conditional block threat attacker",
+    "text": "إن لم ترسل رمز التحقق خلال ساعة سيتم تجميد حسابك.",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 80
+    }
+  },
+  {
+    "id": "gen_warn_001",
+    "category": "suspicious_generic_warning",
+    "description": "Vague account issue",
+    "text": "هناك مشكلة في حسابك. يرجى التواصل معنا في أقرب وقت.",
+    "source": "sms",
+    "is_known_contact": false,
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "gen_warn_002",
+    "category": "suspicious_generic_warning",
+    "description": "Generic security alert",
+    "text": "تنبيه أمني: يرجى مراجعة بريدك الإلكتروني على الفور.",
+    "source": "notification",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "gen_warn_003",
+    "category": "suspicious_generic_warning",
+    "description": "Unspecified system update required",
+    "text": "يجب تحديث بياناتك. تواصل معنا على هذا الرقم لمزيد من التفاصيل.",
+    "source": "sms",
+    "is_known_contact": false,
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "gen_warn_004",
+    "category": "suspicious_generic_warning",
+    "description": "Vague transaction warning",
+    "text": "لاحظنا معاملة غير معتادة. اتصل بنا فوراً.",
+    "source": "sms",
+    "is_known_contact": false,
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "gen_warn_005",
+    "category": "suspicious_generic_warning",
+    "description": "Mystery link no context",
+    "text": "اضغط الرابط التالي لمعرفة التفاصيل الهامة المتعلقة بك. https://short.url/ab12",
+    "source": "sms",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "gen_warn_006",
+    "category": "suspicious_generic_warning",
+    "description": "Generic reward with action",
+    "text": "لقد تأهلت للحصول على مكافأة خاصة. اضغط هنا لمعرفة التفاصيل.",
+    "source": "sms",
+    "is_known_contact": false,
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "gen_warn_007",
+    "category": "suspicious_generic_warning",
+    "description": "Vague KYC request",
+    "text": "لاستمرار الخدمة يجب التحقق من هويتك. تواصل معنا عبر الرابط.",
+    "source": "email",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "gen_warn_008",
+    "category": "suspicious_generic_warning",
+    "description": "Unknown sender money mention",
+    "text": "لديك مبلغ مالي في انتظارك. تواصل معنا لاستلامه.",
+    "source": "sms",
+    "is_known_contact": false,
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "gen_warn_009",
+    "category": "suspicious_generic_warning",
+    "description": "Odd action request no context",
+    "text": "يرجى تأكيد هويتك في أقرب وقت عبر التواصل معنا.",
+    "source": "sms",
+    "is_known_contact": false,
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "gen_warn_010",
+    "category": "suspicious_generic_warning",
+    "description": "Non-specific final notice",
+    "text": "إشعار نهائي: لم يتم حل المشكلة في حسابك. الرجاء التصرف فوراً.",
+    "source": "email",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "adv_neg_001",
+    "category": "tricky_advanced_negation",
+    "description": "Never share: complex sentence",
+    "text": "لا تشارك رمز OTP الخاص بك حتى مع موظف البنك، فالبنك الحقيقي لن يطلبه منك أبداً.",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "adv_neg_002",
+    "category": "tricky_advanced_negation",
+    "description": "Triple negation awareness",
+    "text": "لا تُعطِ ولا تُرسل ولا تُشارك بيانات بطاقتك مع أي أحد مهما كان.",
+    "source": "notification",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "adv_neg_003",
+    "category": "tricky_advanced_negation",
+    "description": "Negation in long sentence",
+    "text": "القاعدة الذهبية: بنكك لن يتصل بك ويطلب منك رمز التحقق أو كلمة مرورك تحت أي ظرف.",
+    "source": "notification",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "adv_neg_004",
+    "category": "tricky_advanced_negation",
+    "description": "Multi-clause negation",
+    "text": "أي رسالة تطلب منك إرسال رمز التحقق أو رقم بطاقتك أو كلمة مرورك فهي رسالة احتيال.",
+    "source": "notification",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "adv_neg_005",
+    "category": "tricky_advanced_negation",
+    "description": "Safe: question in awareness form",
+    "text": "هل طُلب منك رمز التحقق؟ إذا نعم، فهذه عملية احتيال. لا تستجب وأبلغ البنك فوراً.",
+    "source": "notification",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "adv_neg_006",
+    "category": "tricky_advanced_negation",
+    "description": "Negated in reported speech",
+    "text": "إذا قال لك أحد 'أرسل لي كلمة مرورك' — اعلم أنه محتال ولا تستجب له.",
+    "source": "notification",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "adv_neg_007",
+    "category": "tricky_advanced_negation",
+    "description": "Emphatic never share",
+    "text": "أكرر: لا تشارك كلمة مرورك أو رمز التحقق مع أي شخص تحت أي مسمى.",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "adv_neg_008",
+    "category": "tricky_advanced_negation",
+    "description": "Negation after listing dangers",
+    "text": "لا تُعطِ رقم بطاقتك، ولا CVV، ولا رمز OTP، ولا كلمة المرور — لأي أحد.",
+    "source": "notification",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "adv_neg_009",
+    "category": "tricky_advanced_negation",
+    "description": "Present tense vs imperative — safe",
+    "text": "رمز التحقق الذي يصلك على هاتفك سري لاستخدامك الشخصي فقط. لا تشاركه.",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 25
+    }
+  },
+  {
+    "id": "adv_neg_010",
+    "category": "tricky_advanced_negation",
+    "description": "Negative conditional: if request = fraud",
+    "text": "إذا طلب أي شخص رمز التحقق منك فاعلم أنه يحاول سرقة حسابك.",
+    "source": "notification",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "adv_neg_011",
+    "category": "tricky_advanced_negation",
+    "description": "Implicit negation via fraud label",
+    "text": "رسالة تقول 'أرسل رمزك' هي احتيال 100%. لا تستجب وبلّغ البنك.",
+    "source": "notification",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "adv_neg_012",
+    "category": "tricky_advanced_negation",
+    "description": "Negation with bank sender legit OTP",
+    "text": "رمزك للدخول: 847291. لا تشاركه مع أحد. صالح لمدة 5 دقائق.",
+    "source": "sms",
+    "sender": "ALAHLI",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 30
+    }
+  },
+  {
+    "id": "adv_neg_013",
+    "category": "tricky_advanced_negation",
+    "description": "Dialect negation Gulf",
+    "text": "ما تعطي أحد الكود اللي وصلك، حتى لو قال إنه من البنك.",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "otp_theft_031",
+    "category": "dangerous_otp_theft",
+    "description": "Gulf: give me the verification number",
+    "text": "عطني رقم التحقق اللي وصلك هالحين",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 80
+    }
+  },
+  {
+    "id": "otp_theft_032",
+    "category": "dangerous_otp_theft",
+    "description": "Formal: forward your OTP immediately",
+    "text": "يرجى إحالة رمز التحقق الذي وصلكم على الفور",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 80
+    }
+  },
+  {
+    "id": "otp_theft_033",
+    "category": "dangerous_otp_theft",
+    "description": "Disguised as bank: confirm code",
+    "text": "لتأكيد هويتك يرجى إبلاغنا برمز التحقق الذي أُرسل إليك",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 80
+    }
+  },
+  {
+    "id": "otp_theft_034",
+    "category": "dangerous_otp_theft",
+    "description": "English+Arabic: send OTP",
+    "text": "Please send your OTP (رمز التحقق) to confirm your identity.",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 80
+    }
+  },
+  {
+    "id": "otp_theft_035",
+    "category": "dangerous_otp_theft",
+    "description": "Verify account via code",
+    "text": "لإثبات ملكية الحساب أرسل الرمز الذي استقبلته على جوالك",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 80
+    }
+  },
+  {
+    "id": "aware_031",
+    "category": "safe_awareness",
+    "description": "Awareness: do not click unknown links",
+    "text": "تحذير: لا تضغط على روابط مجهولة تصلك عبر الرسائل حتى لو بدت رسمية.",
+    "source": "notification",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "aware_032",
+    "category": "safe_awareness",
+    "description": "Awareness: verify before paying",
+    "text": "قبل أي دفع عبر الإنترنت تأكد من أن الموقع رسمي وآمن ويبدأ بـ https.",
+    "source": "notification",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "aware_033",
+    "category": "safe_awareness",
+    "description": "Awareness: report suspicious messages",
+    "text": "إذا وصلتك رسالة مشبوهة أبلغ عنها فوراً عبر تطبيق نجز أو قسم الجرائم الإلكترونية.",
+    "source": "notification",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "neg_016",
+    "category": "tricky_negation",
+    "description": "Negation + OTP legitimately sent by app",
+    "text": "رمز التحقق: 391847. هذا الرمز لاستخدامك الشخصي فقط — لا تشاركه.",
+    "source": "sms",
+    "sender": "APP",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 30
+    }
+  },
+  {
+    "id": "neg_017",
+    "category": "tricky_negation",
+    "description": "No one should request your PIN",
+    "text": "تذكر: لا يحق لأي جهة طلب رقمك السري أو كلمة مرورك بأي وسيلة.",
+    "source": "notification",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 20
+    }
+  },
+  {
+    "id": "acct_016",
+    "category": "suspicious_account_notice",
+    "description": "Password changed notification",
+    "text": "تم تغيير كلمة مرور حسابك. إذا لم تكن أنت فتواصل معنا.",
+    "source": "email",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "acct_017",
+    "category": "suspicious_account_notice",
+    "description": "Unusual login detected",
+    "text": "تم رصد تسجيل دخول من موقع جغرافي غير معتاد. تحقق من حسابك.",
+    "source": "email",
+    "expected": {
+      "classification": "suspicious"
+    }
+  },
+  {
+    "id": "bank_tx_021",
+    "category": "safe_bank_transaction",
+    "description": "Salary credited notification",
+    "text": "تم إيداع راتبك بمبلغ 7500 ريال في حسابك. تاريخ العملية: 01/05/2025.",
+    "source": "sms",
+    "sender": "ALAHLI",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 25
+    }
+  },
+  {
+    "id": "bank_tx_022",
+    "category": "safe_bank_transaction",
+    "description": "Standing order executed",
+    "text": "تم تنفيذ أمر الدفع المنتظم بمبلغ 500 ريال لصالح شركة الاتصالات.",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 25
+    }
+  },
+  {
+    "id": "mixed_006",
+    "category": "mixed_arabic_english",
+    "description": "English OTP threat Arabic context",
+    "text": "URGENT: Your account will be closed. Send verification code رمز التحقق now.",
+    "source": "sms",
+    "expected": {
+      "classification": "dangerous",
+      "min_risk_score": 80
+    }
+  },
+  {
+    "id": "mixed_007",
+    "category": "mixed_arabic_english",
+    "description": "Arabic awareness English note",
+    "text": "ملاحظة: رمزك السري هو 749201. Note: Do NOT share this code with anyone.",
+    "source": "sms",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 30
+    }
+  },
+  {
+    "id": "app_ver_008",
+    "category": "safe_app_verification",
+    "description": "App login OTP correct form",
+    "text": "رمز الدخول لتطبيق شركتك: 562311. الرمز صالح لمدة 3 دقائق.",
+    "source": "sms",
+    "sender": "CORPAPP",
+    "expected": {
+      "classification": "safe",
+      "max_risk_score": 30
+    }
+  }
+]

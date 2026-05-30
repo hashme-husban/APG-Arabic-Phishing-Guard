@@ -1,0 +1,103 @@
+# APG Risk Intelligence Engine v1 — Risk Policy
+# Defines explicit policy rules in priority order.
+# Each rule has an id, trigger conditions (descriptive), resulting
+# verdict, score, attack_type, and user_action.
+
+definite_block_rules:
+  # Evaluated top-down; first match wins.
+
+  - id: malicious_url
+    description: "URL reputation provider returned malicious verdict"
+    condition: "url_verdict == malicious"
+    score: 98
+    attack_type: malicious_url
+    user_action: do_not_click_link
+    confidence: 0.98
+
+  - id: credential_request_with_url
+    description: "Message requests credentials AND contains a URL or link surface"
+    condition: "credential_request AND has_link_surface"
+    score: 95
+    attack_type: credential_harvesting
+    user_action: do_not_click_link
+    confidence: 0.95
+
+  - id: otp_request
+    description: "Message explicitly requests user to send/share an OTP or verification code"
+    condition: "otp_request == true"
+    score: 88
+    attack_type: otp_theft
+    user_action: do_not_share_code
+    confidence: 0.93
+
+  - id: password_request
+    description: "Message explicitly requests password, PIN, or passcode"
+    condition: "password_request == true"
+    score: 92
+    attack_type: password_theft
+    user_action: verify_from_official_app
+    confidence: 0.95
+
+  - id: card_data_request
+    description: "Message explicitly requests card number, CVV, CVC, or banking details"
+    condition: "card_data_request == true"
+    score: 96
+    attack_type: card_theft
+    user_action: contact_bank_directly
+    confidence: 0.97
+
+  - id: url_account_update_urgency
+    description: "URL + account update + urgency/threat or financial entity"
+    condition: "has_link_surface AND account_update AND (threat_urgency OR financial_entity)"
+    score: 90
+    attack_type: bank_account_takeover
+    user_action: do_not_click_link
+    confidence: 0.91
+
+safe_allow_rules:
+  # Applied only when no block rule has triggered.
+  # Each rule caps the maximum score.
+
+  - id: awareness_no_link
+    condition: "message_category == awareness AND NOT has_url"
+    max_score: 20
+    verdict: allow
+    user_action: no_action_needed
+
+  - id: otp_delivery_no_link
+    condition: "message_category == otp_delivery AND NOT has_url"
+    max_score: 25
+    verdict: allow
+    user_action: no_action_needed
+
+  - id: bank_transaction_no_link
+    condition: "message_category == transactional AND NOT has_url AND NOT credential_request"
+    max_score: 25
+    verdict: allow
+    user_action: no_action_needed
+
+  - id: app_verification_no_link
+    condition: "message_category == app_verification AND NOT has_url AND NOT credential_request"
+    max_score: 15
+    verdict: allow
+    user_action: no_action_needed
+
+  - id: casual_known_contact
+    condition: "message_category == casual AND is_known_contact == true"
+    max_score: 10
+    verdict: allow
+    user_action: no_action_needed
+
+warn_indicators:
+  # These push toward suspicious/warn when present without a block trigger.
+  - id: unknown_url_account_context
+    condition: "url_verdict == unknown AND has_link_surface AND (account_update OR financial_entity)"
+    min_score: 55
+
+  - id: ambiguous_financial_notice
+    condition: "ambiguous_financial_notice == true AND NOT credential_request"
+    score_contribution: 48
+
+  - id: urgent_account_language
+    condition: "threat_urgency AND financial_entity AND NOT credential_request"
+    score_contribution: 58

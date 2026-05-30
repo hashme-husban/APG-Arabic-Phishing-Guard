@@ -1,0 +1,207 @@
+[
+  {
+    "text": "اعطيني رمز بطاقتك البنكية",
+    "expected": "dangerous",
+    "min_score": 90,
+    "must_not_be_safe": true
+  },
+  {
+    "text": "أرسل رمز OTP لتأكيد حسابك",
+    "expected": "dangerous",
+    "min_score": 85,
+    "must_not_be_safe": true
+  },
+  {
+    "text": "شارك رمز التحقق معنا لإكمال العملية",
+    "expected": "dangerous",
+    "min_score": 85,
+    "must_not_be_safe": true
+  },
+  {
+    "text": "أدخل كلمة المرور لتجنب إيقاف الحساب",
+    "expected": "dangerous",
+    "min_score": 90,
+    "must_not_be_safe": true
+  },
+  {
+    "text": "تم تعليق حسابك البنكي، حدث بياناتك عبر http://secure-bank-login.xyz",
+    "expected": "dangerous",
+    "min_score": 95,
+    "must_not_be_safe": true
+  },
+  {
+    "text": "تم إيقاف حسابك، اضغط الرابط وأدخل بياناتك",
+    "expected": "dangerous",
+    "min_score": 85,
+    "must_not_be_safe": true
+  },
+  {
+    "text": "يرجى إدخال CVV لتأكيد العملية",
+    "expected": "dangerous",
+    "min_score": 92,
+    "must_not_be_safe": true
+  },
+  {
+    "text": "البنك يطلب منك تحديث بيانات البطاقة فورًا",
+    "expected": "dangerous",
+    "min_score": 92,
+    "must_not_be_safe": true
+  },
+  {
+    "text": "آخر فرصة لتفعيل حسابك عبر bit.ly/verify-bank",
+    "expected": "dangerous",
+    "min_score": 88,
+    "must_not_be_safe": true
+  },
+  {
+    "text": "تم حظر حسابك مؤقتًا، سجل الدخول الآن",
+    "expected": "dangerous",
+    "min_score": 70,
+    "must_not_be_safe": true
+  },
+  {
+    "text": "مرحبا، موعد الاجتماع الساعة 5 مساء اليوم.",
+    "expected": "safe",
+    "max_score": 30
+  },
+  {
+    "text": "تذكير: يبدأ التسجيل للفصل القادم يوم الاثنين عبر البوابة الرسمية للجامعة.",
+    "expected": "safe",
+    "max_score": 30
+  },
+  {
+    "text": "تم استلام طلبك بنجاح.",
+    "expected": "safe",
+    "max_score": 30
+  },
+  {
+    "text": "وصلت شحنتك إلى الفرع، يمكنك استلامها خلال أوقات الدوام.",
+    "expected": "safe",
+    "max_score": 30
+  },
+  {
+    "text": "رمز التحقق الخاص بك هو 123456. لا تشاركه مع أحد.",
+    "expected": "safe",
+    "max_score": 35
+  },
+  {
+    "text": "يرجى مراجعة حسابك في أقرب وقت.",
+    "expected": "suspicious",
+    "min_score": 31
+  },
+  {
+    "text": "تم رصد نشاط غير معتاد، تحقق من المصدر.",
+    "expected": "suspicious",
+    "min_score": 31
+  },
+  {
+    "text": "اضغط هنا لمتابعة الطلب.",
+    "expected": "suspicious",
+    "min_score": 31
+  },
+  {
+    "text": "يوجد تحديث مهم لحسابك.",
+    "expected": "suspicious",
+    "min_score": 31
+  },
+  {
+    "text": "الرجاء تأكيد بياناتك لاحقًا.",
+    "expected": "suspicious",
+    "min_score": 31
+  },
+  {
+    "text": "تم خصم 5.000 د.أ من بطاقتك لدى كارفور. الرصيد المتاح 120.500 د.أ",
+    "expected": "safe",
+    "max_score": 30
+  },
+  {
+    "text": "تمت عملية شراء بقيمة 10 دنانير من بطاقتك.",
+    "expected": "safe",
+    "max_score": 30
+  },
+  {
+    "text": "تم إيداع راتبك في حسابك البنكي.",
+    "expected": "safe",
+    "max_score": 30
+  },
+  {
+    "text": "رمز التحقق الخاص بك هو 482193. لا تشاركه مع أي شخص.",
+    "expected": "safe",
+    "max_score": 35
+  },
+  {
+    "text": "رمز الدخول لمرة واحدة هو 123456. لا تفصح عنه لأي شخص.",
+    "expected": "safe",
+    "max_score": 35
+  },
+  {
+    "text": "تم تنفيذ حوالة من حسابك بنجاح.",
+    "expected": "safe",
+    "max_score": 30
+  },
+  {
+    "text": "يوجد تحديث مهم لحسابك البنكي، يرجى المراجعة.",
+    "expected": "suspicious",
+    "min_score": 31,
+    "max_score": 70
+  },
+  {
+    "text": "تنبيه من البنك: يرجى التأكد من بيانات حسابك.",
+    "expected": "suspicious",
+    "min_score": 31,
+    "max_score": 70
+  },
+  {
+    "text": "هناك نشاط غير معتاد على حسابك.",
+    "expected": "suspicious",
+    "min_score": 31,
+    "max_score": 70
+  },
+  {
+    "text": "زودنا برقم البطاقة و CVV لإلغاء الحظر.",
+    "expected": "dangerous",
+    "min_score": 92,
+    "must_not_be_safe": true
+  },
+  {
+    "text": "اضغط هنا لتحديث بيانات حسابك البنكي.",
+    "expected": "dangerous",
+    "min_score": 85,
+    "must_not_be_safe": true
+  },
+  {
+    "text": "سيتم إغلاق حسابك إذا لم تدخل كلمة المرور الآن.",
+    "expected": "dangerous",
+    "min_score": 90,
+    "must_not_be_safe": true
+  },
+  {
+    "text": "شارك رمز التحقق مع موظف البنك.",
+    "expected": "dangerous",
+    "min_score": 88,
+    "must_not_be_safe": true
+  },
+  {
+    "text": "ادخل رمز التحقق عبر الرابط التالي.",
+    "expected": "dangerous",
+    "min_score": 88,
+    "must_not_be_safe": true
+  },
+  {
+    "text": "وصلت؟ ابعثلي لما تفضى",
+    "expected": "safe",
+    "max_score": 25,
+    "sender": "Ahmad",
+    "is_known_contact": true,
+    "sender_trust": "known"
+  },
+  {
+    "text": "شو رمز التحقق اللي وصلك؟",
+    "expected": "dangerous",
+    "min_score": 85,
+    "must_not_be_safe": true,
+    "sender": "Ahmad",
+    "is_known_contact": true,
+    "sender_trust": "known"
+  }
+]

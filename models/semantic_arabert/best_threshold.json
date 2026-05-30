@@ -1,0 +1,5 @@
+{
+  "best_threshold": 0.3,
+  "best_f1": 0.0,
+  "note": "Replace best_f1 if you want with the exact value from Seed 777. The threshold 0.3 is the important part here."
+}

@@ -1,0 +1,8 @@
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+python-multipart==0.0.20
+Pillow==11.0.0
+# numpy<2.0 is required by paddleocr==2.8.1 — must NOT be upgraded to 2.x here
+numpy==1.26.4
+paddlepaddle==2.6.2
+paddleocr==2.8.1

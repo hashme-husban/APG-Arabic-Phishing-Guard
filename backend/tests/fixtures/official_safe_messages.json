@@ -1,0 +1,758 @@
+[
+  {
+    "id": "official_safe_001",
+    "text": "JO\nلا تشارك رمز التفعيل\nرمز التفعيل لمرة واحدة: 491262 \nالغاية: حركة شراء بمبلغ 9.18 JOD من ZAIN WEBSITE AND SELFCARE APP \nتطبق عمولة على الحركات الدولية",
+    "category": "safe_otp_delivery",
+    "expected": {
+      "classification": "safe",
+      "message_category": "otp_delivery",
+      "max_risk_score": 25
+    },
+    "notes": "Zain OTP for purchase transaction; includes explicit do-not-share warning and purchase context with no credential theft request",
+    "source_type": "telecom",
+    "contains_url": false,
+    "expected_url_policy": "no_url"
+  },
+  {
+    "id": "official_safe_002",
+    "text": "رمز التأكيد للتحقق من رقم هاتفك هو: 219955",
+    "category": "safe_otp_delivery",
+    "expected": {
+      "classification": "safe",
+      "message_category": "otp_delivery",
+      "max_risk_score": 20
+    },
+    "notes": "Standard phone number verification OTP; no URL and no instruction to share the code with any party",
+    "source_type": "generic",
+    "contains_url": false,
+    "expected_url_policy": "no_url"
+  },
+  {
+    "id": "official_safe_003",
+    "text": "‏941024‏ هو رمزك على Instagram. لا تشاركه. ‎#ig‏",
+    "category": "safe_otp_delivery",
+    "expected": {
+      "classification": "safe",
+      "message_category": "otp_delivery",
+      "max_risk_score": 20
+    },
+    "notes": "Instagram login OTP with explicit do-not-share instruction; standard social media verification pattern",
+    "source_type": "social_media",
+    "contains_url": false,
+    "expected_url_policy": "no_url"
+  },
+  {
+    "id": "official_safe_004",
+    "text": "رمز تعريفك الخاص ب QAWN OTP هو 413938",
+    "category": "safe_otp_delivery",
+    "expected": {
+      "classification": "safe",
+      "message_category": "otp_delivery",
+      "max_risk_score": 20
+    },
+    "notes": "One-time identity code from QAWN service; no URL, no credential sharing request",
+    "source_type": "service",
+    "contains_url": false,
+    "expected_url_policy": "no_url"
+  },
+  {
+    "id": "official_safe_005",
+    "text": "عميلنا العزيز،\nنود التنبيه بوجود صفحات وهمية تنتحل اسم uwallet وتروّج لعروض مثل ساعات ذكية مجانية.\nيرجى عدم التفاعل معها أو مشاركة أي معلومات شخصية عبر روابط غير موثوقة.",
+    "category": "safe_awareness",
+    "expected": {
+      "classification": "safe",
+      "message_category": "awareness",
+      "max_risk_score": 20
+    },
+    "notes": "uwallet official warning about impostor pages; educates users not to share personal info — the message itself makes no credential request",
+    "source_type": "fintech",
+    "contains_url": false,
+    "expected_url_policy": "no_url"
+  },
+  {
+    "id": "official_safe_006",
+    "text": "يرجى عدم مشاركة رمز التحقق الذي يستخدم للتحقق من حسابك ولمرة واحدة  مع أي جهة كانت حيث ان مشاركة هذه المعلومات تقع تحت طائلة مسؤولية العميل رمز التحقق الخاص بك 8689",
+    "category": "safe_otp_delivery",
+    "expected": {
+      "classification": "safe",
+      "message_category": "otp_delivery",
+      "max_risk_score": 20
+    },
+    "notes": "Bank OTP delivery with strong do-not-share legal warning; the warning is a safety signal, not a threat",
+    "source_type": "bank",
+    "contains_url": false,
+    "expected_url_policy": "no_url"
+  },
+  {
+    "id": "official_safe_007",
+    "text": "تم استلام مبلغ 10.000 د.أ من EFAWAGENT  31/03/2026 12:52 ص. الرصيد الحالي د.أ 10.000",
+    "category": "safe_bank_transaction",
+    "expected": {
+      "classification": "safe",
+      "message_category": "transactional",
+      "max_risk_score": 25
+    },
+    "notes": "Bank credit notification from eFawateerCom payment gateway; standard inbound transaction receipt with no URL",
+    "source_type": "bank",
+    "contains_url": false,
+    "expected_url_policy": "no_url"
+  },
+  {
+    "id": "official_safe_008",
+    "text": "رمز التأكيد 1920 لإتمام عملية التسجيل في منصة أبشر.",
+    "category": "safe_otp_delivery",
+    "expected": {
+      "classification": "safe",
+      "message_category": "otp_delivery",
+      "max_risk_score": 20
+    },
+    "notes": "Saudi Absher e-government platform registration OTP; no URL and no request to share the code",
+    "source_type": "government",
+    "contains_url": false,
+    "expected_url_policy": "no_url"
+  },
+  {
+    "id": "official_safe_009",
+    "text": "رمز الدخول للخدمات الالكترونية 02048 فعال ليوم الخميس الساعة 06:16 م",
+    "category": "safe_otp_delivery",
+    "expected": {
+      "classification": "safe",
+      "message_category": "otp_delivery",
+      "max_risk_score": 20
+    },
+    "notes": "Government e-services time-limited login code; expiry time mentioned but no URL or credential sharing request",
+    "source_type": "government",
+    "contains_url": false,
+    "expected_url_policy": "no_url"
+  },
+  {
+    "id": "official_safe_010",
+    "text": "لديك مكالمات لم يتم استلامها؛ لمعرفتها اتصل بـ #11* وستصلك برسالة.",
+    "category": "safe_service_notification",
+    "expected": {
+      "classification": "safe",
+      "message_category": "service_notification",
+      "max_risk_score": 20
+    },
+    "notes": "Telecom missed-call notification directing user to dial a USSD code; no URL, no link, no personal data request",
+    "source_type": "telecom",
+    "contains_url": false,
+    "expected_url_policy": "no_url"
+  },
+  {
+    "id": "official_safe_011",
+    "text": "الطالب احمد ابو الذهب\nرمز التحقق هو\n719957",
+    "category": "safe_otp_delivery",
+    "expected": {
+      "classification": "safe",
+      "message_category": "otp_delivery",
+      "max_risk_score": 20
+    },
+    "notes": "Educational institution verification OTP addressed to a named student; no URL, no credential theft indicator",
+    "source_type": "education",
+    "contains_url": false,
+    "expected_url_policy": "no_url"
+  },
+  {
+    "id": "official_safe_012",
+    "text": "رمز التفعيل: 8032",
+    "category": "safe_otp_delivery",
+    "expected": {
+      "classification": "safe",
+      "message_category": "otp_delivery",
+      "max_risk_score": 20
+    },
+    "notes": "Minimal activation code message; extremely short, no URL, no sharing request",
+    "source_type": "generic",
+    "contains_url": false,
+    "expected_url_policy": "no_url"
+  },
+  {
+    "id": "official_safe_013",
+    "text": "رمز التحقق للتسجيل في منتدى تواصل 449167",
+    "category": "safe_otp_delivery",
+    "expected": {
+      "classification": "safe",
+      "message_category": "otp_delivery",
+      "max_risk_score": 20
+    },
+    "notes": "Forum registration verification code for Tawasol platform; no URL, no credential sharing request",
+    "source_type": "service",
+    "contains_url": false,
+    "expected_url_policy": "no_url"
+  },
+  {
+    "id": "official_safe_014",
+    "text": "JO\nلإضافة جهاز جديد لخدمة العربي موبايل، رمز التفعيل هو 122436. احرص على عدم مشاركة رمز التفعيل مع احد.",
+    "category": "safe_otp_delivery",
+    "expected": {
+      "classification": "safe",
+      "message_category": "otp_delivery",
+      "max_risk_score": 20
+    },
+    "notes": "Arab Bank mobile app device-addition OTP with explicit do-not-share instruction; no URL",
+    "source_type": "bank",
+    "contains_url": false,
+    "expected_url_policy": "no_url"
+  },
+  {
+    "id": "official_safe_015",
+    "text": "يرجى استخدام رمز التحقق  0919 لاستكمال  عملية اصدار تصريح الحج",
+    "category": "safe_otp_delivery",
+    "expected": {
+      "classification": "safe",
+      "message_category": "otp_delivery",
+      "max_risk_score": 20
+    },
+    "notes": "Government OTP for Hajj permit issuance; no URL, no credential theft request, religious administrative context",
+    "source_type": "government",
+    "contains_url": false,
+    "expected_url_policy": "no_url"
+  },
+  {
+    "id": "official_safe_016",
+    "text": "Temu: 557219 هو رمز التحقق الخاص بك. لا تشاركه مع أي شخص",
+    "category": "safe_otp_delivery",
+    "expected": {
+      "classification": "safe",
+      "message_category": "otp_delivery",
+      "max_risk_score": 20
+    },
+    "notes": "Temu e-commerce OTP with do-not-share instruction; standard international platform verification pattern",
+    "source_type": "ecommerce",
+    "contains_url": false,
+    "expected_url_policy": "no_url"
+  },
+  {
+    "id": "official_safe_017",
+    "text": "أهلين.. الكود هو 5976 استمتع بالتوفير [CPzN3C7W2h/]",
+    "category": "safe_promotional",
+    "expected": {
+      "classification": "safe",
+      "message_category": "promotional",
+      "max_risk_score": 35
+    },
+    "notes": "Promotional discount code with referral tracking identifier in brackets; no URL, no credential request, savings context",
+    "source_type": "ecommerce",
+    "contains_url": false,
+    "expected_url_policy": "no_url"
+  },
+  {
+    "id": "official_safe_018",
+    "text": "كود التفعيل هو 7152علما بان الكود صالح لمدة 24 ساعة",
+    "category": "safe_otp_delivery",
+    "expected": {
+      "classification": "safe",
+      "message_category": "otp_delivery",
+      "max_risk_score": 20
+    },
+    "notes": "Time-limited activation code valid 24 hours; no URL, no credential sharing request",
+    "source_type": "generic",
+    "contains_url": false,
+    "expected_url_policy": "no_url"
+  },
+  {
+    "id": "official_safe_019",
+    "text": "عائلة \"إلى\" العزيزة،  \nحرصاً منا على أمن معلوماتكم من محاولات الاحتيال والاختراق، يرجى منكم عدم مشاركة أي رمز OTP أو أي معلومات بنكية أو رموز سرية شخصية مع أي جهة، سواء من خلال الرسائل أو المكالمات الهاتفية. كما ننصح بتجنّب الضغط على أي روابط مشبوهة أو مجهولة المصدر. \nإذا وصلك اتصال أو بريد إلكتروني أو رسالة نصية من شخص يدّعي أنه من فريقنا ويطلب معلومات حساسة، تجاهل الرسالة وتواصل معنا مباشرة على 065100001",
+    "category": "safe_awareness",
+    "expected": {
+      "classification": "safe",
+      "message_category": "awareness",
+      "max_risk_score": 20
+    },
+    "notes": "ila Jordan bank official security awareness message warning customers against phishing; itself makes no credential request and actively instructs users to ignore suspicious contacts",
+    "source_type": "bank",
+    "contains_url": false,
+    "expected_url_policy": "no_url"
+  },
+  {
+    "id": "official_safe_020",
+    "text": "ضايل يومين!  \nافتح حساب الكنز اليوم لفرصة ربح جوائز شهر 4. \n3 رابحين لكل واحد منهم 9,999 دينار  \nللمزيد من المعلومات:  \nhttps://ilajordan.com/ar-JO/AlKanz",
+    "category": "safe_promotional",
+    "expected": {
+      "classification": "safe",
+      "message_category": "promotional",
+      "max_risk_score": 35
+    },
+    "notes": "ila Jordan bank official savings account AlKanz promotion with prize draw; link goes to bank's own ilajordan.com domain, no credential request",
+    "source_type": "bank",
+    "contains_url": true,
+    "expected_url_policy": "trusted_known"
+  },
+  {
+    "id": "official_safe_021",
+    "text": "لفترة محدودة\nفي متجر أمنية الإلكتروني، عالم الألعاب والترفيه أقرب الك.\nتخفيضات على بطاقات إلكترونية متنوعة، وصول سريع وتجربة آمنة تجعلك تبدأ مباشرة بدون تعقيد.\nhttps://umn.jo/gaming",
+    "category": "safe_promotional",
+    "expected": {
+      "classification": "safe",
+      "message_category": "promotional",
+      "max_risk_score": 35
+    },
+    "notes": "Umniah telecom official gaming store promotional message; umn.jo is Umniah's verified domain, no credential request",
+    "source_type": "telecom",
+    "contains_url": true,
+    "expected_url_policy": "trusted_known"
+  },
+  {
+    "id": "official_safe_022",
+    "text": "لنحافظ على نظافة متنزهاتنا بعدم رمي النفايات كن صديقا للبيئة دائما",
+    "category": "safe_awareness",
+    "expected": {
+      "classification": "safe",
+      "message_category": "awareness",
+      "max_risk_score": 20
+    },
+    "notes": "Public environmental awareness message about park cleanliness; no URL, no personal data, purely informational",
+    "source_type": "government",
+    "contains_url": false,
+    "expected_url_policy": "no_url"
+  },
+  {
+    "id": "official_safe_023",
+    "text": "اكتشف باقة سوا شير بلس\n\nسوا شير بلس تعطيك\nGB40 سوشال\nGB40 إنترنت\n1500 دقيقة لكل الشبكات المحلية\nبـ 115 ريال بس\n\n*صلاحية الباقة 4 أسابيع\n*يتم احتساب ضريبة القيمة المضافة 15% عند الشحن\n\nاشترك الآن عبر mystc\nhttps://my.stc/sawa-shareplus \n\nأو أرسل 7115 إلى 900\n\nاشترك واستمتع بالمزايا.",
+    "category": "safe_promotional",
+    "expected": {
+      "classification": "safe",
+      "message_category": "promotional",
+      "max_risk_score": 35
+    },
+    "notes": "STC Saudi telecom official Sawa Share Plus bundle promotion; my.stc is STC's verified customer portal, no credential request",
+    "source_type": "telecom",
+    "contains_url": true,
+    "expected_url_policy": "trusted_known"
+  },
+  {
+    "id": "official_safe_024",
+    "text": "عميلنا العزيز،\nفي إطار تحديث الأنظمة، سيتم إجراء صيانة دورية مجدولة ابتداءً من الليلة وحتى يوم الجمعة، وذلك يوميًا ما بين الساعة 11:00 مساءً و3:00 صباحًا.\nقد يترتب على ذلك انقطاع أو تقطّع مؤقت في الخدمة خلال هذه الفترة فقط.\nلأي استفسار، يرجى التواصل معنا على الرقم 065509292.",
+    "category": "safe_service_notification",
+    "expected": {
+      "classification": "safe",
+      "message_category": "service_notification",
+      "max_risk_score": 35
+    },
+    "notes": "Scheduled maintenance notice with time window and official phone number; no URL, no action required from user",
+    "source_type": "service",
+    "contains_url": false,
+    "expected_url_policy": "no_url"
+  },
+  {
+    "id": "official_safe_025",
+    "text": "صباح الخير احمد\n\nنوّد فقط إبلاغك بأنك استنفدت ١٠٠٪ من إحدى باقات الانترنت  المفعّلة لديك على الرقم 0579470635 \n\nإسم الباقة:\nزيارة 52\n\nيمكنك الاطلاع على تفاصيل استهلاك باقات الإنترنت لديك عن طريق تطبيق mystc عبر الرابط التالي:\nhttps://my.stc/_my_data?data=cD0wNTc5NDcwNjM1 \n\nأو بالرد على هذه الرسالة بالرمز 2220\n\nيومك سعيد",
+    "category": "safe_service_notification",
+    "expected": {
+      "classification": "safe",
+      "message_category": "service_notification",
+      "max_risk_score": 35
+    },
+    "notes": "STC data exhaustion alert linking to official my.stc portal; URL contains base64 phone parameter but domain is STC's verified portal",
+    "source_type": "telecom",
+    "contains_url": true,
+    "expected_url_policy": "trusted_known"
+  },
+  {
+    "id": "official_safe_026",
+    "text": "لقد حصلت على\n  3000 رسائل محلية مـجانية. \n       1000 دقائق دولية على شبكة الوطنية في فلسطين. \n     25 جيجا حزم انترنت سمارت موبايل. \n            \n مكالمات غير محدودة على شبكة امنية والشبكات المحلية.          \nرقمك هو 781918782",
+    "category": "safe_subscription_notice",
+    "expected": {
+      "classification": "safe",
+      "message_category": "subscription_notice",
+      "max_risk_score": 35
+    },
+    "notes": "Umniah telecom welcome bundle confirmation listing included services and assigned number; no URL, no action required",
+    "source_type": "telecom",
+    "contains_url": false,
+    "expected_url_policy": "no_url"
+  },
+  {
+    "id": "official_safe_027",
+    "text": "شكراً لاتصالكم بمركز خدمات مشتركي أورانج، لمعرفة مدى رضاكم عن جودة الخدمة التي تم تقديمها يرجى الاجابة على استبيان رضى الزبائن عبر الرابط التالي \nhttps://digital.orange.jo/DVOC/faces/pages/surv.xhtml?subsSurvId=MjU4MTU1OTU=&channelId=MTY=",
+    "category": "safe_survey",
+    "expected": {
+      "classification": "safe",
+      "message_category": "survey",
+      "max_risk_score": 35
+    },
+    "notes": "Orange Jordan official customer satisfaction survey on their own digital.orange.jo domain; no credential request",
+    "source_type": "telecom",
+    "contains_url": true,
+    "expected_url_policy": "trusted_known"
+  },
+  {
+    "id": "official_safe_028",
+    "text": "لقد تم فصل اشتراكك كليا ب U_شبابي. للحفاظ على اشتراكك ورصيدك المتبقي، يُرجى تجديد الاشتراك في أقرب وقت ممكن. يمكنك شحن الخط من خلال رابط بوابة الدفع الإلكتروني من أمنية http://umn.jo/onlinepayments",
+    "category": "safe_service_notification",
+    "expected": {
+      "classification": "safe",
+      "message_category": "service_notification",
+      "max_risk_score": 35
+    },
+    "notes": "Umniah subscription disconnection alert with official payment portal link on umn.jo; no credential request beyond normal recharge",
+    "source_type": "telecom",
+    "contains_url": true,
+    "expected_url_policy": "trusted_known"
+  },
+  {
+    "id": "official_safe_029",
+    "text": "لا يوجد لديك رصيد كافي لتجديد اشتراك ب U_شبابي.يمكنك معرفة رصيدك وشحنه بسهولة من خلال رابط بوابة الدفع الإلكتروني من أمنية http://umn.jo/onlinepayments",
+    "category": "safe_service_notification",
+    "expected": {
+      "classification": "safe",
+      "message_category": "service_notification",
+      "max_risk_score": 35
+    },
+    "notes": "Umniah low-balance subscription renewal prompt linking to official umn.jo payment portal; routine service notification",
+    "source_type": "telecom",
+    "contains_url": true,
+    "expected_url_policy": "trusted_known"
+  },
+  {
+    "id": "official_safe_030",
+    "text": "ينتهي اشتراكك ب Ushababi_Pro كليا بتاريخ03/05/2026. لتجنب الفصل الكلي وخسارة الرصيد، يُرجى تجديد الاشتراك قبل هذا التاريخ. يمكنك شحن الخط من خلال رابط بوابة الدفع الإلكتروني من أمنية http://umn.jo/onlinepayments",
+    "category": "safe_service_notification",
+    "expected": {
+      "classification": "safe",
+      "message_category": "service_notification",
+      "max_risk_score": 35
+    },
+    "notes": "Umniah subscription expiry warning with specific date and official umn.jo payment portal; no credential theft pattern",
+    "source_type": "telecom",
+    "contains_url": true,
+    "expected_url_policy": "trusted_known"
+  },
+  {
+    "id": "official_safe_031",
+    "text": "لقد حصلت على\n  6000 جيجا U5G. \n                  \nرقمك هو 785384982",
+    "category": "safe_subscription_notice",
+    "expected": {
+      "classification": "safe",
+      "message_category": "subscription_notice",
+      "max_risk_score": 35
+    },
+    "notes": "Umniah 5G data bundle activation confirmation; minimal message confirming subscription and assigned number, no URL",
+    "source_type": "telecom",
+    "contains_url": false,
+    "expected_url_policy": "no_url"
+  },
+  {
+    "id": "official_safe_032",
+    "text": "خصم 50% منWazeer AlHelo  عند الدفع باستخدام بطاقات زين كاش:  \nhttps://zaincashjo.com/4gh00qh",
+    "category": "safe_promotional",
+    "expected": {
+      "classification": "safe",
+      "message_category": "promotional",
+      "max_risk_score": 35
+    },
+    "notes": "Zain Cash Jordan official promotion for Wazeer AlHelo discount; zaincashjo.com is Zain Cash Jordan's verified domain",
+    "source_type": "fintech",
+    "contains_url": true,
+    "expected_url_policy": "trusted_known"
+  },
+  {
+    "id": "official_safe_033",
+    "text": "عمرك بين 20 – 60 أمن ضد السرطان في مركز الحسين للسرطان للاستفسار الاتصال على 0791228888",
+    "category": "safe_awareness",
+    "expected": {
+      "classification": "safe",
+      "message_category": "awareness",
+      "max_risk_score": 20
+    },
+    "notes": "King Hussein Cancer Center health screening awareness campaign; no URL, no personal data request, public health message",
+    "source_type": "healthcare",
+    "contains_url": false,
+    "expected_url_policy": "no_url"
+  },
+  {
+    "id": "official_safe_034",
+    "text": "انطلق التعداد السكاني 2026 وهو واجب وطني على المواطن والمقيم. على الجميع التعاون مع باحث دائرة الإحصاءات العامة. بياناتك سرية بموجب القانون. للاستفسار الاتصال على الرقم المجاني 117110",
+    "category": "safe_government_notice",
+    "expected": {
+      "classification": "safe",
+      "message_category": "government_notice",
+      "max_risk_score": 20
+    },
+    "notes": "Jordan 2026 national census official announcement from Department of Statistics; assures data confidentiality by law, toll-free number only",
+    "source_type": "government",
+    "contains_url": false,
+    "expected_url_policy": "no_url"
+  },
+  {
+    "id": "official_safe_035",
+    "text": "حول أنغامي لمود رمضان\nعيش رمضان مع أنغامي! استمتع بكل لحظات الشهر الفضيل مع تلاوات قرآنية ، أدعية وأذكار .\nاشترك الآن واحصل على أسبوع مجاناً \nhttps://www.anghami.com/operators/UmniahJO",
+    "category": "safe_promotional",
+    "expected": {
+      "classification": "safe",
+      "message_category": "promotional",
+      "max_risk_score": 35
+    },
+    "notes": "Anghami music app official Ramadan mode promotion co-marketed with Umniah; anghami.com is the app's verified domain",
+    "source_type": "entertainment",
+    "contains_url": true,
+    "expected_url_policy": "trusted_known"
+  },
+  {
+    "id": "official_safe_036",
+    "text": "احجز تذكرتك الان للاستمتاع بتجربة لا تنسى!\nفي مهرجان الأردن العالمي للطعام بتاريخ 7-11 آب التذاكر عبر الرابط التالي:\nhttps://jiff.jo/en",
+    "category": "safe_promotional",
+    "expected": {
+      "classification": "safe",
+      "message_category": "promotional",
+      "max_risk_score": 35
+    },
+    "notes": "Jordan International Food Festival official ticket booking notification; jiff.jo is the festival's verified domain",
+    "source_type": "entertainment",
+    "contains_url": true,
+    "expected_url_policy": "trusted_known"
+  },
+  {
+    "id": "official_safe_037",
+    "text": "شارك الآن في تحسين خدمات بطاقاتك الائتمانية عبر تطبيق إي فواتيركم عبر تعبئة الاستبيان:\nhttps://forms.office.com/r/EdHED5RVss",
+    "category": "safe_survey",
+    "expected": {
+      "classification": "safe",
+      "message_category": "survey",
+      "max_risk_score": 45
+    },
+    "notes": "eFawateerCom credit card satisfaction survey on Microsoft Forms; third-party form platform usable by anyone requires reputation check despite legitimate context",
+    "source_type": "fintech",
+    "contains_url": true,
+    "expected_url_policy": "requires_reputation"
+  },
+  {
+    "id": "official_safe_038",
+    "text": "شكرا لاستخدامكم خدمات وزارة العدل تم دفع مبلغ 16 دينار,امر الدفع رقم 2024938132 اضغط على الرابط ادناه لعرض الوصل\nwww.moj.jo/Pk6ed5ed",
+    "category": "safe_government_notice",
+    "expected": {
+      "classification": "safe",
+      "message_category": "government_notice",
+      "max_risk_score": 25
+    },
+    "notes": "Jordan Ministry of Justice payment receipt linking to official moj.jo domain to view receipt; no credential request",
+    "source_type": "government",
+    "contains_url": true,
+    "expected_url_policy": "trusted_known"
+  },
+  {
+    "id": "official_safe_039",
+    "text": "عروض الريحان الك وللعيلة\nعلى تشكيلة واسعة من منتجاتنا\nbit.ly/3TxExRA",
+    "category": "safe_promotional",
+    "expected": {
+      "classification": "safe",
+      "message_category": "promotional",
+      "max_risk_score": 45
+    },
+    "notes": "Al-Rayhan retail promotional message with bit.ly shortener; destination unknown without expansion, requires reputation check",
+    "source_type": "retail",
+    "contains_url": true,
+    "expected_url_policy": "requires_reputation"
+  },
+  {
+    "id": "official_safe_040",
+    "text": "أكاديمية هارمونكس للتدريب بتقدم لمشتركي أمنية خصم 50% على رسوم دورة صيانة الموبايل، المهنة الأكثر طلباً في السوق الأردني. سجل الآن.\n0781555517\n0781566666\nwww.harmonex.co",
+    "category": "safe_promotional",
+    "expected": {
+      "classification": "safe",
+      "message_category": "promotional",
+      "max_risk_score": 45
+    },
+    "notes": "Harmonex training academy promotion via Umniah; harmonex.co is an unfamiliar domain requiring reputation verification despite benign context",
+    "source_type": "education",
+    "contains_url": true,
+    "expected_url_policy": "requires_reputation"
+  },
+  {
+    "id": "official_safe_041",
+    "text": "شكرا لتسجيلك معنا في منصة أورنج للتعليم الالكتروني (كورسات)\nولحتى تحصل شهادتك الي رح تزيد من فرصك في المنافسة في سوق العمل، بدنا تكمل الدورة الى سجلت فيها من خلال الرابط:\nhttps://coursat.orange.jo",
+    "category": "safe_service_notification",
+    "expected": {
+      "classification": "safe",
+      "message_category": "service_notification",
+      "max_risk_score": 35
+    },
+    "notes": "Orange Jordan e-learning platform Coursat registration confirmation; coursat.orange.jo is Orange's verified educational subdomain",
+    "source_type": "telecom",
+    "contains_url": true,
+    "expected_url_policy": "trusted_known"
+  },
+  {
+    "id": "official_safe_042",
+    "text": "عميلنا العزيز, شكرا على زيارتك, نرجو التكرم بتقييم تجربتك من خلال الرابط  \n\nDear Valued customer, thank you for visiting us, please evaluate your experience through this link  https://qFeedback.hbtf.com/Pages/CustomerFeedback.aspx?g=f5a871fe-4df6-484f-b6f3-9e0ea242f064",
+    "category": "safe_survey",
+    "expected": {
+      "classification": "safe",
+      "message_category": "survey",
+      "max_risk_score": 45
+    },
+    "notes": "Housing Bank for Trade and Finance (HBTF) Jordan customer feedback survey; qFeedback.hbtf.com is an unfamiliar feedback subdomain requiring reputation check",
+    "source_type": "bank",
+    "contains_url": true,
+    "expected_url_policy": "requires_reputation"
+  },
+  {
+    "id": "official_safe_043",
+    "text": "كود ‏واتساب ‎883-441\nلا تشاركه أبدا",
+    "category": "safe_otp_delivery",
+    "expected": {
+      "classification": "safe",
+      "message_category": "otp_delivery",
+      "max_risk_score": 20
+    },
+    "notes": "WhatsApp verification code with strong do-not-share warning; no URL, standard WhatsApp authentication pattern",
+    "source_type": "social_media",
+    "contains_url": false,
+    "expected_url_policy": "no_url"
+  },
+  {
+    "id": "official_safe_044",
+    "text": "كود ‏واتساب ‎557-679\nأو انقر هنا\nv.whatsapp.com/557679\nلا تشاركه أبدا",
+    "category": "safe_otp_delivery",
+    "expected": {
+      "classification": "safe",
+      "message_category": "otp_delivery",
+      "max_risk_score": 20
+    },
+    "notes": "WhatsApp OTP with optional tap-to-verify link on v.whatsapp.com which is WhatsApp's official verification domain",
+    "source_type": "social_media",
+    "contains_url": true,
+    "expected_url_policy": "trusted_known"
+  },
+  {
+    "id": "official_safe_045",
+    "text": "لديك مكالمات لم يرد عليها،لمعرفتها ابعث رسالة فارغة أو كلمة \"نعم\" إلى 97787 سعر الرسالة 6قروش أواشترك بدينار بالشهر عن طريق الاتصال بـ #130*",
+    "category": "safe_service_notification",
+    "expected": {
+      "classification": "safe",
+      "message_category": "service_notification",
+      "max_risk_score": 20
+    },
+    "notes": "Telecom missed-call notification service with SMS reply or USSD dial options; no URL, no personal data request",
+    "source_type": "telecom",
+    "contains_url": false,
+    "expected_url_policy": "no_url"
+  },
+  {
+    "id": "official_safe_046",
+    "text": "صوّت للشاعر محمد محمود محاسنة في نهائيات برنامج أمير الشعراء, علماً أن رقم المتسابق (1020) وللتصويت اضغط على الرابط\n https://play.google.com/store/apps/details?id=com.princeofpoets.uae",
+    "category": "safe_promotional",
+    "expected": {
+      "classification": "safe",
+      "message_category": "promotional",
+      "max_risk_score": 35
+    },
+    "notes": "Prince of Poets TV program voting via official Google Play Store app link; play.google.com is Google's verified app marketplace",
+    "source_type": "entertainment",
+    "contains_url": true,
+    "expected_url_policy": "trusted_known"
+  },
+  {
+    "id": "official_safe_047",
+    "text": "لا تفوّت الفرصة!\nتابع دوري أبطال أوروبا عند الاشتراك في الحزمة الشهرية TOD فقط بـ 3.5 دينار بدل 7!\nاستمتع بأقوى وأجمل المباريات بدقة 4K\nاشترك بسهولة من خلال تطبيق أمنية:\nhttps://umnh.page.link/404bundles",
+    "category": "safe_promotional",
+    "expected": {
+      "classification": "safe",
+      "message_category": "promotional",
+      "max_risk_score": 40
+    },
+    "notes": "Umniah TOD sports streaming promotion using Firebase Dynamic Link (page.link); redirect type warrants caution but context is clear with no credential request",
+    "source_type": "telecom",
+    "contains_url": true,
+    "expected_url_policy": "unknown_but_allowed"
+  },
+  {
+    "id": "official_safe_048",
+    "text": "لأنك أحد عملائنا المميزين، يسعدنا إعلامك بأننا قمنا بزيادة سرعة اشتراكك في خدمة الجيل الخامس U5G إلى سرعة أعلى! الآن يمكنك الاستمتاع بسرعة تصل إلى 500 ميجابت/ثانية لمدة شهر كامل تقديراً لولائك.",
+    "category": "safe_service_notification",
+    "expected": {
+      "classification": "safe",
+      "message_category": "service_notification",
+      "max_risk_score": 35
+    },
+    "notes": "Umniah 5G speed upgrade loyalty gift notification; no URL, no action required, purely informational benefit notice",
+    "source_type": "telecom",
+    "contains_url": false,
+    "expected_url_policy": "no_url"
+  },
+  {
+    "id": "official_safe_049",
+    "text": "إذا كنت طالبًا جامعيًا، سجّل الآن في هاكثون CCH-2025\nلإبراز مهاراتك وإبداعك، فرصتك للفوز بجوائز قيمتها 45,000دينار!\nbit.ly/NQz",
+    "category": "safe_promotional",
+    "expected": {
+      "classification": "safe",
+      "message_category": "promotional",
+      "max_risk_score": 45
+    },
+    "notes": "CCH-2025 university hackathon registration invitation with bit.ly shortener; destination unverifiable without expansion",
+    "source_type": "education",
+    "contains_url": true,
+    "expected_url_policy": "requires_reputation"
+  },
+  {
+    "id": "official_safe_050",
+    "text": "مرحبا!\nسعيدين باهتمامك بالانضمام لأكاديمية البرمجة من أورنج / اربد.\nبقي ايام على انتهاء التسجيل، سارعوا بانهاء طلباتكم قبل الموعد النهائي. \nمن خلال الرابط التالي: \nhttps://irbid.orangecodingacademy.com/login\n\nمجانا ورشة عمل في لغة برمجةPython  يوم الخميس25/07 للتسجيل الرجاء الضغط عالرابط:https://forms.gle/5GGjy6vyU7iJTqpQ9",
+    "category": "safe_promotional",
+    "expected": {
+      "classification": "safe",
+      "message_category": "promotional",
+      "max_risk_score": 45
+    },
+    "notes": "Orange Coding Academy Irbid registration with official orangecodingacademy.com link plus forms.gle Google Forms shortener for workshop; shortener link requires reputation check",
+    "source_type": "education",
+    "contains_url": true,
+    "expected_url_policy": "requires_reputation"
+  },
+  {
+    "id": "official_safe_051",
+    "text": "زورونا في مهرجان التوعيه من خطر المخدرات حدائق الحسين- الخميس ٢٠٢٤/٦/٢٧ من الساعه 4 عصرا حتى منتصف الليل\nالدعوه عامه- ادارة مكافحة المخدرات",
+    "category": "safe_awareness",
+    "expected": {
+      "classification": "safe",
+      "message_category": "awareness",
+      "max_risk_score": 20
+    },
+    "notes": "Jordan Drug Control Directorate public anti-narcotics awareness festival invitation; no URL, open public event",
+    "source_type": "government",
+    "contains_url": false,
+    "expected_url_policy": "no_url"
+  },
+  {
+    "id": "official_safe_052",
+    "text": "PayPal: رمز الحماية الخاص بك هو 200303. لا تشارك الرمز الخاص بك.",
+    "category": "safe_otp_delivery",
+    "expected": {
+      "classification": "safe",
+      "message_category": "otp_delivery",
+      "max_risk_score": 20
+    },
+    "notes": "PayPal security code with explicit do-not-share instruction; standard fintech OTP pattern, no URL",
+    "source_type": "fintech",
+    "contains_url": false,
+    "expected_url_policy": "no_url"
+  },
+  {
+    "id": "official_safe_053",
+    "text": "PayPal: شكراً على تصديق رقم هاتفك. سجّل الدخول أو نزّل التطبيق لإدارة بيانات حسابك: https://py.pl/Vp0gY",
+    "category": "safe_service_notification",
+    "expected": {
+      "classification": "safe",
+      "message_category": "service_notification",
+      "max_risk_score": 35
+    },
+    "notes": "PayPal phone verification success notification with py.pl link; py.pl is PayPal's official short domain for app store links",
+    "source_type": "fintech",
+    "contains_url": true,
+    "expected_url_policy": "trusted_known"
+  },
+  {
+    "id": "official_safe_054",
+    "text": "ادخل السحب على 1000 دينار كل خميس لما تدفع عن طريق إي فواتيركم!",
+    "category": "safe_promotional",
+    "expected": {
+      "classification": "safe",
+      "message_category": "promotional",
+      "max_risk_score": 35
+    },
+    "notes": "eFawateerCom weekly prize draw promotional reminder encouraging payment via their platform; no URL, no credential request",
+    "source_type": "fintech",
+    "contains_url": false,
+    "expected_url_policy": "no_url"
+  }
+]

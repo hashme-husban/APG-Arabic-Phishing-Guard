@@ -1,0 +1,1854 @@
+[
+  {
+    "id": "safe_whatsapp_001",
+    "text": "جاري التحقق من واتساب",
+    "expected_classification": "safe",
+    "expected_max_score": 20,
+    "source": "notification",
+    "source_app": "com.whatsapp",
+    "notes": "WhatsApp status only"
+  },
+  {
+    "id": "safe_whatsapp_002",
+    "text": "واتساب: جاري التحقق",
+    "expected_classification": "safe",
+    "expected_max_score": 20,
+    "source": "notification",
+    "source_app": "com.whatsapp"
+  },
+  {
+    "id": "safe_whatsapp_003",
+    "text": "تم التحقق من واتساب بنجاح",
+    "expected_classification": "safe",
+    "expected_max_score": 20,
+    "source": "notification",
+    "source_app": "com.whatsapp"
+  },
+  {
+    "id": "safe_whatsapp_004",
+    "text": "WhatsApp verification in progress",
+    "expected_classification": "safe",
+    "expected_max_score": 20,
+    "source": "notification",
+    "source_app": "com.whatsapp"
+  },
+  {
+    "id": "safe_whatsapp_005",
+    "text": "واتساب يتحقق من رقم الهاتف الآن",
+    "expected_classification": "safe",
+    "expected_max_score": 30,
+    "source": "notification",
+    "source_app": "com.whatsapp"
+  },
+  {
+    "id": "safe_otp_001",
+    "text": "رمز التحقق الخاص بك هو 482193. لا تشاركه مع أي شخص.",
+    "expected_classification": "safe",
+    "expected_max_score": 30,
+    "source": "sms"
+  },
+  {
+    "id": "safe_otp_002",
+    "text": "رمز الدخول لمرة واحدة هو 123456. لا تفصح عنه لأي شخص.",
+    "expected_classification": "safe",
+    "expected_max_score": 30,
+    "source": "sms"
+  },
+  {
+    "id": "safe_otp_003",
+    "text": "لا تشارك رمز التحقق مع أي شخص.",
+    "expected_classification": "safe",
+    "expected_max_score": 25,
+    "source": "manual"
+  },
+  {
+    "id": "safe_otp_004",
+    "text": "كود التحقق الخاص بك 778899. لا ترسله لأي شخص.",
+    "expected_classification": "safe",
+    "expected_max_score": 30,
+    "source": "sms"
+  },
+  {
+    "id": "safe_otp_005",
+    "text": "رمزك هو 441122 للدخول إلى التطبيق. لا تعطه لأي شخص.",
+    "expected_classification": "safe",
+    "expected_max_score": 30,
+    "source": "sms"
+  },
+  {
+    "id": "safe_otp_006",
+    "text": "Your verification code is 104455. Do not share it.",
+    "expected_classification": "safe",
+    "expected_max_score": 30,
+    "source": "sms"
+  },
+  {
+    "id": "safe_otp_007",
+    "text": "لا تفصح عن كلمة المرور أو رمز التحقق لأي شخص.",
+    "expected_classification": "safe",
+    "expected_max_score": 25,
+    "source": "manual"
+  },
+  {
+    "id": "safe_otp_008",
+    "text": "البنك لن يطلب منك كلمة المرور أو رمز التحقق.",
+    "expected_classification": "safe",
+    "expected_max_score": 25,
+    "source": "sms",
+    "sender": "BANK"
+  },
+  {
+    "id": "safe_otp_009",
+    "text": "رمز المصادقة 239100، لا تشاركه حتى مع موظف البنك.",
+    "expected_classification": "safe",
+    "expected_max_score": 30,
+    "source": "sms"
+  },
+  {
+    "id": "safe_otp_010",
+    "text": "لأمانك لا ترسل رمز الدخول لأي جهة.",
+    "expected_classification": "safe",
+    "expected_max_score": 25,
+    "source": "manual"
+  },
+  {
+    "id": "safe_awareness_001",
+    "text": "رسالة توعوية: لا تضغط على الروابط المشبوهة.",
+    "expected_classification": "safe",
+    "expected_max_score": 25,
+    "source": "sms"
+  },
+  {
+    "id": "safe_awareness_002",
+    "text": "نصيحة أمنية: لا تشارك بيانات بطاقتك مع أي شخص.",
+    "expected_classification": "safe",
+    "expected_max_score": 25,
+    "source": "sms"
+  },
+  {
+    "id": "safe_awareness_003",
+    "text": "لحماية حسابك، لا تفصح عن الرقم السري.",
+    "expected_classification": "safe",
+    "expected_max_score": 25,
+    "source": "sms"
+  },
+  {
+    "id": "safe_awareness_004",
+    "text": "احذر من الرسائل التي تطلب رمز التحقق.",
+    "expected_classification": "safe",
+    "expected_max_score": 25,
+    "source": "manual"
+  },
+  {
+    "id": "safe_awareness_005",
+    "text": "البنك لا يطلب تحديث بياناتك عبر روابط خارجية.",
+    "expected_classification": "safe",
+    "expected_max_score": 25,
+    "source": "sms"
+  },
+  {
+    "id": "safe_awareness_006",
+    "text": "لا تقم بإرسال كلمة المرور في أي محادثة.",
+    "expected_classification": "safe",
+    "expected_max_score": 25,
+    "source": "manual"
+  },
+  {
+    "id": "safe_awareness_007",
+    "text": "إذا وصلتك رسالة تطلب CVV فتجاهلها وتواصل مع البنك.",
+    "expected_classification": "safe",
+    "expected_max_score": 25,
+    "source": "manual"
+  },
+  {
+    "id": "safe_awareness_008",
+    "text": "لا تدخل بيانات البطاقة في مواقع غير معروفة.",
+    "expected_classification": "safe",
+    "expected_max_score": 25,
+    "source": "manual"
+  },
+  {
+    "id": "safe_bank_001",
+    "text": "تم خصم 5.000 د.أ من بطاقتك لدى كارفور. الرصيد المتاح 120.500 د.أ",
+    "expected_classification": "safe",
+    "expected_max_score": 25,
+    "source": "sms",
+    "sender": "BANK"
+  },
+  {
+    "id": "safe_bank_002",
+    "text": "تم إيداع راتبك في حسابك البنكي.",
+    "expected_classification": "safe",
+    "expected_max_score": 25,
+    "source": "sms",
+    "sender": "BANK"
+  },
+  {
+    "id": "safe_bank_003",
+    "text": "تمت عملية شراء بقيمة 10 دنانير من بطاقتك.",
+    "expected_classification": "safe",
+    "expected_max_score": 25,
+    "source": "sms"
+  },
+  {
+    "id": "safe_bank_004",
+    "text": "تم تنفيذ حوالة من حسابك بنجاح.",
+    "expected_classification": "safe",
+    "expected_max_score": 25,
+    "source": "sms"
+  },
+  {
+    "id": "safe_bank_005",
+    "text": "تم الدفع بنجاح لدى محطة الوقود. الرصيد المتاح 45 دينار.",
+    "expected_classification": "safe",
+    "expected_max_score": 25,
+    "source": "sms"
+  },
+  {
+    "id": "safe_bank_006",
+    "text": "تم السحب من الصراف الآلي بقيمة 20 دينار.",
+    "expected_classification": "safe",
+    "expected_max_score": 25,
+    "source": "sms"
+  },
+  {
+    "id": "safe_bank_007",
+    "text": "تم تحديث رصيد حسابك بعد عملية ناجحة.",
+    "expected_classification": "safe",
+    "expected_max_score": 25,
+    "source": "sms"
+  },
+  {
+    "id": "safe_bank_008",
+    "text": "تم استلام حوالة واردة إلى حسابك.",
+    "expected_classification": "safe",
+    "expected_max_score": 25,
+    "source": "sms"
+  },
+  {
+    "id": "safe_bank_009",
+    "text": "خصم مبلغ 3 دنانير رسوم شهرية من الحساب.",
+    "expected_classification": "safe",
+    "expected_max_score": 25,
+    "source": "sms"
+  },
+  {
+    "id": "safe_bank_010",
+    "text": "تمت العملية بنجاح. رقم المرجع 7821.",
+    "expected_classification": "safe",
+    "expected_max_score": 25,
+    "source": "sms"
+  },
+  {
+    "id": "safe_casual_001",
+    "text": "وصلت؟ ابعثلي لما تفضى",
+    "expected_classification": "safe",
+    "expected_max_score": 25,
+    "source": "whatsapp",
+    "sender": "Ahmad",
+    "is_known_contact": true,
+    "sender_trust": "known"
+  },
+  {
+    "id": "safe_casual_002",
+    "text": "موعد الاجتماع الساعة 5 مساء اليوم.",
+    "expected_classification": "safe",
+    "expected_max_score": 30,
+    "source": "manual"
+  },
+  {
+    "id": "safe_casual_003",
+    "text": "تم استلام طلبك بنجاح.",
+    "expected_classification": "safe",
+    "expected_max_score": 30,
+    "source": "notification"
+  },
+  {
+    "id": "safe_casual_004",
+    "text": "تذكير: يبدأ التسجيل للفصل القادم يوم الاثنين عبر البوابة الرسمية للجامعة.",
+    "expected_classification": "safe",
+    "expected_max_score": 30,
+    "source": "sms"
+  },
+  {
+    "id": "safe_casual_005",
+    "text": "وصلت شحنتك إلى الفرع، يمكنك استلامها خلال أوقات الدوام.",
+    "expected_classification": "safe",
+    "expected_max_score": 30,
+    "source": "sms"
+  },
+  {
+    "id": "safe_casual_006",
+    "text": "تم قبول الحجز الخاص بك.",
+    "expected_classification": "safe",
+    "expected_max_score": 30,
+    "source": "notification"
+  },
+  {
+    "id": "safe_casual_007",
+    "text": "سأصل بعد عشر دقائق.",
+    "expected_classification": "safe",
+    "expected_max_score": 30,
+    "source": "whatsapp",
+    "is_known_contact": true
+  },
+  {
+    "id": "safe_casual_008",
+    "text": "تم نشر جدول المحاضرات على الموقع الرسمي.",
+    "expected_classification": "safe",
+    "expected_max_score": 30,
+    "source": "email"
+  },
+  {
+    "id": "safe_casual_009",
+    "text": "يرجى مراجعة مكتب التسجيل لاستلام البطاقة الجامعية.",
+    "expected_classification": "safe",
+    "expected_max_score": 30,
+    "source": "email"
+  },
+  {
+    "id": "safe_casual_010",
+    "text": "تم تحديث التطبيق إلى الإصدار الجديد.",
+    "expected_classification": "safe",
+    "expected_max_score": 30,
+    "source": "notification"
+  },
+  {
+    "id": "safe_casual_011",
+    "text": "باقي على موعد الطبيب ساعة واحدة.",
+    "expected_classification": "safe",
+    "expected_max_score": 30,
+    "source": "sms"
+  },
+  {
+    "id": "safe_casual_012",
+    "text": "شكراً لتواصلك معنا، تم إغلاق التذكرة.",
+    "expected_classification": "safe",
+    "expected_max_score": 30,
+    "source": "email"
+  },
+  {
+    "id": "suspicious_001",
+    "text": "يوجد تحديث مهم لحسابك البنكي، يرجى المراجعة.",
+    "expected_classification": "suspicious",
+    "expected_min_score": 40,
+    "expected_max_score": 70,
+    "source": "sms"
+  },
+  {
+    "id": "suspicious_002",
+    "text": "تنبيه من البنك: يرجى التأكد من بيانات حسابك.",
+    "expected_classification": "suspicious",
+    "expected_min_score": 40,
+    "expected_max_score": 70,
+    "source": "sms"
+  },
+  {
+    "id": "suspicious_003",
+    "text": "هناك نشاط غير معتاد على حسابك.",
+    "expected_classification": "suspicious",
+    "expected_min_score": 40,
+    "expected_max_score": 70,
+    "source": "sms"
+  },
+  {
+    "id": "suspicious_004",
+    "text": "راجع حسابك البنكي من خلال الرابط.",
+    "expected_classification": "suspicious",
+    "expected_min_score": 40,
+    "expected_max_score": 70,
+    "source": "sms"
+  },
+  {
+    "id": "suspicious_005",
+    "text": "يرجى تحديث معلومات الحساب قريبًا.",
+    "expected_classification": "suspicious",
+    "expected_min_score": 40,
+    "expected_max_score": 70,
+    "source": "sms"
+  },
+  {
+    "id": "suspicious_006",
+    "text": "تم رصد محاولة دخول غير معروفة، يرجى مراجعة الحساب.",
+    "expected_classification": "suspicious",
+    "expected_min_score": 40,
+    "expected_max_score": 70,
+    "source": "sms"
+  },
+  {
+    "id": "suspicious_007",
+    "text": "يرجى مراجعة حسابك في أقرب وقت.",
+    "expected_classification": "suspicious",
+    "expected_min_score": 31,
+    "expected_max_score": 70,
+    "source": "sms"
+  },
+  {
+    "id": "suspicious_008",
+    "text": "تم رصد نشاط غير معتاد، تحقق من المصدر.",
+    "expected_classification": "suspicious",
+    "expected_min_score": 31,
+    "expected_max_score": 70,
+    "source": "sms"
+  },
+  {
+    "id": "suspicious_009",
+    "text": "اضغط هنا لمتابعة الطلب.",
+    "expected_classification": "suspicious",
+    "expected_min_score": 31,
+    "expected_max_score": 70,
+    "source": "sms"
+  },
+  {
+    "id": "suspicious_010",
+    "text": "يوجد تحديث مهم لحسابك.",
+    "expected_classification": "suspicious",
+    "expected_min_score": 31,
+    "expected_max_score": 70,
+    "source": "sms"
+  },
+  {
+    "id": "suspicious_011",
+    "text": "الرجاء تأكيد بياناتك لاحقًا.",
+    "expected_classification": "suspicious",
+    "expected_min_score": 31,
+    "expected_max_score": 70,
+    "source": "sms"
+  },
+  {
+    "id": "suspicious_012",
+    "text": "رسالة من البنك: راجع حالة الحساب.",
+    "expected_classification": "suspicious",
+    "expected_min_score": 31,
+    "expected_max_score": 70,
+    "source": "sms"
+  },
+  {
+    "id": "suspicious_013",
+    "text": "هناك تحديث في ملفك المالي.",
+    "expected_classification": "suspicious",
+    "expected_min_score": 31,
+    "expected_max_score": 70,
+    "source": "sms",
+    "is_known_contact": false
+  },
+  {
+    "id": "suspicious_014",
+    "text": "راجع حسابك عبر http://example.com/info",
+    "expected_classification": "suspicious",
+    "expected_min_score": 40,
+    "expected_max_score": 70,
+    "source": "sms"
+  },
+  {
+    "id": "suspicious_015",
+    "text": "يرجى الدخول إلى البوابة للتأكد من حالة الحساب.",
+    "expected_classification": "suspicious",
+    "expected_min_score": 31,
+    "expected_max_score": 70,
+    "source": "email"
+  },
+  {
+    "id": "suspicious_016",
+    "text": "تنبيه: معلومات الحساب بحاجة إلى مراجعة.",
+    "expected_classification": "suspicious",
+    "expected_min_score": 31,
+    "expected_max_score": 70,
+    "source": "sms"
+  },
+  {
+    "id": "suspicious_017",
+    "text": "حسابك يحتاج مراجعة خلال 24 ساعة.",
+    "expected_classification": "suspicious",
+    "expected_min_score": 40,
+    "expected_max_score": 70,
+    "source": "sms"
+  },
+  {
+    "id": "suspicious_018",
+    "text": "يوجد رابط جديد لمراجعة خدمات البنك.",
+    "expected_classification": "suspicious",
+    "expected_min_score": 40,
+    "expected_max_score": 70,
+    "source": "sms"
+  },
+  {
+    "id": "suspicious_019",
+    "text": "تم تسجيل دخول جديد إلى حسابك، تحقق من النشاط.",
+    "expected_classification": "suspicious",
+    "expected_min_score": 31,
+    "expected_max_score": 70,
+    "source": "email"
+  },
+  {
+    "id": "suspicious_020",
+    "text": "تنبيه أمني: يرجى مراجعة إعدادات الحساب.",
+    "expected_classification": "suspicious",
+    "expected_min_score": 31,
+    "expected_max_score": 70,
+    "source": "email"
+  },
+  {
+    "id": "danger_otp_001",
+    "text": "أرسل رمز OTP لتأكيد حسابك.",
+    "expected_classification": "dangerous",
+    "expected_min_score": 85,
+    "source": "sms",
+    "must_not_be_safe": true
+  },
+  {
+    "id": "danger_otp_002",
+    "text": "شارك رمز التحقق معنا.",
+    "expected_classification": "dangerous",
+    "expected_min_score": 85,
+    "source": "sms",
+    "must_not_be_safe": true
+  },
+  {
+    "id": "danger_otp_003",
+    "text": "ادخل رمز التحقق عبر الرابط التالي.",
+    "expected_classification": "dangerous",
+    "expected_min_score": 85,
+    "source": "sms",
+    "must_not_be_safe": true
+  },
+  {
+    "id": "danger_otp_004",
+    "text": "شو رمز واتساب اللي وصلك؟",
+    "expected_classification": "dangerous",
+    "expected_min_score": 85,
+    "source": "whatsapp",
+    "sender": "Ahmad",
+    "is_known_contact": true,
+    "sender_trust": "known",
+    "must_not_be_safe": true
+  },
+  {
+    "id": "danger_otp_005",
+    "text": "ابعثلي كود التحقق حتى أكمل العملية.",
+    "expected_classification": "dangerous",
+    "expected_min_score": 85,
+    "source": "whatsapp",
+    "is_known_contact": true,
+    "must_not_be_safe": true
+  },
+  {
+    "id": "danger_otp_006",
+    "text": "اكتب رمز الدخول لمرة واحدة هنا.",
+    "expected_classification": "dangerous",
+    "expected_min_score": 85,
+    "source": "sms",
+    "must_not_be_safe": true
+  },
+  {
+    "id": "danger_otp_007",
+    "text": "زودنا برمز المصادقة لتحديث الملف.",
+    "expected_classification": "dangerous",
+    "expected_min_score": 85,
+    "source": "sms",
+    "must_not_be_safe": true
+  },
+  {
+    "id": "danger_otp_008",
+    "text": "هات رمز التفعيل اللي وصلك.",
+    "expected_classification": "dangerous",
+    "expected_min_score": 85,
+    "source": "whatsapp",
+    "must_not_be_safe": true
+  },
+  {
+    "id": "danger_otp_009",
+    "text": "send otp now to verify account",
+    "expected_classification": "dangerous",
+    "expected_min_score": 85,
+    "source": "sms",
+    "must_not_be_safe": true
+  },
+  {
+    "id": "danger_otp_010",
+    "text": "يرجى إرسال رمز التحقق للمتابعة.",
+    "expected_classification": "dangerous",
+    "expected_min_score": 85,
+    "source": "sms",
+    "must_not_be_safe": true
+  },
+  {
+    "id": "danger_credential_001",
+    "text": "زودنا برقم البطاقة و CVV لإلغاء الحظر.",
+    "expected_classification": "dangerous",
+    "expected_min_score": 90,
+    "source": "sms",
+    "must_not_be_safe": true
+  },
+  {
+    "id": "danger_credential_002",
+    "text": "اعطيني رمز بطاقتك البنكية.",
+    "expected_classification": "dangerous",
+    "expected_min_score": 90,
+    "source": "whatsapp",
+    "must_not_be_safe": true
+  },
+  {
+    "id": "danger_credential_003",
+    "text": "ادخل كلمة المرور الآن لتأكيد الحساب.",
+    "expected_classification": "dangerous",
+    "expected_min_score": 90,
+    "source": "sms",
+    "must_not_be_safe": true
+  },
+  {
+    "id": "danger_credential_004",
+    "text": "سيتم إغلاق حسابك إذا لم تدخل كلمة المرور الآن.",
+    "expected_classification": "dangerous",
+    "expected_min_score": 90,
+    "source": "sms",
+    "must_not_be_safe": true
+  },
+  {
+    "id": "danger_credential_005",
+    "text": "ارسل الرقم السري للمتابعة.",
+    "expected_classification": "dangerous",
+    "expected_min_score": 90,
+    "source": "sms",
+    "must_not_be_safe": true
+  },
+  {
+    "id": "danger_credential_006",
+    "text": "يرجى إدخال CVV لتأكيد العملية.",
+    "expected_classification": "dangerous",
+    "expected_min_score": 90,
+    "source": "sms",
+    "must_not_be_safe": true
+  },
+  {
+    "id": "danger_credential_007",
+    "text": "صورلي البطاقة من الجهتين حتى أفعل الحساب.",
+    "expected_classification": "dangerous",
+    "expected_min_score": 85,
+    "source": "whatsapp",
+    "must_not_be_safe": true
+  },
+  {
+    "id": "danger_credential_008",
+    "text": "قدم رقم الحساب والرقم السري لإكمال التحقق.",
+    "expected_classification": "dangerous",
+    "expected_min_score": 90,
+    "source": "sms",
+    "must_not_be_safe": true
+  },
+  {
+    "id": "danger_credential_009",
+    "text": "اكتب PIN الخاص بالبطاقة.",
+    "expected_classification": "dangerous",
+    "expected_min_score": 90,
+    "source": "sms",
+    "must_not_be_safe": true
+  },
+  {
+    "id": "danger_credential_010",
+    "text": "provide your card number and cvc to unlock account",
+    "expected_classification": "dangerous",
+    "expected_min_score": 90,
+    "source": "sms",
+    "must_not_be_safe": true
+  },
+  {
+    "id": "danger_url_001",
+    "text": "تم تعليق حسابك البنكي، حدث بياناتك فورًا عبر الرابط http://bit.ly/abc",
+    "expected_classification": "dangerous",
+    "expected_min_score": 90,
+    "source": "sms",
+    "must_not_be_safe": true
+  },
+  {
+    "id": "danger_url_002",
+    "text": "اضغط هنا لتحديث بيانات حسابك البنكي.",
+    "expected_classification": "dangerous",
+    "expected_min_score": 85,
+    "source": "sms",
+    "must_not_be_safe": true
+  },
+  {
+    "id": "danger_url_003",
+    "text": "آخر فرصة لتفعيل حسابك، أدخل بياناتك عبر الرابط.",
+    "expected_classification": "dangerous",
+    "expected_min_score": 85,
+    "source": "sms",
+    "must_not_be_safe": true
+  },
+  {
+    "id": "danger_url_004",
+    "text": "ادخل بياناتك عبر الرابط لتحديث حسابك البنكي.",
+    "expected_classification": "dangerous",
+    "expected_min_score": 85,
+    "source": "sms",
+    "must_not_be_safe": true
+  },
+  {
+    "id": "danger_url_005",
+    "text": "حسابك البنكي موقوف، اضغط الرابط لتأكيد الحساب.",
+    "expected_classification": "dangerous",
+    "expected_min_score": 85,
+    "source": "sms",
+    "must_not_be_safe": true
+  },
+  {
+    "id": "danger_url_006",
+    "text": "تحديث بياناتك مطلوب عبر http://secure-bank-login.xyz",
+    "expected_classification": "dangerous",
+    "expected_min_score": 85,
+    "source": "sms",
+    "must_not_be_safe": true
+  },
+  {
+    "id": "danger_url_007",
+    "text": "اضغط الرابط التالي لتفعيل البطاقة البنكية.",
+    "expected_classification": "dangerous",
+    "expected_min_score": 85,
+    "source": "sms",
+    "must_not_be_safe": true
+  },
+  {
+    "id": "danger_url_008",
+    "text": "تم إيقاف الحساب، افتح الرابط وسجل الدخول الآن.",
+    "expected_classification": "dangerous",
+    "expected_min_score": 85,
+    "source": "sms",
+    "must_not_be_safe": true
+  },
+  {
+    "id": "danger_url_009",
+    "text": "عاجل: حدث بيانات حسابك عبر www.bank-secure-update.xyz",
+    "expected_classification": "dangerous",
+    "expected_min_score": 85,
+    "source": "sms",
+    "must_not_be_safe": true
+  },
+  {
+    "id": "danger_url_010",
+    "text": "سيتم إغلاق حسابك خلال 24 ساعة، اضغط الرابط لتأكيد الحساب.",
+    "expected_classification": "dangerous",
+    "expected_min_score": 90,
+    "source": "sms",
+    "must_not_be_safe": true
+  },
+  {
+    "id": "danger_threat_001",
+    "text": "تم تعليق حسابك البنكي، حدث بياناتك فورًا عبر الرابط http://secure-bank-login.xyz",
+    "expected_classification": "dangerous",
+    "expected_min_score": 90,
+    "source": "sms",
+    "must_not_be_safe": true
+  },
+  {
+    "id": "danger_threat_002",
+    "text": "سيتم إغلاق حسابك إذا لم تدخل كلمة المرور الآن.",
+    "expected_classification": "dangerous",
+    "expected_min_score": 90,
+    "source": "sms",
+    "must_not_be_safe": true
+  },
+  {
+    "id": "danger_threat_003",
+    "text": "آخر فرصة لتفعيل حسابك، أدخل بياناتك عبر الرابط.",
+    "expected_classification": "dangerous",
+    "expected_min_score": 85,
+    "source": "sms",
+    "must_not_be_safe": true
+  },
+  {
+    "id": "danger_threat_004",
+    "text": "تم حظر حسابك مؤقتًا، سجل الدخول الآن.",
+    "expected_classification": "dangerous",
+    "expected_min_score": 75,
+    "source": "sms",
+    "must_not_be_safe": true
+  },
+  {
+    "id": "danger_threat_005",
+    "text": "عاجل: أرسل رمز الدخول لتجنب إيقاف الحساب.",
+    "expected_classification": "dangerous",
+    "expected_min_score": 85,
+    "source": "sms",
+    "must_not_be_safe": true
+  },
+  {
+    "id": "golden_variant_001",
+    "text": "جاري التحقق من واتساب",
+    "expected_classification": "safe",
+    "expected_max_score": 20,
+    "source": "notification",
+    "source_app": "com.whatsapp",
+    "notes": "WhatsApp status only"
+  },
+  {
+    "id": "golden_variant_002",
+    "text": "واتساب: جاري التحقق",
+    "expected_classification": "safe",
+    "expected_max_score": 20,
+    "source": "notification",
+    "source_app": "com.whatsapp"
+  },
+  {
+    "id": "golden_variant_003",
+    "text": "تم التحقق من واتساب بنجاح",
+    "expected_classification": "safe",
+    "expected_max_score": 20,
+    "source": "notification",
+    "source_app": "com.whatsapp",
+    "is_known_contact": true,
+    "sender": "Known Contact",
+    "sender_trust": "known"
+  },
+  {
+    "id": "golden_variant_004",
+    "text": "WhatsApp verification in progress",
+    "expected_classification": "safe",
+    "expected_max_score": 20,
+    "source": "notification",
+    "source_app": "com.whatsapp"
+  },
+  {
+    "id": "golden_variant_005",
+    "text": "واتساب يتحقق من رقم الهاتف الآن",
+    "expected_classification": "safe",
+    "expected_max_score": 30,
+    "source": "notification",
+    "source_app": "com.whatsapp"
+  },
+  {
+    "id": "golden_variant_006",
+    "text": "رمز التحقق الخاص بك هو 482193. لا تشاركه مع أي شخص.",
+    "expected_classification": "safe",
+    "expected_max_score": 30,
+    "source": "sms",
+    "is_known_contact": true,
+    "sender": "Known Contact",
+    "sender_trust": "known"
+  },
+  {
+    "id": "golden_variant_007",
+    "text": "رمز الدخول لمرة واحدة هو 123456. لا تفصح عنه لأي شخص.",
+    "expected_classification": "safe",
+    "expected_max_score": 30,
+    "source": "sms"
+  },
+  {
+    "id": "golden_variant_008",
+    "text": "لا تشارك رمز التحقق مع أي شخص.",
+    "expected_classification": "safe",
+    "expected_max_score": 25,
+    "source": "manual"
+  },
+  {
+    "id": "golden_variant_009",
+    "text": "كود التحقق الخاص بك 778899. لا ترسله لأي شخص.",
+    "expected_classification": "safe",
+    "expected_max_score": 30,
+    "source": "sms",
+    "is_known_contact": true,
+    "sender": "Known Contact",
+    "sender_trust": "known"
+  },
+  {
+    "id": "golden_variant_010",
+    "text": "رمزك هو 441122 للدخول إلى التطبيق. لا تعطه لأي شخص.",
+    "expected_classification": "safe",
+    "expected_max_score": 30,
+    "source": "sms"
+  },
+  {
+    "id": "golden_variant_011",
+    "text": "Your verification code is 104455. Do not share it.",
+    "expected_classification": "safe",
+    "expected_max_score": 30,
+    "source": "sms"
+  },
+  {
+    "id": "golden_variant_012",
+    "text": "لا تفصح عن كلمة المرور أو رمز التحقق لأي شخص.",
+    "expected_classification": "safe",
+    "expected_max_score": 25,
+    "source": "manual",
+    "is_known_contact": true,
+    "sender": "Known Contact",
+    "sender_trust": "known"
+  },
+  {
+    "id": "golden_variant_013",
+    "text": "البنك لن يطلب منك كلمة المرور أو رمز التحقق.",
+    "expected_classification": "safe",
+    "expected_max_score": 25,
+    "source": "sms",
+    "sender": "BANK"
+  },
+  {
+    "id": "golden_variant_014",
+    "text": "رمز المصادقة 239100، لا تشاركه حتى مع موظف البنك.",
+    "expected_classification": "safe",
+    "expected_max_score": 30,
+    "source": "sms"
+  },
+  {
+    "id": "golden_variant_015",
+    "text": "لأمانك لا ترسل رمز الدخول لأي جهة.",
+    "expected_classification": "safe",
+    "expected_max_score": 25,
+    "source": "manual",
+    "is_known_contact": true,
+    "sender": "Known Contact",
+    "sender_trust": "known"
+  },
+  {
+    "id": "golden_variant_016",
+    "text": "رسالة توعوية: لا تضغط على الروابط المشبوهة.",
+    "expected_classification": "safe",
+    "expected_max_score": 25,
+    "source": "sms"
+  },
+  {
+    "id": "golden_variant_017",
+    "text": "نصيحة أمنية: لا تشارك بيانات بطاقتك مع أي شخص.",
+    "expected_classification": "safe",
+    "expected_max_score": 25,
+    "source": "sms"
+  },
+  {
+    "id": "golden_variant_018",
+    "text": "لحماية حسابك، لا تفصح عن الرقم السري.",
+    "expected_classification": "safe",
+    "expected_max_score": 25,
+    "source": "sms",
+    "is_known_contact": true,
+    "sender": "Known Contact",
+    "sender_trust": "known"
+  },
+  {
+    "id": "golden_variant_019",
+    "text": "احذر من الرسائل التي تطلب رمز التحقق.",
+    "expected_classification": "safe",
+    "expected_max_score": 25,
+    "source": "manual"
+  },
+  {
+    "id": "golden_variant_020",
+    "text": "البنك لا يطلب تحديث بياناتك عبر روابط خارجية.",
+    "expected_classification": "safe",
+    "expected_max_score": 25,
+    "source": "sms"
+  },
+  {
+    "id": "golden_variant_021",
+    "text": "لا تقم بإرسال كلمة المرور في أي محادثة.",
+    "expected_classification": "safe",
+    "expected_max_score": 25,
+    "source": "manual",
+    "is_known_contact": true,
+    "sender": "Known Contact",
+    "sender_trust": "known"
+  },
+  {
+    "id": "golden_variant_022",
+    "text": "إذا وصلتك رسالة تطلب CVV فتجاهلها وتواصل مع البنك.",
+    "expected_classification": "safe",
+    "expected_max_score": 25,
+    "source": "manual"
+  },
+  {
+    "id": "golden_variant_023",
+    "text": "لا تدخل بيانات البطاقة في مواقع غير معروفة.",
+    "expected_classification": "safe",
+    "expected_max_score": 25,
+    "source": "manual"
+  },
+  {
+    "id": "golden_variant_024",
+    "text": "تم خصم 5.000 د.أ من بطاقتك لدى كارفور. الرصيد المتاح 120.500 د.أ",
+    "expected_classification": "safe",
+    "expected_max_score": 25,
+    "source": "sms",
+    "sender": "Known Contact",
+    "is_known_contact": true,
+    "sender_trust": "known"
+  },
+  {
+    "id": "golden_variant_025",
+    "text": "تم إيداع راتبك في حسابك البنكي.",
+    "expected_classification": "safe",
+    "expected_max_score": 25,
+    "source": "sms",
+    "sender": "BANK"
+  },
+  {
+    "id": "golden_variant_026",
+    "text": "تمت عملية شراء بقيمة 10 دنانير من بطاقتك.",
+    "expected_classification": "safe",
+    "expected_max_score": 25,
+    "source": "sms"
+  },
+  {
+    "id": "golden_variant_027",
+    "text": "تم تنفيذ حوالة من حسابك بنجاح.",
+    "expected_classification": "safe",
+    "expected_max_score": 25,
+    "source": "sms",
+    "is_known_contact": true,
+    "sender": "Known Contact",
+    "sender_trust": "known"
+  },
+  {
+    "id": "golden_variant_028",
+    "text": "تم الدفع بنجاح لدى محطة الوقود. الرصيد المتاح 45 دينار.",
+    "expected_classification": "safe",
+    "expected_max_score": 25,
+    "source": "sms"
+  },
+  {
+    "id": "golden_variant_029",
+    "text": "تم السحب من الصراف الآلي بقيمة 20 دينار.",
+    "expected_classification": "safe",
+    "expected_max_score": 25,
+    "source": "sms"
+  },
+  {
+    "id": "golden_variant_030",
+    "text": "تم تحديث رصيد حسابك بعد عملية ناجحة.",
+    "expected_classification": "safe",
+    "expected_max_score": 25,
+    "source": "sms",
+    "is_known_contact": true,
+    "sender": "Known Contact",
+    "sender_trust": "known"
+  },
+  {
+    "id": "golden_variant_031",
+    "text": "تم استلام حوالة واردة إلى حسابك.",
+    "expected_classification": "safe",
+    "expected_max_score": 25,
+    "source": "sms"
+  },
+  {
+    "id": "golden_variant_032",
+    "text": "خصم مبلغ 3 دنانير رسوم شهرية من الحساب.",
+    "expected_classification": "safe",
+    "expected_max_score": 25,
+    "source": "sms"
+  },
+  {
+    "id": "golden_variant_033",
+    "text": "تمت العملية بنجاح. رقم المرجع 7821.",
+    "expected_classification": "safe",
+    "expected_max_score": 25,
+    "source": "sms",
+    "is_known_contact": true,
+    "sender": "Known Contact",
+    "sender_trust": "known"
+  },
+  {
+    "id": "golden_variant_034",
+    "text": "وصلت؟ ابعثلي لما تفضى",
+    "expected_classification": "safe",
+    "expected_max_score": 25,
+    "source": "whatsapp",
+    "sender": "Ahmad",
+    "is_known_contact": true,
+    "sender_trust": "known"
+  },
+  {
+    "id": "golden_variant_035",
+    "text": "موعد الاجتماع الساعة 5 مساء اليوم.",
+    "expected_classification": "safe",
+    "expected_max_score": 30,
+    "source": "manual"
+  },
+  {
+    "id": "golden_variant_036",
+    "text": "تم استلام طلبك بنجاح.",
+    "expected_classification": "safe",
+    "expected_max_score": 30,
+    "source": "notification",
+    "is_known_contact": true,
+    "sender": "Known Contact",
+    "sender_trust": "known"
+  },
+  {
+    "id": "golden_variant_037",
+    "text": "تذكير: يبدأ التسجيل للفصل القادم يوم الاثنين عبر البوابة الرسمية للجامعة.",
+    "expected_classification": "safe",
+    "expected_max_score": 30,
+    "source": "sms"
+  },
+  {
+    "id": "golden_variant_038",
+    "text": "وصلت شحنتك إلى الفرع، يمكنك استلامها خلال أوقات الدوام.",
+    "expected_classification": "safe",
+    "expected_max_score": 30,
+    "source": "sms"
+  },
+  {
+    "id": "golden_variant_039",
+    "text": "تم قبول الحجز الخاص بك.",
+    "expected_classification": "safe",
+    "expected_max_score": 30,
+    "source": "notification",
+    "is_known_contact": true,
+    "sender": "Known Contact",
+    "sender_trust": "known"
+  },
+  {
+    "id": "golden_variant_040",
+    "text": "سأصل بعد عشر دقائق.",
+    "expected_classification": "safe",
+    "expected_max_score": 30,
+    "source": "whatsapp",
+    "is_known_contact": true
+  },
+  {
+    "id": "golden_variant_041",
+    "text": "تم نشر جدول المحاضرات على الموقع الرسمي.",
+    "expected_classification": "safe",
+    "expected_max_score": 30,
+    "source": "email"
+  },
+  {
+    "id": "golden_variant_042",
+    "text": "يرجى مراجعة مكتب التسجيل لاستلام البطاقة الجامعية.",
+    "expected_classification": "safe",
+    "expected_max_score": 30,
+    "source": "email",
+    "is_known_contact": true,
+    "sender": "Known Contact",
+    "sender_trust": "known"
+  },
+  {
+    "id": "golden_variant_043",
+    "text": "تم تحديث التطبيق إلى الإصدار الجديد.",
+    "expected_classification": "safe",
+    "expected_max_score": 30,
+    "source": "notification"
+  },
+  {
+    "id": "golden_variant_044",
+    "text": "باقي على موعد الطبيب ساعة واحدة.",
+    "expected_classification": "safe",
+    "expected_max_score": 30,
+    "source": "sms"
+  },
+  {
+    "id": "golden_variant_045",
+    "text": "شكراً لتواصلك معنا، تم إغلاق التذكرة.",
+    "expected_classification": "safe",
+    "expected_max_score": 30,
+    "source": "email",
+    "is_known_contact": true,
+    "sender": "Known Contact",
+    "sender_trust": "known"
+  },
+  {
+    "id": "golden_variant_046",
+    "text": "يوجد تحديث مهم لحسابك البنكي، يرجى المراجعة.",
+    "expected_classification": "suspicious",
+    "expected_min_score": 40,
+    "expected_max_score": 70,
+    "source": "sms",
+    "is_known_contact": false,
+    "sender_trust": "unknown"
+  },
+  {
+    "id": "golden_variant_047",
+    "text": "تنبيه من البنك: يرجى التأكد من بيانات حسابك.",
+    "expected_classification": "suspicious",
+    "expected_min_score": 40,
+    "expected_max_score": 70,
+    "source": "sms",
+    "is_known_contact": false,
+    "sender_trust": "unknown"
+  },
+  {
+    "id": "golden_variant_048",
+    "text": "هناك نشاط غير معتاد على حسابك.",
+    "expected_classification": "suspicious",
+    "expected_min_score": 40,
+    "expected_max_score": 70,
+    "source": "sms",
+    "is_known_contact": false,
+    "sender_trust": "unknown"
+  },
+  {
+    "id": "golden_variant_049",
+    "text": "راجع حسابك البنكي من خلال الرابط.",
+    "expected_classification": "suspicious",
+    "expected_min_score": 40,
+    "expected_max_score": 70,
+    "source": "sms",
+    "is_known_contact": false,
+    "sender_trust": "unknown"
+  },
+  {
+    "id": "golden_variant_050",
+    "text": "يرجى تحديث معلومات الحساب قريبًا.",
+    "expected_classification": "suspicious",
+    "expected_min_score": 40,
+    "expected_max_score": 70,
+    "source": "sms",
+    "is_known_contact": false,
+    "sender_trust": "unknown"
+  },
+  {
+    "id": "golden_variant_051",
+    "text": "تم رصد محاولة دخول غير معروفة، يرجى مراجعة الحساب.",
+    "expected_classification": "suspicious",
+    "expected_min_score": 40,
+    "expected_max_score": 70,
+    "source": "sms",
+    "is_known_contact": false,
+    "sender_trust": "unknown"
+  },
+  {
+    "id": "golden_variant_052",
+    "text": "يرجى مراجعة حسابك في أقرب وقت.",
+    "expected_classification": "suspicious",
+    "expected_min_score": 31,
+    "expected_max_score": 70,
+    "source": "sms",
+    "is_known_contact": false,
+    "sender_trust": "unknown"
+  },
+  {
+    "id": "golden_variant_053",
+    "text": "تم رصد نشاط غير معتاد، تحقق من المصدر.",
+    "expected_classification": "suspicious",
+    "expected_min_score": 31,
+    "expected_max_score": 70,
+    "source": "sms",
+    "is_known_contact": false,
+    "sender_trust": "unknown"
+  },
+  {
+    "id": "golden_variant_054",
+    "text": "اضغط هنا لمتابعة الطلب.",
+    "expected_classification": "suspicious",
+    "expected_min_score": 31,
+    "expected_max_score": 70,
+    "source": "sms",
+    "is_known_contact": false,
+    "sender_trust": "unknown"
+  },
+  {
+    "id": "golden_variant_055",
+    "text": "يوجد تحديث مهم لحسابك.",
+    "expected_classification": "suspicious",
+    "expected_min_score": 31,
+    "expected_max_score": 70,
+    "source": "sms",
+    "is_known_contact": false,
+    "sender_trust": "unknown"
+  },
+  {
+    "id": "golden_variant_056",
+    "text": "الرجاء تأكيد بياناتك لاحقًا.",
+    "expected_classification": "suspicious",
+    "expected_min_score": 31,
+    "expected_max_score": 70,
+    "source": "sms",
+    "is_known_contact": false,
+    "sender_trust": "unknown"
+  },
+  {
+    "id": "golden_variant_057",
+    "text": "رسالة من البنك: راجع حالة الحساب.",
+    "expected_classification": "suspicious",
+    "expected_min_score": 31,
+    "expected_max_score": 70,
+    "source": "sms",
+    "is_known_contact": false,
+    "sender_trust": "unknown"
+  },
+  {
+    "id": "golden_variant_058",
+    "text": "هناك تحديث في ملفك المالي.",
+    "expected_classification": "suspicious",
+    "expected_min_score": 31,
+    "expected_max_score": 70,
+    "source": "sms",
+    "is_known_contact": false,
+    "sender_trust": "unknown"
+  },
+  {
+    "id": "golden_variant_059",
+    "text": "راجع حسابك عبر http://example.com/info",
+    "expected_classification": "suspicious",
+    "expected_min_score": 40,
+    "expected_max_score": 70,
+    "source": "sms",
+    "is_known_contact": false,
+    "sender_trust": "unknown"
+  },
+  {
+    "id": "golden_variant_060",
+    "text": "يرجى الدخول إلى البوابة للتأكد من حالة الحساب.",
+    "expected_classification": "suspicious",
+    "expected_min_score": 31,
+    "expected_max_score": 70,
+    "source": "email",
+    "is_known_contact": false,
+    "sender_trust": "unknown"
+  },
+  {
+    "id": "golden_variant_061",
+    "text": "تنبيه: معلومات الحساب بحاجة إلى مراجعة.",
+    "expected_classification": "suspicious",
+    "expected_min_score": 31,
+    "expected_max_score": 70,
+    "source": "sms",
+    "is_known_contact": false,
+    "sender_trust": "unknown"
+  },
+  {
+    "id": "golden_variant_062",
+    "text": "حسابك يحتاج مراجعة خلال 24 ساعة.",
+    "expected_classification": "suspicious",
+    "expected_min_score": 40,
+    "expected_max_score": 70,
+    "source": "sms",
+    "is_known_contact": false,
+    "sender_trust": "unknown"
+  },
+  {
+    "id": "golden_variant_063",
+    "text": "يوجد رابط جديد لمراجعة خدمات البنك.",
+    "expected_classification": "suspicious",
+    "expected_min_score": 40,
+    "expected_max_score": 70,
+    "source": "sms",
+    "is_known_contact": false,
+    "sender_trust": "unknown"
+  },
+  {
+    "id": "golden_variant_064",
+    "text": "تم تسجيل دخول جديد إلى حسابك، تحقق من النشاط.",
+    "expected_classification": "suspicious",
+    "expected_min_score": 31,
+    "expected_max_score": 70,
+    "source": "email",
+    "is_known_contact": false,
+    "sender_trust": "unknown"
+  },
+  {
+    "id": "golden_variant_065",
+    "text": "تنبيه أمني: يرجى مراجعة إعدادات الحساب.",
+    "expected_classification": "suspicious",
+    "expected_min_score": 31,
+    "expected_max_score": 70,
+    "source": "email",
+    "is_known_contact": false,
+    "sender_trust": "unknown"
+  },
+  {
+    "id": "golden_variant_066",
+    "text": "أرسل رمز OTP لتأكيد حسابك.",
+    "expected_classification": "dangerous",
+    "expected_min_score": 85,
+    "source": "sms",
+    "must_not_be_safe": true,
+    "sender": "Ahmad",
+    "is_known_contact": true,
+    "sender_trust": "known"
+  },
+  {
+    "id": "golden_variant_067",
+    "text": "شارك رمز التحقق معنا.",
+    "expected_classification": "dangerous",
+    "expected_min_score": 85,
+    "source": "sms",
+    "must_not_be_safe": true,
+    "sender": "BANK"
+  },
+  {
+    "id": "golden_variant_068",
+    "text": "ادخل رمز التحقق عبر الرابط التالي.",
+    "expected_classification": "dangerous",
+    "expected_min_score": 85,
+    "source": "sms",
+    "must_not_be_safe": true,
+    "sender": "Ahmad",
+    "is_known_contact": true,
+    "sender_trust": "known"
+  },
+  {
+    "id": "golden_variant_069",
+    "text": "شو رمز واتساب اللي وصلك؟",
+    "expected_classification": "dangerous",
+    "expected_min_score": 85,
+    "source": "whatsapp",
+    "sender": "BANK",
+    "is_known_contact": true,
+    "sender_trust": "known",
+    "must_not_be_safe": true
+  },
+  {
+    "id": "golden_variant_070",
+    "text": "ابعثلي كود التحقق حتى أكمل العملية.",
+    "expected_classification": "dangerous",
+    "expected_min_score": 85,
+    "source": "whatsapp",
+    "is_known_contact": true,
+    "must_not_be_safe": true,
+    "sender": "Ahmad",
+    "sender_trust": "known"
+  },
+  {
+    "id": "golden_variant_071",
+    "text": "اكتب رمز الدخول لمرة واحدة هنا.",
+    "expected_classification": "dangerous",
+    "expected_min_score": 85,
+    "source": "sms",
+    "must_not_be_safe": true,
+    "sender": "BANK"
+  },
+  {
+    "id": "golden_variant_072",
+    "text": "زودنا برمز المصادقة لتحديث الملف.",
+    "expected_classification": "dangerous",
+    "expected_min_score": 85,
+    "source": "sms",
+    "must_not_be_safe": true,
+    "sender": "Ahmad",
+    "is_known_contact": true,
+    "sender_trust": "known"
+  },
+  {
+    "id": "golden_variant_073",
+    "text": "هات رمز التفعيل اللي وصلك.",
+    "expected_classification": "dangerous",
+    "expected_min_score": 85,
+    "source": "whatsapp",
+    "must_not_be_safe": true,
+    "sender": "BANK"
+  },
+  {
+    "id": "golden_variant_074",
+    "text": "send otp now to verify account",
+    "expected_classification": "dangerous",
+    "expected_min_score": 85,
+    "source": "sms",
+    "must_not_be_safe": true,
+    "sender": "Ahmad",
+    "is_known_contact": true,
+    "sender_trust": "known"
+  },
+  {
+    "id": "golden_variant_075",
+    "text": "يرجى إرسال رمز التحقق للمتابعة.",
+    "expected_classification": "dangerous",
+    "expected_min_score": 85,
+    "source": "sms",
+    "must_not_be_safe": true,
+    "sender": "BANK"
+  },
+  {
+    "id": "golden_variant_076",
+    "text": "زودنا برقم البطاقة و CVV لإلغاء الحظر.",
+    "expected_classification": "dangerous",
+    "expected_min_score": 90,
+    "source": "sms",
+    "must_not_be_safe": true,
+    "sender": "Ahmad",
+    "is_known_contact": true,
+    "sender_trust": "known"
+  },
+  {
+    "id": "golden_variant_077",
+    "text": "اعطيني رمز بطاقتك البنكية.",
+    "expected_classification": "dangerous",
+    "expected_min_score": 90,
+    "source": "whatsapp",
+    "must_not_be_safe": true,
+    "sender": "BANK"
+  },
+  {
+    "id": "golden_variant_078",
+    "text": "ادخل كلمة المرور الآن لتأكيد الحساب.",
+    "expected_classification": "dangerous",
+    "expected_min_score": 90,
+    "source": "sms",
+    "must_not_be_safe": true,
+    "sender": "Ahmad",
+    "is_known_contact": true,
+    "sender_trust": "known"
+  },
+  {
+    "id": "golden_variant_079",
+    "text": "سيتم إغلاق حسابك إذا لم تدخل كلمة المرور الآن.",
+    "expected_classification": "dangerous",
+    "expected_min_score": 90,
+    "source": "sms",
+    "must_not_be_safe": true,
+    "sender": "BANK"
+  },
+  {
+    "id": "golden_variant_080",
+    "text": "ارسل الرقم السري للمتابعة.",
+    "expected_classification": "dangerous",
+    "expected_min_score": 90,
+    "source": "sms",
+    "must_not_be_safe": true,
+    "sender": "Ahmad",
+    "is_known_contact": true,
+    "sender_trust": "known"
+  },
+  {
+    "id": "golden_variant_081",
+    "text": "يرجى إدخال CVV لتأكيد العملية.",
+    "expected_classification": "dangerous",
+    "expected_min_score": 90,
+    "source": "sms",
+    "must_not_be_safe": true,
+    "sender": "BANK"
+  },
+  {
+    "id": "golden_variant_082",
+    "text": "صورلي البطاقة من الجهتين حتى أفعل الحساب.",
+    "expected_classification": "dangerous",
+    "expected_min_score": 85,
+    "source": "whatsapp",
+    "must_not_be_safe": true,
+    "sender": "Ahmad",
+    "is_known_contact": true,
+    "sender_trust": "known"
+  },
+  {
+    "id": "golden_variant_083",
+    "text": "قدم رقم الحساب والرقم السري لإكمال التحقق.",
+    "expected_classification": "dangerous",
+    "expected_min_score": 90,
+    "source": "sms",
+    "must_not_be_safe": true,
+    "sender": "BANK"
+  },
+  {
+    "id": "golden_variant_084",
+    "text": "اكتب PIN الخاص بالبطاقة.",
+    "expected_classification": "dangerous",
+    "expected_min_score": 90,
+    "source": "sms",
+    "must_not_be_safe": true,
+    "sender": "Ahmad",
+    "is_known_contact": true,
+    "sender_trust": "known"
+  },
+  {
+    "id": "golden_variant_085",
+    "text": "provide your card number and cvc to unlock account",
+    "expected_classification": "dangerous",
+    "expected_min_score": 90,
+    "source": "sms",
+    "must_not_be_safe": true,
+    "sender": "BANK"
+  },
+  {
+    "id": "golden_variant_086",
+    "text": "تم تعليق حسابك البنكي، حدث بياناتك فورًا عبر الرابط http://bit.ly/abc",
+    "expected_classification": "dangerous",
+    "expected_min_score": 90,
+    "source": "sms",
+    "must_not_be_safe": true,
+    "sender": "Ahmad",
+    "is_known_contact": true,
+    "sender_trust": "known"
+  },
+  {
+    "id": "golden_variant_087",
+    "text": "اضغط هنا لتحديث بيانات حسابك البنكي.",
+    "expected_classification": "dangerous",
+    "expected_min_score": 85,
+    "source": "sms",
+    "must_not_be_safe": true,
+    "sender": "BANK"
+  },
+  {
+    "id": "golden_variant_088",
+    "text": "آخر فرصة لتفعيل حسابك، أدخل بياناتك عبر الرابط.",
+    "expected_classification": "dangerous",
+    "expected_min_score": 85,
+    "source": "sms",
+    "must_not_be_safe": true,
+    "sender": "Ahmad",
+    "is_known_contact": true,
+    "sender_trust": "known"
+  },
+  {
+    "id": "golden_variant_089",
+    "text": "ادخل بياناتك عبر الرابط لتحديث حسابك البنكي.",
+    "expected_classification": "dangerous",
+    "expected_min_score": 85,
+    "source": "sms",
+    "must_not_be_safe": true,
+    "sender": "BANK"
+  },
+  {
+    "id": "golden_variant_090",
+    "text": "حسابك البنكي موقوف، اضغط الرابط لتأكيد الحساب.",
+    "expected_classification": "dangerous",
+    "expected_min_score": 85,
+    "source": "sms",
+    "must_not_be_safe": true,
+    "sender": "Ahmad",
+    "is_known_contact": true,
+    "sender_trust": "known"
+  },
+  {
+    "id": "golden_variant_091",
+    "text": "تحديث بياناتك مطلوب عبر http://secure-bank-login.xyz",
+    "expected_classification": "dangerous",
+    "expected_min_score": 85,
+    "source": "sms",
+    "must_not_be_safe": true,
+    "sender": "BANK"
+  },
+  {
+    "id": "golden_variant_092",
+    "text": "اضغط الرابط التالي لتفعيل البطاقة البنكية.",
+    "expected_classification": "dangerous",
+    "expected_min_score": 85,
+    "source": "sms",
+    "must_not_be_safe": true,
+    "sender": "Ahmad",
+    "is_known_contact": true,
+    "sender_trust": "known"
+  },
+  {
+    "id": "golden_variant_093",
+    "text": "تم إيقاف الحساب، افتح الرابط وسجل الدخول الآن.",
+    "expected_classification": "dangerous",
+    "expected_min_score": 85,
+    "source": "sms",
+    "must_not_be_safe": true,
+    "sender": "BANK"
+  },
+  {
+    "id": "golden_variant_094",
+    "text": "عاجل: حدث بيانات حسابك عبر www.bank-secure-update.xyz",
+    "expected_classification": "dangerous",
+    "expected_min_score": 85,
+    "source": "sms",
+    "must_not_be_safe": true,
+    "sender": "Ahmad",
+    "is_known_contact": true,
+    "sender_trust": "known"
+  },
+  {
+    "id": "golden_variant_095",
+    "text": "سيتم إغلاق حسابك خلال 24 ساعة، اضغط الرابط لتأكيد الحساب.",
+    "expected_classification": "dangerous",
+    "expected_min_score": 90,
+    "source": "sms",
+    "must_not_be_safe": true,
+    "sender": "BANK"
+  },
+  {
+    "id": "golden_variant_096",
+    "text": "تم تعليق حسابك البنكي، حدث بياناتك فورًا عبر الرابط http://secure-bank-login.xyz",
+    "expected_classification": "dangerous",
+    "expected_min_score": 90,
+    "source": "sms",
+    "must_not_be_safe": true,
+    "sender": "Ahmad",
+    "is_known_contact": true,
+    "sender_trust": "known"
+  },
+  {
+    "id": "golden_variant_097",
+    "text": "سيتم إغلاق حسابك إذا لم تدخل كلمة المرور الآن.",
+    "expected_classification": "dangerous",
+    "expected_min_score": 90,
+    "source": "sms",
+    "must_not_be_safe": true,
+    "sender": "BANK"
+  },
+  {
+    "id": "golden_variant_098",
+    "text": "آخر فرصة لتفعيل حسابك، أدخل بياناتك عبر الرابط.",
+    "expected_classification": "dangerous",
+    "expected_min_score": 85,
+    "source": "sms",
+    "must_not_be_safe": true,
+    "sender": "Ahmad",
+    "is_known_contact": true,
+    "sender_trust": "known"
+  },
+  {
+    "id": "golden_variant_099",
+    "text": "تم حظر حسابك مؤقتًا، سجل الدخول الآن.",
+    "expected_classification": "dangerous",
+    "expected_min_score": 75,
+    "source": "sms",
+    "must_not_be_safe": true,
+    "sender": "BANK"
+  },
+  {
+    "id": "golden_variant_100",
+    "text": "عاجل: أرسل رمز الدخول لتجنب إيقاف الحساب.",
+    "expected_classification": "dangerous",
+    "expected_min_score": 85,
+    "source": "sms",
+    "must_not_be_safe": true,
+    "sender": "Ahmad",
+    "is_known_contact": true,
+    "sender_trust": "known"
+  },
+  {
+    "id": "url_provider_malicious_001",
+    "text": "Meeting file: https://known-bad.example/login",
+    "expected_classification": "dangerous",
+    "source": "sms",
+    "expected_min_score": 95,
+    "urls": [
+      "https://known-bad.example/login"
+    ],
+    "mock_url_reputation": {
+      "known-bad.example": "malicious"
+    },
+    "must_not_be_safe": true
+  },
+  {
+    "id": "url_provider_clean_benign_001",
+    "text": "Class schedule is posted at https://university.example/schedule",
+    "expected_classification": "safe",
+    "source": "sms",
+    "expected_max_score": 30,
+    "urls": [
+      "https://university.example/schedule"
+    ],
+    "mock_url_reputation": {
+      "university.example": "clean"
+    }
+  },
+  {
+    "id": "url_provider_clean_credential_001",
+    "text": "Enter password at https://portal.example/login",
+    "expected_classification": "dangerous",
+    "source": "sms",
+    "expected_min_score": 90,
+    "urls": [
+      "https://portal.example/login"
+    ],
+    "mock_url_reputation": {
+      "portal.example": "clean"
+    },
+    "must_not_be_safe": true
+  },
+  {
+    "id": "url_provider_unknown_account_001",
+    "text": "Please update account information at https://new-service.example/update",
+    "expected_classification": "suspicious",
+    "source": "sms",
+    "expected_min_score": 50,
+    "expected_max_score": 70,
+    "urls": [
+      "https://new-service.example/update"
+    ],
+    "mock_url_reputation": {
+      "new-service.example": "unknown"
+    }
+  },
+  {
+    "id": "url_provider_shortener_bank_001",
+    "text": "Review bank account at bit.ly/bank-review",
+    "expected_classification": "suspicious",
+    "source": "sms",
+    "expected_min_score": 50,
+    "expected_max_score": 75,
+    "urls": [
+      "bit.ly/bank-review"
+    ],
+    "mock_url_reputation": {
+      "bit.ly": "unknown"
+    }
+  },
+  {
+    "id": "url_provider_shortener_bank_002",
+    "text": "Urgent update bank account at bit.ly/bank-update",
+    "expected_classification": "dangerous",
+    "source": "sms",
+    "expected_min_score": 85,
+    "urls": [
+      "bit.ly/bank-update"
+    ],
+    "mock_url_reputation": {
+      "bit.ly": "unknown"
+    },
+    "must_not_be_safe": true
+  },
+  {
+    "id": "url_provider_phishtank_001",
+    "text": "Open link to verify account https://phish.example/verify",
+    "expected_classification": "dangerous",
+    "source": "sms",
+    "expected_min_score": 95,
+    "urls": [
+      "https://phish.example/verify"
+    ],
+    "mock_url_reputation": {
+      "phish.example": {
+        "providers": [
+          {
+            "provider": "phishtank",
+            "status": "ok",
+            "verdict": "malicious"
+          }
+        ]
+      }
+    },
+    "must_not_be_safe": true
+  },
+  {
+    "id": "url_provider_vt_suspicious_001",
+    "text": "Account update available at https://odd.example/account",
+    "expected_classification": "suspicious",
+    "source": "sms",
+    "expected_min_score": 55,
+    "expected_max_score": 75,
+    "urls": [
+      "https://odd.example/account"
+    ],
+    "mock_url_reputation": {
+      "odd.example": {
+        "providers": [
+          {
+            "provider": "virustotal",
+            "status": "ok",
+            "verdict": "suspicious"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "url_provider_clean_awareness_001",
+    "text": "Security tip: do not open suspicious links such as https://example.com",
+    "expected_classification": "safe",
+    "source": "sms",
+    "expected_max_score": 25,
+    "urls": [
+      "https://example.com"
+    ],
+    "mock_url_reputation": {
+      "example.com": "clean"
+    }
+  },
+  {
+    "id": "url_provider_malicious_benign_text_001",
+    "text": "Photo from meeting https://evil.example/file",
+    "expected_classification": "dangerous",
+    "source": "sms",
+    "expected_min_score": 95,
+    "urls": [
+      "https://evil.example/file"
+    ],
+    "mock_url_reputation": {
+      "evil.example": "malicious"
+    },
+    "must_not_be_safe": true
+  }
+]

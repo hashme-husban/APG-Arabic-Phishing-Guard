@@ -1,0 +1,33 @@
+{
+  "base_weights": {
+    "sender": 0.14,
+    "policy": 0.18,
+    "text": 0.38,
+    "url": 0.30
+  },
+  "safe_max": 0.33,
+  "legit_max": 0.33,
+  "phishing_min": 0.72,
+  "strong_phishing": 0.84,
+  "strong_safe": 0.18,
+  "strong_legit": 0.18,
+  "high_risk_cutoff": 0.65,
+  "low_risk_cutoff": 0.35,
+  "huge_disagreement": 0.55,
+  "adjustments": {
+    "text_url_strong_boost": 0.09,
+    "text_url_moderate_boost": 0.055,
+    "text_policy_boost": 0.05,
+    "sender_policy_text_boost": 0.045,
+    "policy_sender_risk_boost": 0.05,
+    "trusted_sender_discount": 0.045,
+    "all_clear_discount": 0.07,
+    "disagreement_pull_to_center": 0.24
+  },
+  "confidence": {
+    "noise_threshold": 70,
+    "typo_threshold": 60,
+    "noise_penalty": 0.04,
+    "typo_penalty": 0.03
+  }
+}

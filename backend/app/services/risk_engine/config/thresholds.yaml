@@ -1,0 +1,61 @@
+# APG Risk Intelligence Engine v1 — Score Thresholds
+# All values configurable here; Python code falls back to these defaults if
+# YAML loading fails.
+
+verdict:
+  block_min: 76          # risk_score >= this -> block/dangerous
+  warn_min: 55           # risk_score >= this (but < block_min) -> warn/suspicious
+  caution_min: 31        # risk_score >= this (but < warn_min) -> caution/suspicious
+  # < caution_min -> allow/safe
+
+risk_level:
+  critical_min: 85
+  high_min: 65
+  medium_min: 40
+  low_min: 20
+  # < low_min -> minimal
+
+# Safe context caps — applied when no block evidence is present.
+# Prevents awareness / OTP-delivery / benign-transaction messages
+# from being scored high even if they mention sensitive words.
+safe_caps:
+  awareness: 20
+  otp_delivery: 25
+  transactional: 25
+  app_verification: 15
+  casual_known_contact: 10
+
+# Official safe-context caps — applied even when a URL is present.
+# All values are below caution_min (31) so the verdict resolves to "allow".
+# Never applied when dangerous_text_request / otp_request / password_request
+# / card_data_request is set, or when brand_impersonation / malicious URL detected.
+official_safe_caps:
+  bank_transaction: 25
+  payment_receipt: 25
+  government_notice: 28
+  service_notification: 30
+  subscription_notice: 30
+  survey: 30
+  promotional: 30
+
+# Definite-block base scores (score never falls below these when the rule fires)
+block_scores:
+  otp_request: 88
+  password_request: 92
+  card_data_request: 96
+  credential_link: 92          # credential_request + url
+  malicious_url: 98
+  url_urgency_account: 90      # url + account_update + (urgency|financial)
+  url_credential_request: 95   # credential_request + url (higher of the two)
+
+# AI advisory — models are advisory only, never override definite block/allow
+ai_advisory:
+  min_threshold: 65            # AI scaled score below this is ignored
+  max_no_context: 55           # AI alone, no suspicious signal -> cap contribution
+  max_with_suspicious: 68      # With suspicious signals -> slightly higher cap
+  only_for_ambiguous: true     # Do not apply when safe_context or definite_danger
+
+# Sender adjustments (additive to base score)
+sender_adjustments:
+  known_contact_reduction: -8   # Known contact, non-sensitive, low suspicion
+  unknown_financial_increase: 6 # Unknown sender + financial context + vague warning

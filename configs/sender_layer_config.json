@@ -1,0 +1,20 @@
+{
+  "free_email_domains": [
+    "gmail.com", "googlemail.com", "yahoo.com", "ymail.com", "hotmail.com", "outlook.com", "live.com", "icloud.com", "me.com", "proton.me", "protonmail.com", "aol.com", "mail.com", "zoho.com"
+  ],
+  "sensitive_sectors": [
+    "bank", "government", "wallet", "payment", "payment_wallet", "telecom", "email_cloud", "social_media", "healthcare"
+  ],
+  "risk_scores": {
+    "trusted_exact": 0.03,
+    "trusted_domain": 0.07,
+    "trusted_phone": 0.08,
+    "trusted_shortcode": 0.10,
+    "unknown": 0.43,
+    "unknown_sensitive": 0.62,
+    "display_alias_only": 0.78,
+    "free_email_sensitive_claim": 0.87,
+    "hard_claim_conflict": 0.94,
+    "soft_claim_conflict": 0.86
+  }
+}

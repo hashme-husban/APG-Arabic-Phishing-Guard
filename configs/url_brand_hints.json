@@ -1,0 +1,60 @@
+{
+  "entities": {
+    "generic_bank": {
+      "official_domains": [],
+      "expected_tokens": ["bank", "banking", "bnk", "card"]
+    },
+    "generic_payment_wallet": {
+      "official_domains": [],
+      "expected_tokens": ["pay", "wallet", "cash", "billing"]
+    },
+    "generic_shipping": {
+      "official_domains": [],
+      "expected_tokens": ["ship", "tracking", "delivery", "courier", "parcel"]
+    },
+    "generic_telecom": {
+      "official_domains": [],
+      "expected_tokens": ["telecom", "mobile", "sim", "internet"]
+    },
+    "generic_government": {
+      "official_domains": [],
+      "expected_tokens": ["gov", "government", "ministry", "service"]
+    },
+    "generic_ecommerce": {
+      "official_domains": [],
+      "expected_tokens": ["shop", "store", "order", "checkout"]
+    },
+    "generic_social": {
+      "official_domains": [],
+      "expected_tokens": ["whatsapp", "facebook", "meta", "instagram", "telegram"]
+    },
+    "generic_email_cloud": {
+      "official_domains": [],
+      "expected_tokens": ["mail", "cloud", "drive", "google", "icloud", "outlook"]
+    },
+    "generic_education": {
+      "official_domains": [],
+      "expected_tokens": ["edu", "university", "student", "portal"]
+    },
+    "generic_healthcare": {
+      "official_domains": [],
+      "expected_tokens": ["health", "hospital", "clinic", "medical"]
+    },
+    "sample_bank": {
+      "official_domains": ["samplebank.com", "samplebank.jo"],
+      "expected_tokens": ["samplebank", "sample-bank", "sbank"]
+    },
+    "google": {
+      "official_domains": ["google.com", "gmail.com", "accounts.google.com"],
+      "expected_tokens": ["google", "gmail", "gstatic"]
+    },
+    "microsoft": {
+      "official_domains": ["microsoft.com", "live.com", "outlook.com"],
+      "expected_tokens": ["microsoft", "outlook", "live"]
+    },
+    "meta": {
+      "official_domains": ["facebook.com", "meta.com", "instagram.com", "whatsapp.com"],
+      "expected_tokens": ["facebook", "meta", "instagram", "whatsapp"]
+    }
+  }
+}

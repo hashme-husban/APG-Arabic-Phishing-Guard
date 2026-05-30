@@ -1,0 +1,84 @@
+{
+  "entities": [
+    {
+      "entity_id": "generic_bank",
+      "display_name": "بنك",
+      "sector": "bank",
+      "aliases": [
+        "بنك", "البنك", "بنكي", "حسابك البنكي", "مصرف", "المصرف", "bank", "banking", "debit card", "credit card", "atm"
+      ]
+    },
+    {
+      "entity_id": "generic_payment_wallet",
+      "display_name": "محفظة أو خدمة دفع",
+      "sector": "payment_wallet",
+      "aliases": [
+        "محفظة", "محفظتك", "دفع", "بوابة دفع", "pay", "payment", "wallet", "cashback", "refund", "transfer", "paypal", "apple pay", "google pay"
+      ]
+    },
+    {
+      "entity_id": "generic_shipping",
+      "display_name": "شركة شحن",
+      "sector": "shipping",
+      "aliases": [
+        "شحن", "شركة شحن", "الشحنة", "طرد", "توصيل", "تتبع", "tracking", "shipment", "delivery", "parcel", "courier"
+      ]
+    },
+    {
+      "entity_id": "generic_telecom",
+      "display_name": "شركة اتصالات",
+      "sector": "telecom",
+      "aliases": [
+        "اتصالات", "شركة اتصالات", "شريحة", "باقة", "انترنت", "فاتورتك", "telecom", "mobile", "internet", "sim", "carrier", "network"
+      ]
+    },
+    {
+      "entity_id": "generic_government",
+      "display_name": "جهة حكومية",
+      "sector": "government",
+      "aliases": [
+        "وزارة", "حكومة", "حكومي", "جهة حكومية", "خدمة حكومية", "ضريبة", "هوية", "أحوال", "government", "gov", "ministry", "tax", "identity", "citizen service"
+      ]
+    },
+    {
+      "entity_id": "generic_ecommerce",
+      "display_name": "متجر إلكتروني",
+      "sector": "ecommerce",
+      "aliases": [
+        "طلبك", "الدفع", "فاتورة", "متجر", "شراء", "خصم", "كوبون", "order", "payment", "invoice", "shop", "store", "coupon", "discount"
+      ]
+    },
+    {
+      "entity_id": "generic_social",
+      "display_name": "منصة تواصل اجتماعي",
+      "sector": "social_media",
+      "aliases": [
+        "واتساب", "whatsapp", "فيسبوك", "facebook", "meta", "انستغرام", "instagram", "تيليجرام", "تلغرام", "telegram", "حسابك", "توثيق الحساب", "account verification"
+      ]
+    },
+    {
+      "entity_id": "generic_email_cloud",
+      "display_name": "بريد أو خدمة سحابية",
+      "sector": "email_cloud",
+      "aliases": [
+        "البريد", "بريدك", "ايميل", "إيميل", "gmail", "google", "icloud", "apple", "microsoft", "outlook", "hotmail", "cloud", "storage", "drive"
+      ]
+    },
+    {
+      "entity_id": "generic_education",
+      "display_name": "مؤسسة تعليمية",
+      "sector": "education",
+      "aliases": [
+        "جامعة", "الجامعة", "مدرسة", "طالب", "تسجيل الفصل", "بوابة الجامعة", "university", "school", "student", "semester", "registration", "portal"
+      ]
+    },
+    {
+      "entity_id": "generic_healthcare",
+      "display_name": "جهة صحية",
+      "sector": "healthcare",
+      "aliases": [
+        "مستشفى", "عيادة", "موعد طبي", "تأمين صحي", "health", "hospital", "clinic", "appointment", "insurance"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+# APG Risk Intelligence Engine v1 — Trusted Domain Allowlist
+#
+# IMPORTANT: Being on this list reduces LOCAL suspicion heuristics only.
+# It does NOT neutralize credential requests, OTP theft, or other block
+# evidence. A message asking for a password from a "trusted" domain is
+# still dangerous.
+
+trusted_domains:
+  # Global tech / social
+  - google.com
+  - gmail.com
+  - youtube.com
+  - facebook.com
+  - instagram.com
+  - twitter.com
+  - x.com
+  - apple.com
+  - microsoft.com
+  - amazon.com
+  - ebay.com
+  - paypal.com
+  - whatsapp.com
+  - telegram.org
+  - snapchat.com
+  - tiktok.com
+  - linkedin.com
+  - dropbox.com
+  - icloud.com
+  - outlook.com
+  - live.com
+  - hotmail.com
+  - yahoo.com
+
+  # Saudi Arabia
+  - gov.sa
+  - stc.com.sa
+  - mobily.com.sa
+  - zain.com.sa
+  - ncb.com.sa
+  - alrajhibank.com.sa
+  - riyalbank.com.sa
+  - sabb.com
+  - alinma.com
+  - bsf.com.sa
+  - riyadbank.com
+  - sib.com.sa
+  - bankalbilad.com.sa
+  - anz.com
+  - sama.gov.sa
+
+  # UAE
+  - gov.ae
+  - du.ae
+  - etisalat.ae
+  - emiratesnbd.com
+  - adcb.com
+  - dib.ae
+  - fab.ae
+  - mashreq.com
+  - centralbank.ae
+
+  # Jordan
+  - gov.jo
+  - zain.jo
+  - zaincash.jo
+  - zaincashjo.com
+  - umniah.com
+  - umn.jo
+  - orange.jo
+  - digital.orange.jo
+  - coursat.orange.jo
+  - orangecodingacademy.com
+  - irbid.orangecodingacademy.com
+  - arabbank.jo
+  - jordan-ahli.com
+  - cbj.gov.jo
+  - ahliunited.com
+  - ilajordan.com
+  - moj.jo
+  - jiff.jo
+  - efawateercom.jo
+
+  # Global payments / fintech
+  - py.pl
+  - paypal.com
+
+  # Global platforms (subdomains)
+  - my.stc
+  - forms.office.com
+  - play.google.com
+  - v.whatsapp.com
+  - anghami.com
+
+  # Saudi Arabia — STC portals
+  - my.stc.com.sa
+
+  # Kuwait
+  - gov.kw
+  - zain.com
+  - nbk.com
+  - kib.com.kw
+  - boubyanbank.com.kw
+  - burgan.com
+
+  # Bahrain
+  - gov.bh
+  - batelco.com
+  - nbo.com
+  - bkme.com
+  - bankofbahrain.com
+
+  # Qatar
+  - gov.qa
+  - ooredoo.qa
+  - qnb.com
+  - qib.com.qa
+  - masrafal rayan.com.qa
+
+  # Egypt
+  - gov.eg
+  - nbe.com.eg
+  - banquemisr.com
+  - cib.com.eg
+  - alexbank.com
+  - qnbalahli.com
+
+  # Iraq
+  - gov.iq
+  - rtelecom.iq
+  - itc.iq
+
+# Domains that are SUSPICIOUS regardless of above
+# (patterns in domain or path that indicate phishing even on otherwise-known domains)
+suspicious_url_patterns:
+  - ".*-login\\..*"
+  - ".*-verify\\..*"
+  - ".*-secure\\..*"
+  - ".*account-update.*"
+  - ".*signin-.*"
+  - ".*verify-account.*"
+
+# Words in URL path that indicate suspicious intent
+suspicious_path_words:
+  - login
+  - verify
+  - secure
+  - update
+  - confirm
+  - account
+  - banking
+  - otp
+  - signin
+  - auth
+  - wallet
+  - payment
+  - password
+  - credential

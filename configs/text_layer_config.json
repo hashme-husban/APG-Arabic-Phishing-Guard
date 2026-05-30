@@ -1,0 +1,13 @@
+{
+  "semantic_weight": 0.56,
+  "lexical_weight": 0.44,
+  "safe_max": 0.34,
+  "legit_max": 0.34,
+  "phishing_min": 0.72,
+  "strong_safe": 0.20,
+  "strong_legit": 0.20,
+  "strong_phishing": 0.85,
+  "disagreement_gap": 0.30,
+  "suspicious_center_margin": 0.18,
+  "min_tokens_for_full_confidence": 5
+}

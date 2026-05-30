@@ -1,0 +1,58 @@
+name: mobile
+description: Arabic Phishing Guard — mobile application for detecting phishing in Arabic messages.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '^3.11.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: any
+  http: ^1.6.0
+  share_plus: ^12.0.2
+  hive_ce: ^2.3.4
+  hive_ce_flutter: ^2.3.4
+  notification_listener_service: ^0.3.5
+  flutter_secure_storage: ^9.2.4
+  image_picker: ^1.1.2
+  google_mlkit_barcode_scanning: ^0.12.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.2
+  flutter_native_splash: ^2.4.4
+
+flutter:
+  uses-material-design: true
+  generate: true
+  assets:
+    - assets/branding/apg_app_icon.png
+    - assets/branding/apg_splash.png
+    - assets/branding/apg_logo_transparent.png
+    - assets/branding/apg_logo_white.png
+    - assets/branding/apg_brand_horizontal.png
+    - assets/branding/apg_dashboard_branding.png
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: assets/branding/apg_app_icon.png
+  adaptive_icon_background: "#020B12"
+  adaptive_icon_foreground: assets/branding/apg_app_icon.png
+  remove_alpha_ios: true
+
+flutter_native_splash:
+  android: true
+  ios: true
+  web: false
+  color: "#020B12"
+  image: assets/branding/apg_splash.png
+  android_12:
+    color: "#020B12"
+    image: assets/branding/apg_splash.png

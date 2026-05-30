@@ -1,0 +1,7 @@
+{
+  "unknown_policy_score": 0.48,
+  "compliant_max": 0.32,
+  "conflicting_min": 0.70,
+  "trusted_sender_discount": 0.07,
+  "spoof_sender_boost": 0.09
+}

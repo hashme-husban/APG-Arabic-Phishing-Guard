@@ -1,0 +1,77 @@
+{
+  "safe_max": 0.30,
+  "phishing_min": 0.72,
+  "rules_weight": 0.68,
+  "model_weight": 0.32,
+  "disagreement_gap": 0.35,
+  "enable_external_reputation": false,
+  "external_provider": "webhook",
+  "external_webhook_url": "",
+  "external_timeout_seconds": 5,
+  "external_min_trigger_score": 0.55,
+  "external_force_on_flags": ["OBFUSCATED_INPUT", "BRAND_MISMATCH", "IP_LITERAL", "PRIVATE_OR_INTERNAL_IP", "PUNYCODE_OR_IDN", "DOWNLOADABLE_FILE"],
+  "external_hit_floor": 0.92,
+  "suspicious_tlds": [
+    "xyz", "top", "cfd", "click", "site", "online", "monster", "rest", "quest", "cam", "work", "support", "live", "gq", "tk", "ml", "cf", "icu", "cyou", "buzz", "zip", "mov", "country", "stream", "loan", "win", "review", "kim", "fit", "men", "date", "racing", "party", "link"
+  ],
+  "shortener_domains": [
+    "bit.ly", "tinyurl.com", "t.co", "goo.gl", "ow.ly", "is.gd", "buff.ly", "tiny.cc", "cutt.ly", "rebrand.ly", "shorturl.at", "rb.gy", "s.id", "soo.gd", "lnkd.in", "bitly.com", "qrco.de", "bc.vc", "adf.ly"
+  ],
+  "suspicious_keywords": [
+    "login", "signin", "verify", "verification", "update", "secure", "account", "bank", "payment", "invoice", "otp", "confirm", "suspend", "unlock", "wallet", "gift", "reward", "reset", "billing", "kyc", "password", "validate", "review", "claim", "refund", "support", "service", "portal", "auth", "security", "recover", "limited", "urgent", "blocked", "restricted", "prize", "cashback"
+  ],
+  "action_keywords": [
+    "login", "signin", "verify", "update", "reset", "confirm", "unlock", "activate", "payment", "billing", "password", "otp", "validate", "review", "submit", "continue", "recover", "claim", "appeal", "secure", "auth"
+  ],
+  "deceptive_host_tokens": [
+    "secure", "security", "support", "update", "verify", "verification", "login", "signin", "account", "billing", "pay", "payment", "wallet", "bank", "gov", "government", "official", "service", "portal", "auth", "otp", "kyc", "reset", "unlock", "restricted", "blocked", "help", "customer", "safe", "confirm"
+  ],
+  "redirect_parameter_names": [
+    "url", "u", "redirect", "redirect_url", "return", "returnurl", "next", "target", "dest", "destination", "redir", "continue", "callback", "return_to", "to", "link", "go", "out", "r", "ref", "checkout_url"
+  ],
+  "sensitive_sectors": [
+    "bank", "government", "payment", "wallet", "payment_wallet", "telecom", "email_cloud", "social_media", "healthcare", "education"
+  ],
+  "sector_domain_tokens": {
+    "bank": ["bank", "banking", "bnk", "card", "account"],
+    "payment": ["pay", "wallet", "card", "billing", "checkout"],
+    "payment_wallet": ["pay", "wallet", "cash", "billing", "transfer"],
+    "government": ["gov", "government", "ministry", "service", "tax", "citizen"],
+    "shipping": ["ship", "shipping", "delivery", "track", "tracking", "courier", "parcel"],
+    "telecom": ["telecom", "mobile", "internet", "sim", "network", "carrier"],
+    "ecommerce": ["shop", "store", "order", "pay", "checkout", "deal"],
+    "social_media": ["whatsapp", "facebook", "meta", "instagram", "telegram", "social"],
+    "email_cloud": ["mail", "email", "cloud", "drive", "storage", "account"],
+    "education": ["edu", "university", "portal", "student", "school"],
+    "healthcare": ["health", "hospital", "clinic", "insurance", "medical"]
+  },
+  "weights": {
+    "OBFUSCATED_INPUT": 0.23,
+    "INSECURE_HTTP": 0.08,
+    "CREDENTIALS_OR_AT_SYMBOL": 0.17,
+    "IP_LITERAL": 0.23,
+    "PRIVATE_OR_INTERNAL_IP": 0.28,
+    "PUNYCODE_OR_IDN": 0.20,
+    "MIXED_SCRIPT_HOST": 0.13,
+    "TOO_MANY_SUBDOMAINS": 0.12,
+    "EXCESSIVE_LENGTH": 0.10,
+    "SUSPICIOUS_KEYWORDS": 0.11,
+    "ACTION_LINK": 0.11,
+    "HOST_DECEPTIVE_TOKEN": 0.18,
+    "REDIRECT_PARAM": 0.18,
+    "NESTED_URL": 0.18,
+    "URL_SHORTENER": 0.15,
+    "BRAND_MISMATCH": 0.26,
+    "UNUSUAL_PORT": 0.10,
+    "HTTPS_TOKEN_MISUSE": 0.11,
+    "LONG_QUERY": 0.08,
+    "SUSPICIOUS_TLD": 0.13,
+    "DOWNLOADABLE_FILE": 0.20,
+    "HEAVY_ENCODING": 0.11,
+    "OBFUSCATED_ACTION_LINK": 0.15,
+    "SENSITIVE_ENTITY_ACTION_LINK": 0.13,
+    "SENSITIVE_ENTITY_INSECURE_HTTP": 0.11,
+    "DECEPTIVE_SECTOR_DOMAIN": 0.13,
+    "MULTIPLE_URLS": 0.05
+  }
+}

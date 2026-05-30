@@ -1,0 +1,138 @@
+{
+  "term_sets": {
+    "otp": ["otp", "pin", "رمز", "كود", "رمز التحقق", "كود التحقق", "رمز تفعيل", "verification code", "auth code", "2fa"],
+    "reply": ["رد", "قم بالرد", "يرجى الرد", "ارسل", "أرسل", "ابعث", "reply", "send back", "send us", "share with us"],
+    "password": ["password", "passcode", "credentials", "كلمة المرور", "كلمه المرور", "الرقم السري", "بيانات الدخول"],
+    "card": ["cvv", "cvc", "card number", "card code", "atm", "رقم البطاقة", "بطاقتك", "بطاقة الائتمان", "رمز البطاقة", "رمز بطاقة الصراف", "كود الصراف"],
+    "payment": ["payment", "pay", "invoice", "billing", "refund", "transfer", "فاتورة", "ادفع", "سداد", "رسوم", "تحويل", "استرداد", "مستحقات"],
+    "login": ["login", "sign in", "signin", "تسجيل الدخول", "دخول", "بوابة الدخول"],
+    "verify": ["verify", "verification", "confirm", "update", "validate", "review", "تحقق", "تأكيد", "تاكيد", "تحديث", "تحديث البيانات", "مراجعة"],
+    "tracking": ["tracking", "track", "shipment", "delivery", "tracking number", "parcel", "شحنة", "الشحنة", "تتبع", "توصيل", "طرد"],
+    "order": ["order", "طلبك", "طلب", "رقم الطلب", "شراء", "متجر"],
+    "bill": ["bill", "فاتورة", "billing", "renewal", "تجديد", "فاتورتك", "رصيد"],
+    "urgent": ["urgent", "immediately", "now", "final notice", "last warning", "حالاً", "حالا", "فورا", "فوراً", "عاجل", "الان", "الآن", "تحذير نهائي"],
+    "threat": ["suspend", "restricted", "blocked", "locked", "closed", "deactivated", "تقييد", "ايقاف", "إيقاف", "تعطيل", "حظر", "قفل", "إغلاق", "اغلاق"],
+    "app_install": ["install", "download app", "apk", "تحميل التطبيق", "ثبت التطبيق", "قم بتثبيت", "تنزيل"],
+    "account": ["account", "profile", "حسابك", "الحساب", "ملفك"],
+    "link_words": ["link", "url", "الرابط", "الرابط التالي", "اضغط", "اضغط هنا", "visit", "open", "افتح", "الدخول عبر الرابط"],
+    "safe_context": ["reminder", "schedule", "class", "meeting", "appointment", "تذكير", "موعد", "جدول", "محاضرة", "الفصل القادم", "بوابة الجامعة الرسمية"],
+    "bank_sector": ["bank", "banking", "بنك", "بنكي", "مصرف"],
+    "government_sector": ["government", "gov", "وزارة", "حكومة", "جهة حكومية", "ضريبة", "هوية"],
+    "telecom_sector": ["telecom", "اتصالات", "شريحة", "رقمك", "باقة", "فاتورتك"],
+    "shipping_sector": ["shipping", "شحن", "توصيل", "الشحنة", "tracking", "delivery"],
+    "ecommerce_sector": ["store", "shop", "متجر", "طلبك", "order", "شراء"],
+    "social_sector": ["whatsapp", "facebook", "meta", "instagram", "telegram", "واتساب", "فيسبوك", "انستغرام", "تيليجرام", "تلغرام"],
+    "education_sector": ["university", "school", "student", "جامعة", "الجامعة", "طالب", "مدرسة"],
+    "health_sector": ["hospital", "clinic", "insurance", "مستشفى", "عيادة", "تأمين صحي"]
+  },
+  "sector_hints": {
+    "bank": ["bank", "banking", "بنك", "بنكي", "مصرف"],
+    "payment_wallet": ["wallet", "payment", "pay", "محفظة", "دفع", "تحويل", "استرداد"],
+    "shipping": ["shipping", "شحن", "الشحنة", "tracking", "delivery", "parcel", "طرد"],
+    "telecom": ["telecom", "اتصالات", "فاتورتك", "تجديد", "شريحة", "باقة"],
+    "government": ["government", "gov", "وزارة", "حكومة", "جهة حكومية", "ضريبة", "هوية"],
+    "ecommerce": ["order", "طلبك", "متجر", "شراء", "delivery", "shop", "store"],
+    "social_media": ["whatsapp", "facebook", "instagram", "telegram", "واتساب", "فيسبوك", "انستغرام", "تيليجرام"],
+    "email_cloud": ["gmail", "google", "icloud", "microsoft", "outlook", "بريد", "سحابة"],
+    "education": ["university", "school", "student", "جامعة", "طالب", "مدرسة"],
+    "healthcare": ["hospital", "clinic", "health", "مستشفى", "عيادة", "صحي"]
+  },
+  "global_rules": [
+    {"all": ["otp", "reply"], "flag": "OTP_REPLY_REQUEST", "risk": 0.86, "reason": "Requesting the user to send or reply with an OTP is a high-risk behavior."},
+    {"all": ["password"], "flag": "PASSWORD_REQUEST", "risk": 0.91, "reason": "Requesting a password or passcode is highly suspicious."},
+    {"all": ["card"], "flag": "CARD_DATA_REQUEST", "risk": 0.93, "reason": "Requesting card-related sensitive data is highly suspicious."},
+    {"all": ["urgent", "link_words"], "flag": "URGENT_LINK_PRESSURE", "risk": 0.74, "reason": "Urgent pressure combined with a link is risky."},
+    {"all": ["threat", "verify", "link_words"], "flag": "THREAT_VERIFY_LINK", "risk": 0.82, "reason": "Threat language combined with link-based verification is a strong social-engineering pattern."},
+    {"all": ["app_install"], "flag": "APP_INSTALL_REQUEST", "risk": 0.70, "reason": "Requests to install apps or files from messages require caution."}
+  ],
+  "sectors": {
+    "bank": {
+      "baseline_score": 0.18,
+      "allowed_rules": [{"all": ["account"], "adjustment": -0.03, "reason": "General account-related notifications can be normal for banks."}],
+      "risky_rules": [
+        {"all": ["verify", "link_words"], "flag": "BANK_VERIFY_LINK", "risk": 0.82, "reason": "Banks asking users to verify or update through a link is high-risk."},
+        {"all": ["login", "link_words"], "flag": "BANK_LOGIN_LINK", "risk": 0.86, "reason": "Bank login requests through a link are high-risk."},
+        {"all": ["payment", "link_words"], "flag": "BANK_PAYMENT_LINK", "risk": 0.80, "reason": "Unexpected payment links in a banking context are high-risk."},
+        {"all": ["otp"], "flag": "BANK_OTP_REQUEST", "risk": 0.88, "reason": "Banks should not ask users to share OTPs in a message conversation."},
+        {"all": ["card"], "flag": "BANK_CARD_REQUEST", "risk": 0.94, "reason": "Bank card or ATM-code requests are highly suspicious."}
+      ]
+    },
+    "payment_wallet": {
+      "baseline_score": 0.22,
+      "allowed_rules": [{"all": ["payment"], "adjustment": -0.02, "reason": "Payment services may send routine transaction notifications."}],
+      "risky_rules": [
+        {"all": ["verify", "link_words"], "flag": "WALLET_VERIFY_LINK", "risk": 0.78, "reason": "Wallet verification through message links should be verified separately."},
+        {"all": ["password"], "flag": "WALLET_PASSWORD_REQUEST", "risk": 0.90, "reason": "Wallet services should not ask for passwords in messages."},
+        {"all": ["otp", "reply"], "flag": "WALLET_OTP_REPLY", "risk": 0.88, "reason": "Wallet OTP reply requests are high-risk."}
+      ]
+    },
+    "shipping": {
+      "baseline_score": 0.28,
+      "allowed_rules": [{"all": ["tracking", "link_words"], "adjustment": -0.10, "reason": "Tracking links are commonly legitimate in shipping messages."}],
+      "risky_rules": [
+        {"all": ["payment", "link_words"], "flag": "SHIPPING_PAYMENT_LINK", "risk": 0.64, "reason": "Shipping-related payment links can be risky and should be verified carefully."},
+        {"all": ["otp"], "flag": "SHIPPING_OTP_REQUEST", "risk": 0.74, "reason": "Shipping entities normally should not ask users to share OTPs."},
+        {"all": ["app_install"], "flag": "SHIPPING_APP_INSTALL", "risk": 0.70, "reason": "Unexpected shipping app install requests require caution."}
+      ]
+    },
+    "telecom": {
+      "baseline_score": 0.26,
+      "allowed_rules": [{"all": ["bill", "link_words"], "adjustment": -0.09, "reason": "Billing or renewal links can be legitimate in telecom messages."}],
+      "risky_rules": [
+        {"all": ["otp", "reply"], "flag": "TELECOM_OTP_REPLY", "risk": 0.84, "reason": "Telecom entities should not ask users to reply with OTPs."},
+        {"all": ["password"], "flag": "TELECOM_PASSWORD_REQUEST", "risk": 0.88, "reason": "Password requests are not normal in telecom notifications."},
+        {"all": ["verify", "link_words", "threat"], "flag": "TELECOM_THREAT_VERIFY", "risk": 0.78, "reason": "Threatening service suspension with a verification link is risky."}
+      ]
+    },
+    "government": {
+      "baseline_score": 0.24,
+      "allowed_rules": [],
+      "risky_rules": [
+        {"all": ["payment", "link_words"], "flag": "GOV_PAYMENT_LINK", "risk": 0.74, "reason": "Government payment links should be treated cautiously unless clearly verified."},
+        {"all": ["verify", "link_words"], "flag": "GOV_VERIFY_LINK", "risk": 0.76, "reason": "Government identity or account verification via a link is risky."},
+        {"all": ["password"], "flag": "GOV_PASSWORD_REQUEST", "risk": 0.92, "reason": "Government entities should not request passwords."}
+      ]
+    },
+    "ecommerce": {
+      "baseline_score": 0.30,
+      "allowed_rules": [{"all": ["order", "tracking"], "adjustment": -0.08, "reason": "Order and tracking related language can be normal in e-commerce messages."}],
+      "risky_rules": [
+        {"all": ["payment", "link_words"], "flag": "ECOMMERCE_PAYMENT_LINK", "risk": 0.62, "reason": "Payment links in e-commerce messages should be checked carefully."},
+        {"all": ["password"], "flag": "ECOMMERCE_PASSWORD_REQUEST", "risk": 0.86, "reason": "E-commerce messages should not ask users for passwords directly."}
+      ]
+    },
+    "social_media": {
+      "baseline_score": 0.28,
+      "allowed_rules": [],
+      "risky_rules": [
+        {"all": ["verify", "link_words"], "flag": "SOCIAL_VERIFY_LINK", "risk": 0.74, "reason": "Social account verification through message links is commonly abused."},
+        {"all": ["login", "link_words"], "flag": "SOCIAL_LOGIN_LINK", "risk": 0.78, "reason": "Login links for social accounts should be verified carefully."},
+        {"all": ["otp", "reply"], "flag": "SOCIAL_OTP_REPLY", "risk": 0.86, "reason": "Social platforms do not ask users to reply with OTPs."}
+      ]
+    },
+    "email_cloud": {
+      "baseline_score": 0.26,
+      "allowed_rules": [],
+      "risky_rules": [
+        {"all": ["password"], "flag": "CLOUD_PASSWORD_REQUEST", "risk": 0.90, "reason": "Email/cloud services should not request passwords via messages."},
+        {"all": ["verify", "link_words", "threat"], "flag": "CLOUD_THREAT_VERIFY", "risk": 0.80, "reason": "Threat-based cloud account verification links are risky."}
+      ]
+    },
+    "education": {
+      "baseline_score": 0.18,
+      "allowed_rules": [{"all": ["safe_context"], "adjustment": -0.10, "reason": "Academic reminders and registration notices can be routine."}],
+      "risky_rules": [
+        {"all": ["password"], "flag": "EDU_PASSWORD_REQUEST", "risk": 0.84, "reason": "Educational institutions should not request passwords through messages."},
+        {"all": ["payment", "link_words"], "flag": "EDU_PAYMENT_LINK", "risk": 0.62, "reason": "Unexpected education payment links should be verified."}
+      ]
+    },
+    "healthcare": {
+      "baseline_score": 0.22,
+      "allowed_rules": [{"all": ["safe_context"], "adjustment": -0.08, "reason": "Routine appointment reminders can be legitimate."}],
+      "risky_rules": [
+        {"all": ["password"], "flag": "HEALTH_PASSWORD_REQUEST", "risk": 0.88, "reason": "Healthcare messages should not ask for passwords."},
+        {"all": ["payment", "link_words"], "flag": "HEALTH_PAYMENT_LINK", "risk": 0.66, "reason": "Unexpected medical payment links should be verified."}
+      ]
+    }
+  }
+}

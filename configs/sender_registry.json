@@ -1,0 +1,130 @@
+{
+  "entities": [
+    {
+      "entity_id": "sample_bank",
+      "display_name": "Sample Bank",
+      "sector": "bank",
+      "official_domains": [
+        "samplebank.com",
+        "samplebank.jo"
+      ],
+      "official_emails": [
+        "alerts@samplebank.com",
+        "security@samplebank.com"
+      ],
+      "official_phones": [
+        "+962790000000"
+      ],
+      "official_short_codes": [
+        "1234"
+      ],
+      "display_aliases": [
+        "sample bank",
+        "samplebank",
+        "بنك المثال"
+      ]
+    },
+    {
+      "entity_id": "sample_shipping",
+      "display_name": "Sample Shipping",
+      "sector": "shipping",
+      "official_domains": [
+        "sampleship.com"
+      ],
+      "official_emails": [
+        "tracking@sampleship.com"
+      ],
+      "official_phones": [
+        "+962780000000"
+      ],
+      "official_short_codes": [
+        "5678"
+      ],
+      "display_aliases": [
+        "sample shipping",
+        "sampleship",
+        "شركة الشحن المثال"
+      ]
+    },
+    {
+      "entity_id": "sample_telecom",
+      "display_name": "Sample Telecom",
+      "sector": "telecom",
+      "official_domains": [
+        "sampletel.com"
+      ],
+      "official_emails": [
+        "noreply@sampletel.com"
+      ],
+      "official_phones": [
+        "+962770000000"
+      ],
+      "official_short_codes": [
+        "9010"
+      ],
+      "display_aliases": [
+        "sample telecom",
+        "sampletel",
+        "اتصالات المثال"
+      ]
+    },
+    {
+      "entity_id": "sample_wallet",
+      "display_name": "Sample Wallet",
+      "sector": "wallet",
+      "official_domains": [
+        "samplewallet.com"
+      ],
+      "official_emails": [
+        "alerts@samplewallet.com"
+      ],
+      "official_phones": [],
+      "official_short_codes": [
+        "7711"
+      ],
+      "display_aliases": [
+        "sample wallet",
+        "samplewallet",
+        "محفظة المثال"
+      ]
+    },
+    {
+      "entity_id": "sample_government",
+      "display_name": "Sample Government Service",
+      "sector": "government",
+      "official_domains": [
+        "service.example.gov"
+      ],
+      "official_emails": [
+        "noreply@service.example.gov"
+      ],
+      "official_phones": [],
+      "official_short_codes": [
+        "94444"
+      ],
+      "display_aliases": [
+        "sample gov",
+        "government service",
+        "خدمة حكومية"
+      ]
+    },
+    {
+      "entity_id": "sample_university",
+      "display_name": "Sample University",
+      "sector": "education",
+      "official_domains": [
+        "university.example.edu"
+      ],
+      "official_emails": [
+        "registrar@university.example.edu"
+      ],
+      "official_phones": [],
+      "official_short_codes": [],
+      "display_aliases": [
+        "sample university",
+        "university",
+        "الجامعة"
+      ]
+    }
+  ]
+}
