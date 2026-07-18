@@ -448,7 +448,7 @@ class SettingsScreen extends StatelessWidget {
           ),
           const SizedBox(height: 16),
           Text(
-            'Built by Hashem & Ruba',
+            'Developed by Hashem Ibrahim Al-Hosban',
             style: Theme.of(context).textTheme.bodySmall?.copyWith(
               color: AppTokens.mutedText(context),
               height: 1.4,

@@ -1,6 +1,6 @@
 # APG — Arabic Phishing Guard
 
-![Graduation Project](https://img.shields.io/badge/Graduation_Project-Al_al--Bayt_University-0066CC?style=flat-square)
+![Single Author](https://img.shields.io/badge/Single_Author-Hashem_Ibrahim_Al--Hosban-0066CC?style=flat-square)
 ![Arabic NLP](https://img.shields.io/badge/Arabic_NLP-AraBERT-orange?style=flat-square)
 ![Cybersecurity](https://img.shields.io/badge/Cybersecurity-Phishing_Detection-CC0000?style=flat-square)
 ![Flutter](https://img.shields.io/badge/Mobile-Flutter-02569B?style=flat-square)
@@ -12,7 +12,7 @@
 
 **Arabic-first AI-powered phishing detection and risk analysis system for SMS, URLs, and Android notifications.**
 
-APG is a full-stack security research project developed for AI Expo Jordan 2026. It detects Arabic phishing and smishing attempts using a hybrid AI risk engine, provides explainable risk scores, and monitors Android notifications in real time.
+APG is a single-author full-stack security research project developed by Hashem Ibrahim Al-Hosban for AI Expo Jordan 2026. It detects Arabic phishing and smishing attempts using a hybrid AI risk engine, provides explainable risk scores, and monitors Android notifications in real time.
 
 ---
 
@@ -34,7 +34,7 @@ APG is a full-stack security research project developed for AI Expo Jordan 2026.
 14. [Security Notice](#security-notice)
 15. [Limitations](#limitations)
 16. [Future Work](#future-work)
-17. [Team](#team)
+17. [Project Author](#project-author)
 
 ---
 

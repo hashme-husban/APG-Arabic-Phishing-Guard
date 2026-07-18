@@ -1,6 +1,8 @@
 # APG Project Structure
 
-**Arabic Phishing Guard (APG)** — Graduation project for detecting Arabic-language phishing content.
+**Arabic Phishing Guard (APG)** — Single-author project for detecting Arabic-language phishing content.
+Author: Hashem Ibrahim Al-Hosban
+Role: Project Owner, Researcher, Developer
 Cleaned and organized. Last validation: 2026-05-22.
 
 ---

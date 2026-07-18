@@ -1,6 +1,7 @@
 {
   "name": "apg-admin-console-frontend",
   "version": "1.0.0",
+  "author": "Hashem Ibrahim Al-Hosban",
   "private": true,
   "type": "module",
   "scripts": {
